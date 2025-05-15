@@ -247,6 +247,7 @@ header img {
         h2 {
     background-image: linear-gradient(to right, rgb(1, 37, 146), rgb(21, 98, 124), rgb(14, 79, 100));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
