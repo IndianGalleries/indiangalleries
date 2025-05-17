@@ -14,24 +14,30 @@
 
 </head>
 <body>
-  <!-- Header Section -->
+  <!-- Header Section --><div class="container-fluid bg-light py-3 border-bottom">
+  <div class="container">
+    
+    <!-- Main Flex Container -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      
+      <!-- Logo and Company Name -->
+      <div class="d-flex align-items-center mb-3 mb-md-0">
+        <img src="Images/favicon-light.png" alt="Logo" width="60" height="60" class="me-3">
+        <h2 class="m-0 fw-bold text-brand" style="font-family: 'Allura', cursive;">Indian Galleries</h2>
+      </div>
 
-<div class="container-fluid bg-light py-3 border-bottom">
-  <div class="container d-flex flex-wrap justify-content-between align-items-center">
-    
-    <!-- Logo and Company Name -->
-    <div class="d-flex align-items-center">
-      <img src="Images/favicon-light.png" alt="Logo" width="60" height="60" class="me-3">
-      <h2 class="m-0 fw-bold text-brand"  style="font-family: 'Allura', cursive;">Indian Galleries</h2>
+      <!-- Contact Details -->
+      <div class="text-brand fs-6 fw-semibold text-center text-md-end">
+        <div class="mb-1 mb-md-0">
+          <span class="me-md-4 d-block d-md-inline"><i class="fa-solid fa-phone me-1"></i> +91 9997515438</span>
+          <span class="me-md-4 d-block d-md-inline"><i class="fa-solid fa-envelope me-1"></i> indiangallery@rediffmail.com</span>
+          <span class="me-md-4 d-block d-md-inline"><i class="fa-solid fa-location-dot me-1"></i> Moradabad, India</span>
+          <span class="d-block d-md-inline"><i class="fa-solid fa-clock me-1"></i> 10am - 7pm</span>
+        </div>
+      </div>
+
     </div>
-    
-    <!-- Contact Details -->
-    <div class="text-end text-brand fs-6 fw-semibold">
-      <span class="me-4"><i class="fa-solid fa-phone me-1"></i> +91 9997515438</span>
-      <span class="me-4"><i class="fa-solid fa-envelope me-1"></i>indiangallery@rediffmail.com</span>
-      <span class="me-4"><i class="fa-solid fa-location-dot me-1"></i> Moradabad, India</span>
-      <span><i class="fa-solid fa-clock me-1"></i> 10am - 7pm</span>
-    </div>
+
   </div>
 </div>
 
@@ -46,10 +52,10 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav d-flex justify-content-center gap-4">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-us">About Us</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
@@ -57,30 +63,53 @@
             Product Gallery
           </a>
           <ul class="dropdown-menu" aria-labelledby="productDropdown">
-            <li><a class="dropdown-item" href="#">All Products</a></li>
+            <!-- <li><a class="dropdown-item" href="#">All Products</a></li> -->
             <li class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">Indoor Lights</a>
+              <a class="dropdown-item dropdown-toggle" href="Lamps_and_Lightings.html">Lamps and Lightings</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Chandeliers</a></li>
-                <li><a class="dropdown-item" href="#">Lamps</a></li>
-                <li><a class="dropdown-item" href="#">Wall Sconces</a></li>
+                <li><a class="dropdown-item" href="Lamps_and_Lightings.html">Table Lamps</a></li>
+                <li><a class="dropdown-item" href="Lamps_and_Lightings.html">Floor Lamps</a></li>
+                <li><a class="dropdown-item" href="Lamps_and_Lightings.html">Wall Lamps</a></li>
+                 <li><a class="dropdown-item" href="Lamps_and_Lightings.html">Chandeliers</a></li>
+                <li><a class="dropdown-item" href="Lamps_and_Lightings.html">Pendants</a></li>
+                <li><a class="dropdown-item" href="Lamps_and_Lightings.html">Outdoor Lamps</a></li>
               </ul>
             </li>
-            <li><a class="dropdown-item" href="#">Outdoor Lights</a></li>
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item  dropdown-toggle" href="Home_decor.html">Home Decor</a>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Table Top items</a></li>
+                <li><a class="dropdown-item" href="#">Hand Panted items</a></li>
+                <li><a class="dropdown-item" href="#">Wall Decor</a></li>
+                 <li><a class="dropdown-item" href="#">Flower Vases</a></li>
+                             </ul>
+             </li>
+
+               <li class="dropdown-submenu">
+              <a class="dropdown-item  dropdown-toggle" href="Luxury_Kitchen_Wares.html">Luxury Kitchen Wares</a>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Silver Tea Cup Set</a></li>
+                <li><a class="dropdown-item" href="#">Etagere</a></li>
+                <li><a class="dropdown-item" href="#">Trays</a></li>
+                 
+              </ul>
+             </li>
+
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#rewards">Rewards</a>
+          <a class="nav-link" href="certification.html">Certification</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact-us">Contact Us</a>
+          <a class="nav-link" href="certification.html">Contact Us</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade mt-2" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="Images/Carousel/slider1.jpg" class="d-block w-100" alt="...">
@@ -160,7 +189,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img1.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Table_lamps/t3.jpg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-10%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -174,7 +203,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img2.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Floor_lamps/f3.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-15%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -187,7 +216,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img3.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/OutDoor_lamps/O3.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-5%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -200,7 +229,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img4.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Pendants/p14.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-25%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -215,7 +244,7 @@
             <div class="row section-gap">
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img5.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Table_lamps/t3.jpg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-35%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -229,7 +258,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img6.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Wall_Lamps/w3.jpg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-25%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -242,7 +271,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img7.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Wall_Lamps/w5.jpg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-12%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -255,7 +284,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img8.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Chandeliers/c2.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-19%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -270,7 +299,7 @@
                  <div class="row section-gap">
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img9.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/OutDoor_lamps/O3.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-35%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -284,7 +313,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img10.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Pendants/p16.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-25%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -297,7 +326,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img11.PNG" class="img-fluid custom-img" alt="...">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Chandeliers/c3.jpeg" class="img-fluid custom-img" alt="...">
                         <!-- <div class="discount-banner">-12%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -310,7 +339,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="gallery-image">
-                        <img src="\Images\Product Images\Lamps\img12.PNG" class="img-fluid custom-img" alt="Decorative table lamp with a brass base and intricate floral patterns, illuminated with a warm light, placed on a wooden surface in a cozy indoor setting">
+                        <img src="Images/Product Images/Lamps_and_Lightening/Floor_lamps/f6.jpeg" class="img-fluid custom-img" alt="Decorative table lamp with a brass base and intricate floral patterns, illuminated with a warm light, placed on a wooden surface in a cozy indoor setting">
                         <!-- <div class="discount-banner">-19%</div> -->
                         <div class="product-info">
                             <!-- <p>Design Name:</p>
@@ -384,192 +413,106 @@
     referrerpolicy="no-referrer-when-downgrade">
   </iframe>
 </div>
-
             </div>
           </div>
         </div>
       </section>
       <!-- contact us end -->
-       <!-- review section start -->
-       <section id="customer-reviews" class="section-gap">
-        <div class="container">
-          <h2 class="text-center mb-5">Our Customer Reviews</h2>
-          <!-- <div class="review-carousel d-flex overflow-hidden"> -->
-            <!-- <marquee behavior="alternate" direction="left" scrollamount="4" width="100%">
-<div style="display: inline-block;">
-            <div class="review-item me-3">
-              <img src="Images/img3.jpg" class="img-fluid rounded" alt="Customer 1">
-              <div class="rating mt-2">
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p class="review-comment">Great Quality! Loved it</p>
-            </div>
-      
-            <div class="review-item me-3">
-              <img src="Images/imp1.jpg" class="img-fluid rounded" alt="Customer 2">
-              <div class="rating mt-2">
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-              </div>
-              <p class="review-comment">Awesome product</p>
-            </div>
-      
-            <div class="review-item me-3">
-              <img src="Images/img4.jpg" class="img-fluid rounded" alt="Customer 3">
-              <div class="rating mt-2">
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star-half-alt filled"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p class="review-comment">Elegant design</p>
-            </div>
-      
-            <div class="review-item me-3">
-              <img src="Images/imp2.jpg" class="img-fluid rounded" alt="Customer 4">
-              <div class="rating mt-2">
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p class="review-comment">Beautiful!</p>
-            </div>
+      <!-- Review Section Start -->
+<section id="customer-reviews" class="section-gap">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Customer Reviews</h2>
+    
+    <!-- <div class="review-marquee-track"> -->
+      <!-- <div class="review-marquee-content"> -->
 
-
-             <div class="review-item me-3">
-              <img src="Images/imp1.jpg" class="img-fluid rounded" alt="Customer 2">
-              <div class="rating mt-2">
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-              </div>
-              <p class="review-comment">Awesome product</p>
-            </div>
-
-             <div class="review-item me-3">
-              <img src="Images/img4.jpg" class="img-fluid rounded" alt="Customer 3">
-              <div class="rating mt-2">
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star filled"></i>
-                <i class="fa fa-star-half-alt filled"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p class="review-comment">Elegant design</p>
-              </div>
-
-            </div>
-          </marquee> -->
-
-          <div class="review-marquee-wrapper">
-  <div class="fade-left"></div>
-  <div class="fade-right"></div>
-
-  <div class="review-marquee-track">
-    <div class="review-marquee-content">
-      <!-- Review Items Set 1 -->
-      <div class="review-item">
-        <img src="Images/img3.jpg" alt="Customer 1">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star"></i>
+        <div class="review-item">
+          <img src="Images/img3.jpg" alt="Customer 1">
+          <div class="rating mt-2">
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <p class="review-comment">Great Quality! Loved it</p>
         </div>
-        <p class="review-comment">Great Quality! Loved it</p>
-      </div>
 
-      <div class="review-item">
-        <img src="Images/imp1.jpg" alt="Customer 2">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
+        <div class="review-item">
+          <img src="Images/imp1.jpg" alt="Customer 2">
+          <div class="rating mt-2">
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p class="review-comment">Awesome product</p>
         </div>
-        <p class="review-comment">Awesome product</p>
-      </div>
 
-      <div class="review-item">
-        <img src="Images/img4.jpg" alt="Customer 3">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star-half-alt filled"></i><i class="fa fa-star"></i>
+        <div class="review-item">
+          <img src="Images/img4.jpg" alt="Customer 3">
+          <div class="rating mt-2">
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star-half-alt filled"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p class="review-comment">Elegant design</p>
         </div>
-        <p class="review-comment">Elegant design</p>
-      </div>
 
-      <div class="review-item">
-        <img src="Images/imp2.jpg" alt="Customer 4">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star"></i>
+        <div class="review-item">
+          <img src="Images/imp2.jpg" alt="Customer 4">
+          <div class="rating mt-2">
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p class="review-comment">Beautiful!</p>
         </div>
-        <p class="review-comment">Beautiful!</p>
-      </div>
-    </div>
 
-    <!-- Duplicated content for infinite scroll -->
-    <div class="review-marquee-content">
-      <div class="review-item">
-        <img src="Images/img3.jpg" alt="Customer 1">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star"></i>
+        <!-- Duplicated for scroll loop -->
+        <div class="review-item">
+          <img src="Images/img3.jpg" alt="Customer 1">
+          <div class="rating mt-2">
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star filled"></i>
+            <i class="fa fa-star-half-alt"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p class="review-comment">Great Quality! Loved it</p>
         </div>
-        <p class="review-comment">Great Quality! Loved it</p>
-      </div>
 
-      <div class="review-item">
-        <img src="Images/imp1.jpg" alt="Customer 2">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
-        </div>
-        <p class="review-comment">Awesome product</p>
-      </div>
+        
+    
+      <!-- </div> -->
+    <!-- </div> -->
 
-      <div class="review-item">
-        <img src="Images/img4.jpg" alt="Customer 3">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star-half-alt filled"></i><i class="fa fa-star"></i>
-        </div>
-        <p class="review-comment">Elegant design</p>
-      </div>
-
-      <div class="review-item">
-        <img src="Images/imp2.jpg" alt="Customer 4">
-        <div class="rating mt-2">
-          <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star"></i>
-        </div>
-        <p class="review-comment">Beautiful!</p>
-      </div>
-    </div>
   </div>
-</div>
-          
-        </div>
-      </section>
-      
-        <!-- review section end -->
+</section>
+<!-- Review Section End -->
+
        <!-- footer start -->
     <footer class="footer section-gap">
   <div class="container">
     <div class="row text-start">
       <!-- Policy Links -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3 mb-3">
         <h5>Important Links</h5>
         <ul>
-          <li><a href="#"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Refund Policy</a></li>
-          <li><a href="#"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Shipping Policy</a></li>
-          <li> <a href="#"> <i class="fa-solid fa-angle-right me-2 text-maroon"></i>Exchange Policy</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Privacy Policy</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Terms & Condition</a></li>
+          <li> <a href="#"> <i class="fa-solid fa-angle-right me-2 text-maroon"></i>Disclaimer</a></li>
+           <li> <a href="#"> <i class="fa-solid fa-angle-right me-2 text-maroon"></i>Shipping</a></li>
         </ul>
       </div>
 
       <!-- Page Navigation -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3 mb-3">
         <h5>Navigation</h5>
         <ul>
           <li><a href="#home"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Home</a></li>
@@ -579,14 +522,26 @@
       </div>
 
  <!-- Social Media -->
-      <div class="col-md-4 mb-4">
+       <div class="col-md-3 mb-3">
         <h5>Social Media</h5>
         <div class="social-icons">
           <a href="https://www.instagram.com/_indian_galleries_" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/indian-galleries-5096b0365/"  target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#"target="_blank"  class="facebook"><i class="fa-brands fa-facebook"></i></a>
+           <a href="#"target="_blank"  class="youtube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
+
+<div class="col-md-3 mb-3">
+  <div class="logo-items text-center"> 
+    <img src="Images/favicon-light.png" alt="Indian Gallaries Logo" style="max-width: 80px; height: auto; margin-bottom: 10px;">
+    <p>
+      <strong style="font-family: 'Allura', cursive;  font-size: 28px;">Indian Galleries</strong><br>
+      Established in 2009 in <strong>Moradabad, Uttar Pradesh</strong>.
+    </p>
+  </div>
+</div>
+
 
     </div>
   </div>
@@ -604,7 +559,7 @@
   
 </footer>
 <div class="footer-bottom text-center py-2">
-    <p class="mb-0">Copyright © All Right indian gallery Powered by Monika Maurya</p>
+    <p class="mb-0">© All Right indian gallery Powered by Monika Maurya</p>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js.js"></script>   
