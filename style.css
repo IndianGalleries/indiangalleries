@@ -786,5 +786,42 @@ footer ul li a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* swipper css *//* Custom Arrow Styles */
+.custom-swiper-button {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #ccc2d6, #e9e6ec); /* Purple gradient */
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+.custom-swiper-button:hover {
+  background: linear-gradient(135deg, #7b7df1, #bdb9e8); /* Darker hover */
+  transform: translateY(-50%) scale(1.1);
+}
 
+/* Left arrow position */
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Right arrow position */
+.swiper-button-next {
+  right: 10px;
+}
+
+/* Remove default arrows */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
