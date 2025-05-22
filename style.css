@@ -279,7 +279,7 @@ header img {
 }
 
 .review-item {
-    width: 200px;
+    width: 240px;
     display: inline-block;
     text-align: center;
     background: white;
@@ -471,7 +471,7 @@ footer ul li a:hover {
 
   .review-item {
     flex: 0 0 auto;
-    width: 200px;
+    width: 240px;
     padding: 10px;
     border-radius: 12px;
     background: #f8f9fa;
