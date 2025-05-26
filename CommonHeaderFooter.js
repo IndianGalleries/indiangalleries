@@ -60,5 +60,4 @@ class SpecialFooter extends HTMLElement {
     this.innerHTML = html;
   }
 }
-
 customElements.define('special-footer', SpecialFooter);
