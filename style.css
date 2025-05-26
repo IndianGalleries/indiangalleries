@@ -11,7 +11,6 @@
 header img {
   border-radius: 10px;
 }
-
 @media (max-width: 768px) {
   .text-end {
     text-align: center !important;
