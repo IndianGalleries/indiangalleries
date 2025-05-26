@@ -246,16 +246,11 @@ header img {
 .back-to-top {
     right: 80px;
     background-color: #333;
-    display: none; /* Hidden initially */
+   /*display: none; /* Hidden initially */
 }
 
     .whatsapp-icon {
         right: 20px;
-    }
-
-    .back-to-top {
-        right: 80px;
-        background-color: #333;
     }
     /* header css start */
         h2 {
@@ -273,14 +268,21 @@ header img {
         }
 
         /* css of review section start */
-        #customer-reviews {
+#customer-reviews {
     background-color: #f5f8ff;
     padding: 60px 0;
 }
 
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 .review-item {
-    width: 240px;
-    display: inline-block;
+    flex: 1 1 240px;
+    max-width: 280px;
     text-align: center;
     background: white;
     padding: 15px;
@@ -296,13 +298,9 @@ header img {
 }
 
 .rating i {
-    color: #ffcc00;
     font-size: 16px;
     margin-right: 2px;
-}
-
-.rating .fa-star {
-    color: #ddd;
+    color: #ddd; /* Default unfilled */
 }
 
 .rating .filled {
@@ -314,6 +312,16 @@ header img {
     color: #003681;
     margin-top: 8px;
     font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .review-item {
+    padding: 10px;
+  }
+
+  .review-comment {
+    font-size: 13px;
+  }
 }
 
         /* css of review section end */
@@ -732,7 +740,7 @@ footer ul li a:hover {
   text-align: center;
 }
 
-.certification-title {
+.common-title {
   font-size: 36px;
   color: #2a5298;
   font-weight: bold;
@@ -740,7 +748,7 @@ footer ul li a:hover {
   animation: fadeInDown 1s ease-in-out;
 }
 
-.certification-description {
+.common-description {
   font-size: 18px;
   color: #555;
   margin-bottom: 40px;
@@ -825,3 +833,60 @@ footer ul li a:hover {
 .swiper-button-next::after {
   display: none;
 }
+
+
+/* mission and vision css */
+    .card-custom {
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      background-color: #fff;
+    }
+    .card-custom:hover {
+      transform: translateY(-5px);
+      z-index: 2;
+    }
+    .card-header-custom {
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: #0a2948;
+      color: #fff;
+    }
+    .card-body-custom {
+      font-size: 1rem;
+      color: #444;
+    }
+    .icon {
+      margin-right: 10px;
+    }
+    .separator {
+      border-top: 3px solid #ccc;
+      margin: 60px 0 40px;
+    }
+
+    /* terms and conditions  and privacy policy*/
+    
+    h2.common-title {
+      color: #002244;
+      font-weight: bold;
+    }
+    h3.section-heading {
+      color: #6c757d;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    .terms-content {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .terms-content h4 {
+      color: #002244;
+      font-weight: 600;
+    }
+    .terms-content p, .terms-content li {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
