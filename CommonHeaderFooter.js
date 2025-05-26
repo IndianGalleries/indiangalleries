@@ -1,7 +1,7 @@
 class SpecialHeader extends HTMLElement {
   async connectedCallback() {
     // Load header HTML
-    const response = await fetch("/Pages/header.html");
+    const response = await fetch("header.html");
     const html = await response.text();
     this.innerHTML = html;
 
@@ -55,10 +55,9 @@ customElements.define('special-header', SpecialHeader);
 class SpecialFooter extends HTMLElement {
   async connectedCallback() {
     // Load footer HTML from external file
-    const response = await fetch("/Pages/footer.html");
+    const response = await fetch("footer.html");
     const html = await response.text();
     this.innerHTML = html;
   }
 }
-
 customElements.define('special-footer', SpecialFooter);

@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
       title.style.textShadow = `0 0 ${Math.random() * 20 + 10}px rgba(255,255,255,0.8)`;
     }, 700);
   }
-
   // Example button event (only if it exists)
   const someBtn = document.getElementById("some-button");
   if (someBtn) {
