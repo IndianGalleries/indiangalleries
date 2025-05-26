@@ -32,7 +32,6 @@ class SpecialHeader extends HTMLElement {
         }
       });
     });
-
     // Close all on outside click
     document.addEventListener("click", function () {
       document.querySelectorAll(".dropdown-submenu .dropdown-menu").forEach(menu => {
