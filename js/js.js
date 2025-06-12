@@ -21,6 +21,8 @@ function openWhatsApp() {
   const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
   window.open(whatsappUrl, "_blank");
 }
+
+
 // DOM Ready
 document.addEventListener("DOMContentLoaded", function () {
   // Update favicon
@@ -68,4 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Clicked!");
     });
   }
+
+
+ 
+
 });
+
+
