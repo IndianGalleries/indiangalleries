@@ -11,15 +11,13 @@
 header img {
   border-radius: 10px;
 }
-
 @media (max-width: 768px) {
   .text-end {
     text-align: center !important;
     margin-top: 15px;
   }
 }
-        /* header end  */
-        /* navbar css start */
+       
        /* Navbar background and spacing */
 .navbar {
     background-image: linear-gradient(to right, #062f69, #094274);
@@ -69,6 +67,39 @@ header img {
             height: auto;
             object-fit: cover;
         }
+
+        .carousel-caption {
+  bottom: 18%;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* improves readability on light areas */
+}
+
+.carousel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem; /* larger title */
+  font-weight: 700;
+  color: #ffffff; /* white text */
+  animation: fadeInDown 1s;
+}
+
+
+.carousel-subtext {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem; /* larger subtitle */
+  color: #ffffff; /* white text */
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
         /* carousel css end */
 /* about us section start */
 /* Team card layout */
