@@ -17,7 +17,6 @@ header img {
     margin-top: 15px;
   }
 }
-       
        /* Navbar background and spacing */
 .navbar {
     background-image: linear-gradient(to right, #062f69, #094274);
@@ -148,7 +147,6 @@ header img {
         transform: translateY(-5px);
         box-shadow: 0 8px 16px rgba(0, 54, 129, 0.15);
     }
-
 /* Circular wrapper around image */
 .image-circle-wrapper {
     width: 60%;

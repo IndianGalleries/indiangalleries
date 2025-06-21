@@ -8,7 +8,6 @@ function updateFavicon() {
       : "/Images/favicon-light.png";
   }
 }
-
 // Scroll to top function
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
