@@ -67,26 +67,53 @@ header img {
             height: auto;
             object-fit: cover;
         }
+
+        .carousel-caption {
+  bottom: 18%;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* improves readability on light areas */
+}
+.carousel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem; /* larger title */
+  font-weight: 700;
+  color: #ffffff; /* white text */
+  animation: fadeInDown 1s;
+}
+
+
+.carousel-subtext {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem; /* larger subtitle */
+  color: #ffffff; /* white text */
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
         /* carousel css end */
 /* about us section start */
+/* Team card layout */
 .team-card {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 54, 129, 0.1);
-}
+    .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 54, 129, 0.1);
+    }
 
-.team-img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
+/* About Us heading & text */
 #about-us h2 {
     color: #003681;
     font-weight: bold;
@@ -96,65 +123,98 @@ header img {
     font-size: 16px;
     line-height: 1.7;
     color: #333;
+    text-align: justify;
 }
 
-/* about us section end */
-
+/* Team Section container */
 .team-section {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+/* Team card with dashed outer */
 .custom-team-card {
-  background-color: #f5f7fa;
-  border: 2px dashed #003681;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  height: 100%;
+    background-color: #f5f7fa;
+    border: 2px dashed #003681;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+    padding: 10px;
 }
 
-.custom-team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 54, 129, 0.15);
+    /* Add hover effect */
+    .custom-team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 54, 129, 0.15);
+    }
+
+/* Circular wrapper around image */
+.image-circle-wrapper {
+    width: 60%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    border: 4px dotted #003681;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.custom-team-img {
-  height: 220px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 15px;
-}
+    /* Inner image */
+    .image-circle-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
+/* Team member name & role */
 .team-name {
-  font-weight: 600;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .team-role {
-  font-size: 0.85rem;
-  color: #6c757d;
+    font-size: 0.85rem;
+    color: #6c757d;
 }
 
 
+
         /* gallery image css start  */
-        .gallery-image {
-            position: relative;
-            display: inline-block;
-        }
-        .gallery-image .product-info {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-        .gallery-image:hover .product-info {
-            opacity: 1;
-        }
+       
+      
+.gallery-image {
+    border: 4px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, navy, white, black) border-box;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: relative;
+    display: inline-block;
+}
+
+
+    .gallery-image .product-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .gallery-image:hover .product-info {
+        opacity: 1;
+    }
+
+
           /* gallery image css end  */
 
           /* css for discound banner on imagen start */
@@ -566,7 +626,48 @@ footer ul li a:hover {
   height: 100%;
   object-fit: contain;
   border-radius: 15px;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
+   cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover img {
+  transform: scale(1.05);
+}
+.image-popup {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px #fff;
+  border-radius: 8px;
+  cursor: zoom-out;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1100;
+  transition: 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+  transform: scale(1.2);
 }
 
 
