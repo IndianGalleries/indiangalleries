@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  
   // Hover animation on elements
   const elements = document.querySelectorAll('.nav-item, .gallery-image, .card, .btn, .whatsapp-icon, .back-to-top');
   elements.forEach((element) => {
