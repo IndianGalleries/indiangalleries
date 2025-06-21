@@ -20,6 +20,7 @@ function openWhatsApp() {
   const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
   window.open(whatsappUrl, "_blank");
 }
+
 // DOM Ready
 document.addEventListener("DOMContentLoaded", function () {
   // Update favicon
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  
   // Hover animation on elements
   const elements = document.querySelectorAll('.nav-item, .gallery-image, .card, .btn, .whatsapp-icon, .back-to-top');
   elements.forEach((element) => {
