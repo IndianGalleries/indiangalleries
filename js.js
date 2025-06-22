@@ -1,6 +1,6 @@
 // Update favicon based on dark/light theme
 function updateFavicon() {
-  debugger
+  
   const favicon = document.getElementById("favicon");
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (favicon) {
@@ -21,21 +21,24 @@ function openWhatsApp() {
   const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
   window.open(whatsappUrl, "_blank");
 }
+ function openImagePopup(el) {
+    const imgSrc = el.querySelector('img').getAttribute('src');
+    const popup = document.getElementById('popupModal');
+    const popupImg = document.getElementById('popupImage');
+    popupImg.src = imgSrc;
+    popup.style.display = 'flex';
+  }
 
-// DOM Ready
-document.addEventListener("DOMContentLoaded", function () {
-debugger
- const currentPage = window.location.pathname.split("/").pop();
+  function closeImagePopup() {
+    document.getElementById('popupModal').style.display = 'none';
+  }
 
-    // Highlight top-level nav items
+  function highlightActiveLink() {
+    const currentPage = window.location.pathname.split("/").pop();
     document.querySelectorAll(".nav-link, .dropdown-item").forEach(link => {
       const linkPage = link.getAttribute("href");
-      
-      // Match exact page (excluding empty or "#")
       if (linkPage && linkPage !== "#" && linkPage === currentPage) {
         link.classList.add("active");
-
-        // Also add active to parent dropdown if exists
         const parentDropdown = link.closest('.dropdown-submenu') || link.closest('.dropdown');
         if (parentDropdown) {
           const toggle = parentDropdown.querySelector('.dropdown-toggle');
@@ -43,11 +46,11 @@ debugger
         }
       }
     });
-
-  // Update favicon
-  updateFavicon();
-
-  // Back-to-top button logic
+  }
+// DOM Ready
+document.addEventListener("DOMContentLoaded", function () {
+    updateFavicon();
+ highlightActiveLink();
   const backToTop = document.querySelector(".back-to-top");
   if (backToTop) {
     backToTop.addEventListener("click", scrollToTop);
@@ -89,6 +92,7 @@ debugger
       alert("Clicked!");
     });
   }
+
 });
 
 
