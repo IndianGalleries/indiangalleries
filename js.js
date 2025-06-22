@@ -1,5 +1,6 @@
 // Update favicon based on dark/light theme
 function updateFavicon() {
+  debugger
   const favicon = document.getElementById("favicon");
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (favicon) {
@@ -23,6 +24,26 @@ function openWhatsApp() {
 
 // DOM Ready
 document.addEventListener("DOMContentLoaded", function () {
+debugger
+ const currentPage = window.location.pathname.split("/").pop();
+
+    // Highlight top-level nav items
+    document.querySelectorAll(".nav-link, .dropdown-item").forEach(link => {
+      const linkPage = link.getAttribute("href");
+      
+      // Match exact page (excluding empty or "#")
+      if (linkPage && linkPage !== "#" && linkPage === currentPage) {
+        link.classList.add("active");
+
+        // Also add active to parent dropdown if exists
+        const parentDropdown = link.closest('.dropdown-submenu') || link.closest('.dropdown');
+        if (parentDropdown) {
+          const toggle = parentDropdown.querySelector('.dropdown-toggle');
+          if (toggle) toggle.classList.add("active");
+        }
+      }
+    });
+
   // Update favicon
   updateFavicon();
 
@@ -68,10 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Clicked!");
     });
   }
-
-
- 
-
 });
+
+
 
 

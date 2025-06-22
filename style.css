@@ -1025,3 +1025,21 @@ footer ul li a:hover {
       font-size: 1rem;
       line-height: 1.6;
     }
+.nav-link.active,
+.dropdown-item.active {
+  color: #000 !important;
+  background: linear-gradient(
+    to right,
+    rgba(208, 239, 255, 0.4) 0%,
+    rgba(208, 239, 255, 1) 20%,
+    rgba(208, 239, 255, 1) 80%,
+    rgba(208, 239, 255, 0.4) 100%
+  );
+  padding: 8px 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+.nav-link.active:hover,
+.dropdown-item.active:hover {
+  color: #000 !important; /* Force black text */
+}
