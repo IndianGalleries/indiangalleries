@@ -20,6 +20,7 @@ Hosted live on 🔗 https://www.indiangalleries.net/ 🚀
 
 ## 📁 Project Structure
 
+```bash
 IndianGalleries/
 ├── index.html              # Home page
 ├── about.html              # About us section
@@ -34,7 +35,7 @@ IndianGalleries/
 │   ├── images/
 │   │   └── (product images, banners, etc.)
 └── README.md               # Project documentation (this file)
-
+```
 🎯 Features
 🔦 Product Gallery – Includes table lamps, pendant lights, chandeliers, sconces, outdoor lighting, and decor.
 
@@ -76,6 +77,6 @@ If you're a developer or designer interested in contributing ideas or features, 
 📧 Contact
 For product inquiries, partnerships, or feedback:
 
-📨 Email: indiangallery@rediffmail.com
-🌐 Website: www.indiangalleries.net
-📍 Location: India – Pan India and Export Market Presence
+- **📨 Email: indiangallery@rediffmail.com**
+- **🌐 Website: www.indiangalleries.net**
+- **📍 Location: India – Pan India and Export Market Presence**
