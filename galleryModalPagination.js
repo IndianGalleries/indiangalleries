@@ -44,7 +44,6 @@ if (path.includes("tablelamps")) {
   const fileNames = Array(27).fill("outdoorLamps.jpg");
   images = fileNames.map(file => basePath + file);
 }
-
 // Pagination setup
 let currentPage = 0;
 const pageSize = 16;
