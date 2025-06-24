@@ -12,17 +12,17 @@ if (path.includes("tablelamps")) {
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("walllamps")) {
-  basePath = "/Images/Product Images/Lamps_and_Lightening/wall_lamps/";
+  basePath = "/Images/Product Images/Lamps_and_Lightening/Wall_Lamps/";
   const fileNames = Array(23).fill("WallLamps.jpg"); // 13 same images
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("floorlamps")) {
-  basePath = "/Images/Product Images/Lamps_and_Lightening/floor_lamps/";
+  basePath = "/Images/Product Images/Lamps_and_Lightening/Floor_lamps/";
   const fileNames = Array(20).fill("floorLamps.jpg");
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("chandeliers")) {
-  basePath = "/Images/Product Images/Lamps_and_Lightening/chandeliers/";
+  basePath = "/Images/Product Images/Lamps_and_Lightening/Chandeliers/";
   const fileNames = [
     "chandelier.jpg", "chandelier1.JPG", "chandelier2.JPG", "chandelier3.PNG", "chandelier4.PNG", "chandelier5.PNG",
     "chandelier6.JPG", "chandelier7.JPG", "chandelier8.JPG", "chandelier9.JPG", "chandelier10.JPG",
@@ -35,12 +35,12 @@ if (path.includes("tablelamps")) {
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("pendants")) {
-  basePath = "/Images/Product Images/Lamps_and_Lightening/pendants/";
+  basePath = "/Images/Product Images/Lamps_and_Lightening/Pendants/";
   const fileNames = Array(17).fill("Pendants.jpg");
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("outdoorlamps")) {
-  basePath = "/Images/Product Images/Lamps_and_Lightening/outdoor_lamps/";
+  basePath = "/Images/Product Images/Lamps_and_Lightening/OutDoor_lamps/";
   const fileNames = Array(27).fill("outdoorLamps.jpg");
   images = fileNames.map(file => basePath + file);
 }
