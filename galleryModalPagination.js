@@ -32,6 +32,7 @@ if (path.includes("tablelamps")) {
     "chandelier26.JPG", "chandelier27.JPG", "chandelier2.JPG", "chandelier3.PNG", "chandelier4.PNG",
     "chandelier1.JPG"
   ];
+  
   images = fileNames.map(file => basePath + file);
 } else if (path.includes("pendants")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/pendants/";
