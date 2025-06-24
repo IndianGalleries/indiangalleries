@@ -33,7 +33,6 @@ if (path.includes("tablelamps")) {
     "chandelier1.JPG"
   ];
 
-  
   images = fileNames.map(file => basePath + file);
 } else if (path.includes("pendants")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/pendants/";
