@@ -45,7 +45,6 @@
   transition: transform 0.4s ease;
   cursor: zoom-in;
 }
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
