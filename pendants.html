@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendants - Indian Galleries</title>
+
+  <link rel="icon" type="image/png" href="/Images/favicon-light.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallerypagination.css" />
+</head>
+
+<body>
+
+  <header>
+    <!-- Top Contact Section -->
+    <div class="container-fluid bg-light py-3 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="d-flex align-items-center mb-3 mb-md-0">
+            <img src="/Images/favicon-light.png" alt="Logo" width="60" height="60" class="me-3">
+            <h1 class="m-0 fw-bold text-brand" style="font-family: 'Allura', cursive;">Indian Galleries</h1>
+          </div>
+          <div class="text-brand fs-6 fw-semibold text-center text-md-end">
+            <div class="mb-1 mb-md-0">
+              <span class="me-md-4 d-block d-md-inline"><i class="fa-solid fa-phone me-1"></i> +91 9997515438</span>
+              <span class="me-md-4 d-block d-md-inline"><i class="fa-solid fa-envelope me-1"></i>
+                indiangallery@rediffmail.com</span>
+              <span class="me-md-4 d-block d-md-inline"><i class="fa-solid fa-location-dot me-1"></i> Moradabad,
+                India</span>
+              <span class="d-block d-md-inline"><i class="fa-solid fa-clock me-1"></i> 10am - 7pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container justify-content-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex justify-content-center gap-4">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+
+            <!-- Product Gallery Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Lamps_and_Lightings.html" id="productDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Product Gallery
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productDropdown">
+
+                <!-- Submenu: Lamps and Lightings -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="Lamps_and_Lightings.html">Lamps and
+                    Lightings</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="TableLamps.html">Table Lamps</a></li>
+                    <li><a class="dropdown-item" href="floorlamps.html">Floor Lamps</a></li>
+                    <li><a class="dropdown-item" href="walllamps.html">Wall Lamps</a></li>
+                    <li><a class="dropdown-item" href="chandeliers.html">Chandeliers</a></li>
+                    <li><a class="dropdown-item" href="pendants.html">Pendants</a></li>
+                    <li><a class="dropdown-item" href="outdoorlamps.html">Outdoor Lamps</a></li>
+                  </ul>
+                </li>
+
+                <!-- Submenu: Home Decor -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="Home_decor.html">Home Decor</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Home_decor.html">Table Top items</a></li>
+                    <li><a class="dropdown-item" href="Home_decor.html">Hand Painted items</a></li>
+                    <li><a class="dropdown-item" href="Home_decor.html">Wall Decor</a></li>
+                    <li><a class="dropdown-item" href="Home_decor.html">Flower Vases</a></li>
+                  </ul>
+                </li>
+
+                <!-- Submenu: Luxury Kitchen Wares -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="Luxury_Kitchen_Wares.html">Luxury Kitchen
+                    Wares</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Luxury_Kitchen_Wares.html">Silver Tea Cup Set</a></li>
+                    <li><a class="dropdown-item" href="Luxury_Kitchen_Wares.html">Etagere</a></li>
+                    <li><a class="dropdown-item" href="Luxury_Kitchen_Wares.html">Trays</a></li>
+                  </ul>
+                </li>
+
+                <!-- Submenu: Rural Handicrafts -->
+                <li>
+                  <a class="dropdown-item" href="Rural_Handicrafts.html">Rural Handicrafts</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="certification.html">Certification</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
+                <li><a class="dropdown-item" href="career.html">Career</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Same header/nav as other pages -->
+
+  <!-- Breadcrumb Section -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-wrapper text-end">
+        <a href="index.html" class="breadcrumb-item">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="#" class="breadcrumb-item active">Pendants</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Title -->
+  <h2 class="gallery-title">Pendants</h2>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-grid" id="gallery"></div>
+
+  <!-- Pagination -->
+  <div class="pagination-wrapper">
+    <div class="pagination">
+      <button onclick="changePage(-1)">Previous</button>
+      <button onclick="changePage(1)">Next</button>
+    </div>
+  </div>
+
+
+  <footer class="footer section-gap">
+    <div class="container">
+      <div class="row text-start">
+        <!-- Policy Links -->
+        <div class="col-md-3 mb-3">
+          <h5>Important Links</h5>
+          <ul>
+            <li><a href="Privacy_Policy.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Privacy
+                Policy</a></li>
+            <li><a href="TermAndCondition.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Terms &
+                Condition</a></li>
+            <li> <a href="career.html"> <i class="fa-solid fa-angle-right me-2 text-maroon"></i>Work With Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Page Navigation -->
+        <div class="col-md-3 mb-3">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="career.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Career Wtih Us</a>
+            </li>
+            <li><a href="aboutus.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>About Us</a></li>
+            <li><a href="contactus.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-3 mb-3">
+          <h5>Social Media</h5>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/_indian_galleries_" target="_blank" class="instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/indian-galleries/" target="_blank" class="linkedin"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+          <div class="logo-items text-center">
+            <img src="/Images/favicon-light.png" alt="Indian Galleries Logo"
+              style="max-width: 80px; height: auto; margin-bottom: 10px;">
+            <p>
+              <strong style="font-family: 'Allura', cursive;  font-size: 28px;">Indian Galleries</strong><br>
+              Established in 2022 in <strong>Moradabad, Uttar Pradesh</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating Icons (Optional) -->
+    <div class="whatsapp-icon" onclick="openWhatsApp()" style="cursor: pointer;">
+      <i class="fa-brands fa-whatsapp fa-2x"></i>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  </footer>
+  <!-- Same footer as other pages -->
+
+  <div class="footer-bottom text-center py-2">
+    <p class="mb-0">© All Right Indian Galleries Powered by Monika Maurya</p>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="image-modal" onclick="closeModal(event)">
+    <span class="close-btn" onclick="closeModal(event)">&times;</span>
+    <img id="modalImage" src="" alt="Zoomed Image" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="gallerymodalpagination.js"></script>
+</body>
+
+</html>
