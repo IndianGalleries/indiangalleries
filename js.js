@@ -1,5 +1,6 @@
 // Update favicon based on dark/light theme
 function updateFavicon() {
+  
   const favicon = document.getElementById("favicon");
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (favicon) {
@@ -8,7 +9,6 @@ function updateFavicon() {
       : "/Images/favicon-light.png";
   }
 }
-
 // Scroll to top function
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,13 +21,36 @@ function openWhatsApp() {
   const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
   window.open(whatsappUrl, "_blank");
 }
+ function openImagePopup(el) {
+    const imgSrc = el.querySelector('img').getAttribute('src');
+    const popup = document.getElementById('popupModal');
+    const popupImg = document.getElementById('popupImage');
+    popupImg.src = imgSrc;
+    popup.style.display = 'flex';
+  }
 
+  function closeImagePopup() {
+    document.getElementById('popupModal').style.display = 'none';
+  }
+
+  function highlightActiveLink() {
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll(".nav-link, .dropdown-item").forEach(link => {
+      const linkPage = link.getAttribute("href");
+      if (linkPage && linkPage !== "#" && linkPage === currentPage) {
+        link.classList.add("active");
+        const parentDropdown = link.closest('.dropdown-submenu') || link.closest('.dropdown');
+        if (parentDropdown) {
+          const toggle = parentDropdown.querySelector('.dropdown-toggle');
+          if (toggle) toggle.classList.add("active");
+        }
+      }
+    });
+  }
 // DOM Ready
 document.addEventListener("DOMContentLoaded", function () {
-  // Update favicon
-  updateFavicon();
-
-  // Back-to-top button logic
+    updateFavicon();
+ highlightActiveLink();
   const backToTop = document.querySelector(".back-to-top");
   if (backToTop) {
     backToTop.addEventListener("click", scrollToTop);
@@ -70,9 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-
- 
-
 });
+
+
 
 
