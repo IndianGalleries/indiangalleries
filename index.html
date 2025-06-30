@@ -154,7 +154,10 @@
         </div>
       </div>
     </nav>
-  </header><!-- Carousel Section -->
+  </header>
+  <!-- cursor follower -->
+
+  <!-- Carousel Section -->
   <div id="carouselExampleControls" class="carousel slide carousel-fade mt-2" data-bs-ride="carousel"
     data-bs-interval="3000">
 
@@ -441,22 +444,6 @@
     <span class="close-btn" onclick="closeImagePopup()">&times;</span>
     <img id="popupImage" src="" alt="Zoomed Product">
   </div>
-
-  <script>
-    function openImagePopup(el) {
-      // const imgSrc = el.querySelector('img').getAttribute('data-img');
-      const imgSrc = el.querySelector('img').getAttribute('src');
-
-      const popup = document.getElementById('popupModal');
-      const popupImg = document.getElementById('popupImage');
-      popupImg.src = imgSrc;
-      popup.style.display = 'flex';
-    }
-
-    function closeImagePopup() {
-      document.getElementById('popupModal').style.display = 'none';
-    }
-  </script>
 
 </body>
 <!-- <script src="commonheaderfooter.js"></script> -->
