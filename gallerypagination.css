@@ -1,12 +1,22 @@
 /* ========== Table Lamps Page CSS ========== */
 
 /* Section Title */
+.gallery-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
 .gallery-title {
   text-align: center;
   margin: 30px 0;
   color: #062f69;
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-weight: 600;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -155,3 +165,5 @@
     padding: 8px 14px;
   }
 }
+
+
