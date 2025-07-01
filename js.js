@@ -107,15 +107,25 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Clicked!");
     });
   }
+  
+const submenus = document.querySelectorAll(".dropdown-submenu > .dropdown-toggle");
 
-  const submenus = document.querySelectorAll(".dropdown-submenu > .dropdown-toggle");
-  submenus.forEach(toggle => {
-    toggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      const submenu = this.nextElementSibling;
-      submenu.classList.toggle("show");
-    });
+submenus.forEach(toggle => {
+  toggle.addEventListener("click", function (e) {
+    const submenu = this.nextElementSibling;
+
+    if (submenu && submenu.classList.contains("dropdown-menu")) {
+      // ✅ Only prevent default on mobile or if submenu exists
+      if (window.innerWidth < 992) {
+        e.preventDefault();
+        submenu.classList.toggle("show");
+      }
+    }
+    // ✅ Allow default click if it's a normal link
   });
+});
+
+
 
   // ✅ Assign and add event listener for popup
   popup = document.getElementById('popupModal');
