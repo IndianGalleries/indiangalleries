@@ -503,7 +503,7 @@ footer ul li a:hover {
     background-image: linear-gradient(to right, #062f69, #094274);
     border: none;
     padding: 0;
-    z-index: 9999;
+    z-index: 1050; /* Bootstrap default modal layer */
 } 
 
 .dropdown-menu .dropdown-item {
@@ -535,25 +535,40 @@ footer ul li a:hover {
     display: none;
     background-color: royalblue !important;
     border: none;
-    position : absolute;
+    position: absolute;
+    z-index: 1051; /* Higher than parent dropdown */
 }
 
-
-.dropdown-submenu .dropdown-menu.show {
-  display: block;
-}
-
-.dropdown-submenu:hover .dropdown-menu {
+.dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
 
-/* Ensure navbar and dropdown are above carousel */
+/* Show on mobile click */
+.dropdown-submenu .dropdown-menu.show {
+    display: block;
+}
+
+/* Fix for mobile dropdown display */
+@media (max-width: 991.98px) {
+  .dropdown-submenu .dropdown-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: none; /* disable hover on mobile */
+  }
+}
+
+/* Ensure navbar and dropdown are above carousel
 .navbar,
 .dropdown-menu,
 .dropdown-submenu .dropdown-menu {
     position: relative;
     z-index: 9999;
-}
+} */
  .active {
     color: rgb(255, 255, 255);
     font-weight: bold;

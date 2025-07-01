@@ -6,8 +6,8 @@ if (path.includes("tablelamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Table_lamps/";
   const fileNames = [
     "t1.jpg", "t2.jpg", "t3.jpg", "t4.jpg", "t5.jpg", "t6.jpg",
-    "t1.jpg", "t2.jpg", "t4.jpg", "t5.jpg", "t6.jpg",
-    "t1.jpg", "t2.jpg","t3.jpg", "t4.jpg", "t5.jpg", "t6.jpg", "t2.jpg","t3.jpg", "t4.jpg", "t5.jpg", "t6.jpg",  ];
+    "newtablelamp6.png", "newtablelamp2.png", "newtablelamp3.png", "newtablelamp4.png", "newtablelamp5.png",
+    "t1.jpg", "t2.jpg","t3.jpg", "t4.jpg", "t5.jpg", "t6.jpg","newtablelamp3.png", "newtablelamp4.png", "newtablelamp5.png"  ];
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("walllamps")) {
