@@ -101,9 +101,9 @@ else if (path.includes("silverteacupset"))
   {
   basePath = "/Images/Product Images/LuxuryKitchenWares/SilverTeaCupSet/";
   const fileNames = [
-    "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", 
-    "teacup2.png","teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", 
-     "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png"];
+    "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png", 
+    "teacup2.png","TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", 
+     "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png"];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("etagere")) {
