@@ -97,7 +97,8 @@ else if (path.includes("handpainteditems")) {
     "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg"];
   images = fileNames.map(file => basePath + file);
 }
-else if (path.includes("silverteacupset")) {
+else if (path.includes("silverteacupset")) 
+  {
   basePath = "/Images/Product Images/LuxuryKitchenWares/SilverTeaCupSet/";
   const fileNames = [
     "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", 
