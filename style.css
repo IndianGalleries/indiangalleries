@@ -3,22 +3,19 @@
             margin: 0;
             padding: 0;         
         }
-        /* header start */
         .text-brand {
   color: #003681;
 }
-
-
-header img {
+ header .logo-img {
   border-radius: 10px;
 }
 @media (max-width: 768px) {
   .text-end {
     text-align: center !important;
-    margin-top: 15px;
+    margin-top: 1rem;
   }
 }
-       /* Navbar background and spacing */
+ /* Navbar background and spacing */
 .navbar {
     background-image: linear-gradient(to right, #062f69, #094274);
     padding-top: 12px;
@@ -44,10 +41,7 @@ header img {
     border: 2px solid transparent;
     border-radius: 5px;
 }
-
-/* Hover effect with white border only */
 .navbar-nav .nav-link:hover {
-    background-color: transparent !important;
     color: white !important;
     border: 2px solid white;
 }
@@ -55,10 +49,9 @@ header img {
 /* Responsive spacing */
 @media (max-width: 991.98px) {
     .navbar-nav .nav-link {
-        margin: 8px 0;
+      margin: 8px 0;
     }
 }
-
 /* navbar css end */
 /* bread crumb section css start */
 .breadcrumb-section {
@@ -66,57 +59,49 @@ header img {
   margin-bottom: 0;
 }
 
-/* Wrapper to align right */
 .breadcrumb-wrapper {
   display: inline-flex;
   gap: 8px;
   justify-content: flex-end;
   align-items: center;
-  float: right;
 }
 
-/* Breadcrumb item */
 .breadcrumb-item {
   color: #003681;
   font-weight: 600;
   text-decoration: none;
-  font-size: 16px;
+  font-size :1rem;
   position: relative;
   transition: all 0.3s ease;
   border-radius: 30px; 
   padding: 4px 8px;
 }
 
-/* Icon spacing */
 .breadcrumb-item i {
   margin-right: 5px;
 }
 
-/* Classic hover: only color change */
 .breadcrumb-item:hover {
   background-color: #003681;
   color: #ffffff;
   text-decoration: none;
-  box-shadow: 0 0 8px rgba(0, 54, 129, 0.2); /* optional soft glow */
+  box-shadow: 0 0 8px rgba(0, 54, 129, 0.2); 
 }
-
-/* Separator */
 .breadcrumb-separator {
   color: #6c757d;
   font-weight: bold;
 }
 
 /* carousel css start */
-        .carousel-inner img {
+.carousel-inner img {
             width: 100%;
             height: auto;
             object-fit: cover;
         }
-
-        .carousel-caption {
-  bottom: 18%;
+.carousel-caption {
+  bottom:2rem;
   text-align: center;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* improves readability on light areas */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); 
 }
 .carousel-title {
   font-family: 'Playfair Display', serif;
@@ -125,8 +110,6 @@ header img {
   color: #ffffff; /* white text */
   animation: fadeInDown 1s;
 }
-
-
 .carousel-subtext {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem; /* larger subtitle */
@@ -143,10 +126,8 @@ header img {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-        /* carousel css end */
+ /* carousel css end */
 /* about us section start */
-/* Team card layout */
 .team-card {
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -158,14 +139,13 @@ header img {
         box-shadow: 0 10px 20px rgba(0, 54, 129, 0.1);
     }
 
-/* About Us heading & text */
 #about-us h2 {
     color: #003681;
     font-weight: bold;
 }
 
 #about-us p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     color: #333;
     text-align: justify;
@@ -178,17 +158,13 @@ header img {
     flex-wrap: wrap;
 }
 
-/* Team card with dashed outer */
 .custom-team-card {
     background-color: #f5f7fa;
     border: 2px dashed #003681;
     border-radius: 20px;
     transition: all 0.3s ease;
-    height: 100%;
     padding: 10px;
 }
-
-    /* Add hover effect */
     .custom-team-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 16px rgba(0, 54, 129, 0.15);
@@ -206,8 +182,6 @@ header img {
     justify-content: center;
     align-items: center;
 }
-
-    /* Inner image */
     .image-circle-wrapper img {
         width: 100%;
         height: 100%;
@@ -225,59 +199,76 @@ header img {
     font-size: 0.85rem;
     color: #6c757d;
 }
+     .gallery-image {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 300px;
+  border: 4px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, navy, white, black) border-box;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 
-
-
-        /* gallery image css start  */
-       
-      
- .gallery-image {
-    border: 4px solid transparent;
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, navy, white, black) border-box;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    position: relative;
-    display: inline-block;
+  /* Center image inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.gallery-image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
 
-    .gallery-image .product-info {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
+.gallery-image:hover img {
+  transform: scale(1.05);
+}
 
-    .gallery-image:hover .product-info {
-        opacity: 1;
-    }
+.gallery-image .product-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
+.gallery-image:hover .product-info {
+  opacity: 1;
+}
+/* 1st segment */
+/* gallery image css end  */
 
-          /* gallery image css end  */
-
-          /* css for discound banner on imagen start */
-        .discount-banner {
+  /* css for discound banner on imagen start */
+  .discount-banner {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: linear-gradient(135deg, #ff4d4d, #aa1f1a); /* eye-catching gradient */
+    background: linear-gradient(135deg, #ff4d4d, #aa1f1a); 
     color: white;
-    padding: 8px 14px;
+   padding: 0.5rem 0.875rem; 
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     z-index: 2;
     clip-path: polygon(10% 0%, 90% 0%, 100% 30%, 90% 100%, 10% 100%, 0% 70%);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-
-  /* css for discound banner on imagen end */
-        .custom-img {
+/* css for discound banner on imagen end */
+  .custom-img {
     width: 100%; 
     height: 250px;
     object-fit: cover; 
@@ -291,9 +282,9 @@ header img {
 }
 
 .icon-circle {
-    width: 50px;
-    height: 50px;
-    min-width: 50px;
+    width: 3.125rem;  /* 50px → rem */
+    height: 3.125rem; /* 50px → rem */
+     min-width: 3.125rem;
     background-color: white;
     border: 2px dashed #003681;
     border-radius: 50%;
@@ -301,59 +292,77 @@ header img {
     justify-content: center;
     align-items: center;
     color: #003681;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px → rem */
 }
 
 .contact-item h5 {
     margin-bottom: 5px;
-    font-size: 16px;
+     font-size: 1rem; /* 16px → rem */
     color: #003681;
 }
 
 .contact-item p, .contact-item a {
     margin: 0;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     color: #333;
     text-decoration: none;
 }
 
-.contact-item a:hover {
+.contact-item a:hover,
+.contact-item a:focus { /* added focus state */
     text-decoration: underline;
     color: #003681;
 }
-
 .map-container {
     height: 100%;
     min-height: 350px;
     border: 2px solid #003681;
 }
-/* contact css end */
-
-    .whatsapp-icon, .back-to-top {
-        position: fixed;
-        bottom: 20px;
-        width: 50px;
-        height: 50px;
-        background-color: #25d366;
-        color: white;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-         z-index: 9999; 
-    }
-.back-to-top {
-    right: 80px;
-    background-color: #333;
-   /*display: none; /* Hidden initially */
+/* contact css end */.whatsapp-icon, .back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
 }
 
+/* WhatsApp Button */
+.whatsapp-icon {
+    bottom: 20px;  
+    right: 20px;
+    background-color: #25d366;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    bottom: 80px;   
+    right: 20px;
+    background-color: #333;
+}
+
+.whatsapp-icon:focus, .back-to-top:focus, .contact-item a:focus {
+    outline: 2px solid #003681;
+    outline-offset: 2px;
+}
+
+@media (max-width: 400px) {
     .whatsapp-icon {
+        bottom: 20px;
         right: 20px;
     }
+    .back-to-top {
+        bottom: 80px; 
+        right: 20px;
+    }
+}
+
     /* header css start */
         h2 {
     background-image: linear-gradient(to right, rgb(1, 37, 146), rgb(21, 98, 124), rgb(14, 79, 100));
@@ -364,12 +373,9 @@ header img {
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
 }
 /* header css end */
-
         .section-gap {
             padding: 15px 0;
         }
-
-        /* css of review section start */
 #customer-reviews {
     background-color: #f5f8ff;
     padding: 60px 0;
@@ -381,28 +387,26 @@ header img {
     justify-content: center;
     gap: 1.5rem;
 }
-
-.review-item {
-    flex: 1 1 240px;
-    max-width: 280px;
-    text-align: center;
-    background: white;
-    padding: 15px;
+  .review-item {
+    flex: 0 0 auto;
+    width: 240px;
+    padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    background: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     margin-right: 15px; }
 
-.review-item img {
-    width: 100%;
-    height: 150px;
+ .review-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 10px;
-}
-
+  }
 .rating i {
-    font-size: 16px;
+    font-size: 1rem;;
     margin-right: 2px;
-    color: #ddd; /* Default unfilled */
+    color: #ddd;
 }
 
 .rating .filled {
@@ -410,38 +414,35 @@ header img {
 }
 
 .review-comment {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #003681;
     margin-top: 8px;
     font-weight: 500;
 }
 
-@media (max-width: 480px) {
-  .review-item {
-    padding: 10px;
-  }
+   @media (max-width: 480px) {
+  .discount-banner { box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+  .review-item { box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
 
   .review-comment {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 }
-
-        /* css of review section end */
+/* 2nd segment */
+/* css of review section end */
 
 /* footer css start */
 .footer {
-    /* background: url('Images/try.jpg') no-repeat top center; */
-    background-color: #dce1e6; /* fallback plain dark blue */
+    background-color: #dce1e6; 
     background-size: cover;
-    color: white;
     padding: 40px 20px;
     text-align: center;
 }
 footer h5 {
-  font-size: 18px;
+  font-size: 1.125rem; /* instead of 18px */
   font-weight: 600;
   color: #160458;
-  margin-bottom: 15px;
+margin-bottom: 1rem; /* instead of 15px */
 }
 
 footer ul {
@@ -475,25 +476,24 @@ footer ul li a:hover {
 
 .social-icons a:hover {
   transform:  scale(1.3);
-  /* rotate(360deg) */
 }
 
 .social-icons .instagram { color: #E1306C; }
 .social-icons .facebook  { color: #1877F2; }
 .social-icons .youtube { color: #de3038; }
 
-
 /* Developer section */
 .footer-bottom {
   background-color: #000;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
-        /* footer css end */
-        .pics {
-    width: 2500px;
-    height: 300px;
+  /* footer css end */
+ .pics {
+     width: 100%;
+    max-width: 1200px; /* or your container size */
+    height: auto;      /* keeps aspect ratio */
     border-radius: 10px;
     margin: 10px;
     object-fit: cover;
@@ -541,7 +541,7 @@ footer ul li a:hover {
 
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
-}
+} 
 
 /* Show on mobile click */
 .dropdown-submenu .dropdown-menu.show {
@@ -556,59 +556,24 @@ footer ul li a:hover {
     top: 0;
     margin-top: 0;
   }
-
-  .dropdown-submenu:hover > .dropdown-menu {
-    display: none; /* disable hover on mobile */
-  }
 }
 
-/* Ensure navbar and dropdown are above carousel
-.navbar,
-.dropdown-menu,
-.dropdown-submenu .dropdown-menu {
-    position: relative;
-    z-index: 9999;
-} */
  .active {
     color: rgb(255, 255, 255);
     font-weight: bold;
   }
-    /* .review-marquee-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: #fff;
-  }
-
-  .review-marquee-track {
-    display: flex;
-    width: max-content;
-    animation: scroll-left 30s linear infinite;
-  } */
-
   @keyframes scroll-left {
     0% {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
   }
 
   .review-marquee-content {
     display: flex;
     gap: 1.5rem;
-  }
-
-  .review-item {
-    flex: 0 0 auto;
-    width: 240px;
-    padding: 10px;
-    border-radius: 12px;
-    background: #f8f9fa;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-     margin-right: 15px; 
   }
 .logo-item
 {
@@ -619,14 +584,7 @@ footer ul li a:hover {
     background: #f8f9fa;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-   
 }
-  .review-item img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
 
   .review-comment {
     font-size: 0.9rem;
@@ -673,32 +631,6 @@ footer ul li a:hover {
   text-align: center;
 }
 
-/* Image Styling */
-/* Image Container Styling */
-.gallery-image {
-  position: relative;
-  margin-bottom: 30px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  width: 100%;
-  height: 300px;
-}
-
-.gallery-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 15px;
-  /* transition: 0.3s ease-in-out; */
-   cursor: zoom-in;
-  transition: transform 0.3s ease;
-}
-.gallery-image:hover img {
-  transform: scale(1.05);
-}
-
 .image-popup {
   display: none;
   position: fixed;
@@ -719,6 +651,7 @@ footer ul li a:hover {
   border-radius: 8px;
   cursor: zoom-out;
 }
+/* 3rd segment */
 .close-btn {
   position: absolute;
   top: 20px;
@@ -736,8 +669,6 @@ footer ul li a:hover {
   transform: scale(1.2);
 }
 
-
-
 /* Optional: Add captions inside .product-info if needed */
 .product-info {
   padding: 10px;
@@ -749,7 +680,9 @@ footer ul li a:hover {
 /* Responsive adjustment */
 @media screen and (max-width: 768px) {
   .gallery-image img {
-    height: 200px;
+    /* height: 200px; */
+     max-height: 250px;  /* flexible cap, not fixed */
+    height: auto;
   }
 }
 
@@ -769,7 +702,7 @@ footer ul li a:hover {
 .logo-items p {
     color: black; 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.6;
     margin: 0;
     width: 100%;
@@ -783,13 +716,11 @@ footer ul li a:hover {
     cursor: zoom-in;
     transition: transform 0.3s ease;
   }
-  .card-img-top:hover img {
+  .card-img-top:hover {
   transform: scale(1.05);
 }
-  
 
   /* for attractive headings */
-  
   .slider-header .header-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -849,7 +780,6 @@ footer ul li a:hover {
   }
 
 /* cooming soon css */
-
 .coming-soon-wrapper {
   display: flex;
   justify-content: center;
@@ -868,7 +798,7 @@ footer ul li a:hover {
 }
 
 .coming-soon h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -930,7 +860,7 @@ footer ul li a:hover {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  width: 150px;
+  width: 10rem;
 }
 
 .cert-logo:hover {
@@ -958,12 +888,6 @@ footer ul li a:hover {
 .swiper {
     padding: 40px 0;
   }
-
-  /* .swiper-slide {
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-} */
 
 .custom-swiper-button {
   width: 45px;
@@ -1076,4 +1000,50 @@ footer ul li a:hover {
 .nav-link.active:hover,
 .dropdown-item.active:hover {
   color: #000 !important; /* Force black text */
+}
+/* -------------------- 4th Segment: Responsive Adjustments -------------------- */
+
+/* Large desktops (≥1200px) */
+@media screen and (min-width: 1200px) {
+  .slider-header .header-title { font-size: 3rem; }
+  .slider-header .header-subtitle { font-size: 1.25rem; }
+  .cert-logo { width: 180px; }
+}
+
+/* Tablets (768px–1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .slider-header .header-title { font-size: 2rem; }
+  .slider-header .header-subtitle { font-size: 1rem; }
+  .certification-logos { gap: 20px; }
+  .cert-logo { width: 140px; padding: 15px; }
+  .coming-soon h2 { font-size: 36px; }
+  .coming-soon p { font-size: 16px; }
+}
+
+/* Mobiles (≤767px) */
+@media screen and (max-width: 767px) {
+  .coming-soon-wrapper {
+    padding: 20px 10px;
+    min-height: 50vh;
+    border-radius: 10px;
+  }
+  .coming-soon h2 { font-size: 28px; }
+  .coming-soon p { font-size: 14px; }
+  .logo-items img { max-width: 60px; margin-bottom: 5px; }
+  .logo-items p { font-size: 0.75rem; }
+  .common-title { font-size: 24px; }
+  .cert-logo { width: 120px; padding: 10px; }
+  .cert-logo img { max-height: 80px; }
+  .custom-swiper-button { width: 35px; height: 35px; }
+  .card-header-custom { font-size: 1.2rem; padding: 10px; }
+  .card-body-custom { font-size: 0.9rem; }
+  .slider-header .header-title { font-size: 1.5rem; }
+  .slider-header .header-subtitle { font-size: 0.9rem; padding: 0 10px; }
+}
+
+/* Extra small (≤480px) */
+@media screen and (max-width: 480px) {
+  .lamp-link-animated { font-size: 1.25rem; }
+  .cert-logo { width: 100px; padding: 8px; }
+  .cert-logo p { font-size: 0.8rem; }
 }

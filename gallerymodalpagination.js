@@ -31,7 +31,9 @@ if (path.includes("tablelamps")) {
   ];
   images = fileNames.map(file => basePath + file);
 
-} else if (path.includes("chandeliers")) {
+} 
+else if (path.includes("chandeliers")) 
+  {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Chandeliers/";
   const fileNames = [
     "chandelier.jpg", "Chandelier1.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG", "Chandelier5.PNG",
@@ -42,14 +44,13 @@ if (path.includes("tablelamps")) {
     "Chandelier26.JPG", "Chandelier27.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG",
     "Chandelier1.JPG"
   ];
-  images = fileNames.map(file => basePath + file);
-
+   images = fileNames.map(file => basePath + file);
 } else if (path.includes("pendants")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Pendants/";
   // const fileNames = Array(15).fill("Pendants.jpg");
   const fileNames = [
     "Pendants.jpg", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
-  "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG"];
+  "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG"];
 
   images = fileNames.map(file => basePath + file);
 
@@ -62,11 +63,68 @@ if (path.includes("tablelamps")) {
     "O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg",];
   images = fileNames.map(file => basePath + file);
 }
+else if (path.includes("tabletopitem")) {
+  basePath = "/Images/Product Images/HomeDecor/TableTopItems/";
+  const fileNames = [
+    "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
+     "tabletop4.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop7.jpg", "tabletop6.jpg",
+     "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg"];
+  images = fileNames.map(file => basePath + file);
+}
 
+else if (path.includes("flowervases")) {
+  basePath = "/Images/Product Images/HomeDecor/FlowerVases/";
+  const fileNames = [
+    "flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
+     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg"
+    , "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg"];
+  images = fileNames.map(file => basePath + file);
+}
+
+else if (path.includes("walldecor")) {
+  basePath = "/Images/Product Images/HomeDecor/WallDecor/";
+  const fileNames = [
+    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg",
+    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", 
+    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor1.jpg", "walldecor2.jpg"];
+  images = fileNames.map(file => basePath + file);
+}
+
+else if (path.includes("handpainteditems")) {
+  basePath = "/Images/Product Images/HomeDecor/HandPaintedItems/";
+  const fileNames = [
+    "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg",
+    "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg"];
+  images = fileNames.map(file => basePath + file);
+}
+else if (path.includes("silverteacupset")) {
+  basePath = "/Images/Product Images/LuxuryKitchenWares/SilverTeaCupSet/";
+  const fileNames = [
+    "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", 
+    "teacup2.png","teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", 
+     "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png", "teacup2.png", "teacup1.png"];
+  images = fileNames.map(file => basePath + file);
+}
+else if (path.includes("etagere")) {
+  basePath = "/Images/Product Images/LuxuryKitchenWares/Etagere/";
+  const fileNames = [
+    "etagere1.png", "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png", 
+     "etagere2.png", "etagere1.png", "etagere1.png", "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png"
+    , "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png"];
+  images = fileNames.map(file => basePath + file);
+}
+else if (path.includes("trays")) {
+  basePath = "/Images/Product Images/LuxuryKitchenWares/Trays/";
+  const fileNames = [
+    "trays1.png", "trays2.png", "trays1.png", "trays2.png","trays1.png", "trays2.png", "trays1.png", "trays2.png", 
+     "trays1.png", "trays2.png", "trays1.png", "trays2.png", "trays1.png", "trays2.png", "trays1.png", "trays2.png",];
+  images = fileNames.map(file => basePath + file);
+}
 // Pagination setup
 let currentPage = 0;
 const pageSize = 12;
 
+// ===== Render Gallery =====
 function renderGallery() {
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = "";
@@ -85,9 +143,6 @@ function renderGallery() {
     card.appendChild(img);
     gallery.appendChild(card);
   }
-
-
-
   // Pagination buttons control
   const totalPages = Math.ceil(images.length / pageSize);
   const prevBtn = document.querySelector('.pagination button:nth-child(1)');

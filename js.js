@@ -18,7 +18,8 @@ function scrollToTop() {
 function openWhatsApp() {
   const phoneNumber = "+918077155004";
   const message = "Hello! I'm interested in your products.";
-  const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+  const whatsappUrl =
+    "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
   window.open(whatsappUrl, "_blank");
 }
 
@@ -26,41 +27,44 @@ function openWhatsApp() {
 let popup; // will be assigned after DOM is loaded
 
 function openImagePopup(el) {
-  const imgSrc = el.querySelector('img').getAttribute('src');
-  const popupImg = document.getElementById('popupImage');
+  const imgSrc = el.querySelector("img").getAttribute("src");
+  const popupImg = document.getElementById("popupImage");
   popupImg.src = imgSrc;
-  popup.style.display = 'flex';
+  popup.style.display = "flex";
 }
 
 function closeImagePopup() {
-  popup.style.display = 'none';
+  popup.style.display = "none";
 }
 
 // DOM Ready
 document.addEventListener("DOMContentLoaded", function () {
   updateFavicon();
-  // highlightActiveLink();
 
   const currentPath = window.location.pathname.toLowerCase();
-  document.querySelectorAll(".nav-link, .dropdown-item").forEach(link => {
+  document.querySelectorAll(".nav-link, .dropdown-item").forEach((link) => {
     const linkHref = link.getAttribute("href");
-    if (linkHref && linkHref !== "#" && currentPath.endsWith(linkHref.toLowerCase())) {
+    if (
+      linkHref &&
+      linkHref !== "#" &&
+      currentPath.endsWith(linkHref.toLowerCase())
+    ) {
       link.classList.add("active");
 
-      const immediateDropdown = link.closest('.dropdown');
+      const immediateDropdown = link.closest(".dropdown");
       if (immediateDropdown) {
-        const mainToggle = immediateDropdown.querySelector('.dropdown-toggle');
+        const mainToggle = immediateDropdown.querySelector(".dropdown-toggle");
         if (mainToggle) mainToggle.classList.add("active");
       }
 
-      const innerSubMenu = link.closest('.dropdown-submenu');
+      const innerSubMenu = link.closest(".dropdown-submenu");
       if (innerSubMenu) {
-        const innerToggle = innerSubMenu.querySelector('.dropdown-toggle');
+        const innerToggle = innerSubMenu.querySelector(".dropdown-toggle");
         if (innerToggle) innerToggle.classList.add("active");
 
-        const outerDropdown = innerSubMenu.closest('.dropdown');
+        const outerDropdown = innerSubMenu.closest(".dropdown");
         if (outerDropdown) {
-          const outerToggle = outerDropdown.querySelector('.dropdown-toggle');
+          const outerToggle = outerDropdown.querySelector(".dropdown-toggle");
           if (outerToggle) outerToggle.classList.add("active");
         }
       }
@@ -80,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Hover animation
-  const elements = document.querySelectorAll('.nav-item, .gallery-image, .card, .btn, .whatsapp-icon, .back-to-top');
+  const elements = document.querySelectorAll(
+    ".nav-item, .gallery-image, .card, .btn, .whatsapp-icon, .back-to-top"
+  );
   elements.forEach((element) => {
     element.addEventListener("mouseover", () => {
       element.style.transform = "scale(1.1)";
@@ -97,7 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (title) {
     title.style.textShadow = "0 0 10px rgba(255,255,255,0.5)";
     setInterval(() => {
-      title.style.textShadow = `0 0 ${Math.random() * 20 + 10}px rgba(255,255,255,0.8)`;
+      title.style.textShadow = `0 0 ${
+        Math.random() * 20 + 10
+      }px rgba(255,255,255,0.8)`;
     }, 700);
   }
 
@@ -107,32 +115,51 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Clicked!");
     });
   }
-  
-const submenus = document.querySelectorAll(".dropdown-submenu > .dropdown-toggle");
 
-submenus.forEach(toggle => {
-  toggle.addEventListener("click", function (e) {
-    const submenu = this.nextElementSibling;
+  // ✅ Submenu toggle fix
+  const submenus = document.querySelectorAll(
+    ".dropdown-submenu > .dropdown-toggle"
+  );
 
-    if (submenu && submenu.classList.contains("dropdown-menu")) {
-      // ✅ Only prevent default on mobile or if submenu exists
-      if (window.innerWidth < 992) {
-        e.preventDefault();
+  submenus.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // Stop Bootstrap from closing parent
+
+      const submenu = this.nextElementSibling;
+
+      if (submenu && submenu.classList.contains("dropdown-menu")) {
+        // ✅ Close all submenus inside the same parent
+        const parentMenu = this.closest(".dropdown-menu");
+        parentMenu
+          .querySelectorAll(".dropdown-menu.show")
+          .forEach((openMenu) => {
+            if (openMenu !== submenu) {
+              openMenu.classList.remove("show");
+            }
+          });
+
+        // ✅ Toggle only the clicked submenu
         submenu.classList.toggle("show");
       }
-    }
-    // ✅ Allow default click if it's a normal link
+    });
   });
-});
 
-
+  // ✅ Close ALL submenus when main dropdown closes
+  document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    dropdown.addEventListener("hide.bs.dropdown", function () {
+      this.querySelectorAll(".dropdown-menu.show").forEach((submenu) => {
+        submenu.classList.remove("show");
+      });
+    });
+  });
 
   // ✅ Assign and add event listener for popup
-  popup = document.getElementById('popupModal');
+  popup = document.getElementById("popupModal");
   if (popup) {
-    popup.addEventListener('click', function (e) {
+    popup.addEventListener("click", function (e) {
       if (e.target === popup) {
-        popup.style.display = 'none';
+        popup.style.display = "none";
       }
     });
   }
