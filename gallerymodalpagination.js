@@ -84,41 +84,44 @@ else if (path.includes("flowervases")) {
 else if (path.includes("walldecor")) {
   basePath = "/Images/Product Images/HomeDecor/WallDecor/";
   const fileNames = [
-    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg",
-    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", 
-    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor1.jpg", "walldecor2.jpg"];
+    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor4.jpg", "walldecor5.jpeg",
+     "walldecor6.jpg", "walldecor7.jpg", "walldecor8.jpeg", "walldecor9.jpeg", "walldecor10.jpeg",
+     "walldecor11.jpeg", "walldecor12.jpeg", "walldecor13.jpeg", "walldecor14.jpeg"];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("handpainteditems")) {
   basePath = "/Images/Product Images/HomeDecor/HandPaintedItems/";
   const fileNames = [
-    "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg",
-    "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg", "handpainted1.jpg", "handpainted2.jpg"];
+    "handpainted1.jpg", "handpainted3.jpeg", "handpainted4.jpeg", "handpainted5.jpeg",
+     "handpainted6.jpeg", "handpainted7.jpeg", "handpainted8.jpeg", "handpainted9.jpeg", "handpainted10.jpeg",
+     "handpainted11.jpeg",  "handpainted13.jpg", "handpainted14.jpeg", "handpainted15.jpeg",
+     "handpainted16.jpeg", "handpainted17.jpeg", "handpainted18.jpeg", "handpainted19.jpeg", "handpainted20.jpeg"];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("silverteacupset")) 
   {
   basePath = "/Images/Product Images/LuxuryKitchenWares/SilverTeaCupSet/";
   const fileNames = [
-    "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png", 
-    "teacup2.png","TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", 
-     "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png", "teacup2.png", "TeaCup1.png"];
+    "TeaCup1.png", "teacup2.png", "silverteacup1.jpeg", "silverteacup4.jpeg",
+    "silverteacup5.jpeg", "silverteacup6.jpeg", "silverteacup7.jpeg", "silverteacup8.jpeg", "silverteacup9.jpeg",
+    "silverteacup10.jpeg", "silverteacup11.jpeg", "silverteacup12.jpeg", "silverteacup13.jpeg", "silverteacup14.jpg",
+    "silverteacup15.jpeg", "silverteacup16.jpeg", "silverteacup17.jpeg", "silverteacup18.jpeg"];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("etagere")) {
   basePath = "/Images/Product Images/LuxuryKitchenWares/Etagere/";
   const fileNames = [
-    "etagere1.png", "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png", 
-     "etagere2.png", "etagere1.png", "etagere1.png", "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png"
-    , "etagere2.png", "etagere1.png", "etagere2.png", "etagere1.png"];
+    "etagere1.png", "etagere2.png", "etagere3.jpeg", "etagere4.jpeg","etagere5.jpeg", "etagere6.jpeg", "etagere7.jpeg", "etagere8.jpeg", 
+     "etagere9.jpeg", "etagere10.jpeg", "etagere11.jpeg", "etagere12.jpeg", "etagere13.jpeg", "etagere14.jpeg", "etagere7.jpeg",
+      "etagere3.jpeg"];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("trays")) {
   basePath = "/Images/Product Images/LuxuryKitchenWares/Trays/";
   const fileNames = [
-    "trays1.png", "trays2.png", "trays1.png", "trays2.png","trays1.png", "trays2.png", "trays1.png", "trays2.png", 
-     "trays1.png", "trays2.png", "trays1.png", "trays2.png", "trays1.png", "trays2.png", "trays1.png", "trays2.png",];
+    "trays1.png",  "trays3.jpeg", "trays4.jpeg","trays5.jpeg", "trays6.jpeg", "trays7.jpeg", "trays8.jpeg", 
+     "trays9.jpeg", "trays10.jpeg", "trays11.jpeg", "trays12.jpeg", "trays7.jpeg", "trays2.png","trays3.jpeg",];
   images = fileNames.map(file => basePath + file);
 }
 // Pagination setup
