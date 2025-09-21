@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wall Lamp - Indian Galleries</title>
+<!-- SEO Meta Description -->
+  <meta name="description" content="Explore Indian Galleries - Premium lamps, lighting, and home décor collections across India.">
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Wall Lamp - Indian Galleries">
+  <meta property="og:description" content="Explore our collection of premium lamps, lighting, and home décor.">
+  <meta property="og:image" content="https://www.indiangalleries.net/Images/favicon-light.png">
+  <meta property="og:url" content="https://www.indiangalleries.net/walllamps.html">
+  <meta property="og:type" content="website">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/Images/favicon-light.png" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/css-files/style.css" />
+
+  <!-- Gallery Specific CSS -->
+  <link rel="stylesheet" href="/css-files/gallerypagination.css" />
+</head>
+
+<body>
+
+  <!--Header will be loaded here -->
+  <div id="header"></div>
+  <!-- Include your header & navbar here -->
+
+  <!-- Breadcrumb Section -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-wrapper text-end">
+        <a href="/pages/index.html" class="breadcrumb-item">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="#" class="breadcrumb-item active">Wall Lamps</a>
+      </div>
+    </div>
+  </section>
+
+<section class="gallery-section"> 
+  <!-- Gallery Title -->
+  <h2 class="gallery-title">Wall Lamps</h2>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-grid" id="gallery"></div>
+
+  <!-- Pagination -->
+  <div class="pagination-wrapper">
+    <div class="pagination">
+      <button onclick="changePage(-1)">Previous</button>
+      <button onclick="changePage(1)">Next</button>
+    </div>
+  </div>
+</section>
+
+   <!-- Footer will be loaded here -->
+  <div id="footer"></div>
+  <!-- Include your footer and floating icons here -->
+
+  <!-- Developer Bar -->
+  <div class="footer-bottom text-center py-2">
+    <p class="mb-0">© All Right Indian Galleries Powered by Monika Maurya</p>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal" onclick="closeModal(event)">
+    <span class="close-btn" onclick="closeModal(event)">&times;</span>
+    <img id="modalImage" src="" alt="Zoomed Image" />
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js-files/gallerymodalpagination.js"></script>
+   <script src="../js-files/js.js"></script>
+   <script src="../js-files/commonheaderfooter.js"></script>
+</body>
+</html>
