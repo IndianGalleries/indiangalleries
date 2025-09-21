@@ -1,24 +1,44 @@
-// commonheaderfooter.js
-
-async function loadComponent(id, file) {
-  try {
-    const res = await fetch(file);
-    if (!res.ok) throw new Error(`Failed to load ${file}`);
-    const html = await res.text();
-    document.getElementById(id).innerHTML = html;
-  } catch (err) {
-    console.error(err);
+// Update favicon based on dark/light theme
+function updateFavicon() {
+  const favicon = document.getElementById("favicon");
+  const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (favicon) {
+    favicon.href = isDark
+      ? "/Images/favicon-dark.png"
+      : "/Images/favicon-light.png";
   }
 }
 
-window.addEventListener("DOMContentLoaded", async () => {
-  // Wait for both header and footer to load
-  await Promise.all([
-    loadComponent("header", "header.html"),
-    loadComponent("footer", "footer.html")
-  ]);
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
-  // Now run the initialization code (moved from js.js)
+// Open WhatsApp chat
+function openWhatsApp() {
+  const phoneNumber = "+918077155004";
+  const message = "Hello! I'm interested in your products.";
+  const whatsappUrl =
+    "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+  window.open(whatsappUrl, "_blank");
+}
+
+// Declare popup globally
+let popup; // will be assigned after DOM is loaded
+
+function openImagePopup(el) {
+  const imgSrc = el.querySelector("img").getAttribute("src");
+  const popupImg = document.getElementById("popupImage");
+  popupImg.src = imgSrc;
+  popup.style.display = "flex";
+}
+
+function closeImagePopup() {
+  popup.style.display = "none";
+}
+
+// DOM Ready
+document.addEventListener("DOMContentLoaded", function () {
   updateFavicon();
 
   const currentPath = window.location.pathname.toLowerCase();
@@ -143,6 +163,4 @@ window.addEventListener("DOMContentLoaded", async () => {
       }
     });
   }
-
-  // Add any other init code from js.js here if needed (e.g., for gallery popups)
 });
