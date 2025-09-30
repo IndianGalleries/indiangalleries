@@ -30,8 +30,10 @@
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div class="d-flex align-items-center mb-3 mb-md-0">
-          <img src="/Images/favicon-light.png" alt="Logo" width="60" height="60" class="me-3 logo-img">
-          <h1 class="m-0 fw-bold text-brand" style="font-family: 'Allura', cursive;">Indian Galleries</h1>
+          <a href="index.html">
+             <img src="/Images/favicon-light.png" alt="Logo" width="60" height="60" class="me-3 logo-img">
+          </a>
+         <h1 class="m-0 fw-bold text-brand" style="font-family: 'Allura', cursive;">Indian Galleries</h1>
         </div>
         <div class="text-brand fs-6 fw-semibold text-center text-md-end">
           <div class="mb-1 mb-md-0">
@@ -138,11 +140,12 @@
   <div class="gallery-grid" id="gallery"></div>
 
   <!-- Pagination -->
-  <div class="pagination-wrapper">
-    <div class="pagination">
-      <button onclick="changePage(-1)">Previous</button>
-      <button onclick="changePage(1)">Next</button>
-    </div>
+ <div class="pagination-wrapper">
+    <nav aria-label="Gallery pagination">
+        <ul class="pagination">
+          <!-- Pagination items will be injected by JavaScript -->
+        </ul>
+      </nav>
   </div>
 </section>
 
@@ -186,8 +189,9 @@
 
         <div class="col-md-3 mb-3">
           <div class="logo-items text-center">
-            <img src="/Images/favicon-light.png" alt="Indian Galleries Logo"
-              style="max-width: 80px; height: auto; margin-bottom: 10px;">
+           <a href="index.html"> <img src="/Images/favicon-light.png" alt="Indian Galleries Logo"
+                 style="max-width: 80px; height: auto; margin-bottom: 10px;">
+             </a>
             <p>
               <strong style="font-family: 'Allura', cursive;  font-size: 28px;">Indian Galleries</strong><br>
               Established in 2022 in <strong>Moradabad, Uttar Pradesh</strong>.
