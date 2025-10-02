@@ -116,32 +116,56 @@
 }
 
 .page-link {
-  background-color: #062f69; /* Matches Previous button background */
-  border: none;
-  color: #f5f2f2; /* Matches Previous button text color */
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
   cursor: pointer;
+  box-sizing: border-box; 
 }
 
-.page-link:hover {
-  background-color: #062f69;
+.page-link:not(.nav-button) {
+  background-color: transparent;
+  border: none;
+  color: #062f69; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  padding: 0;
 }
 
-.page-item.active .page-link {
-  background-color: #062f69;
-  color:#f5f2f2;
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-radius: 50% !important; 
 }
 
-.page-item.disabled .page-link {
+.page-link.nav-button {
   background-color: #062f69;
   color: #f5f2f2;
-  opacity: 0.5;
-  cursor: not-allowed;
+  padding: 8px 14px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  min-width: 40px;
+}
+
+.page-link:not(.nav-button):hover {
+  background-color: transparent;
+  border: 1px solid #062f69;
+}
+
+.page-link.nav-button:hover {
+  background-color: #062f69;
+  box-shadow: 0 2px 4px rgba(87, 97, 162, 0.15);
+}
+
+
+.page-item.active .page-link:not(.nav-button) {
+  color: #062f69;
+  border: 1px solid #062f69;
+  box-shadow: 0 2px 6px rgba(6, 3, 92, 0.5);
+  border-radius: 50%; 
 }
 
 /* Modal */
@@ -254,10 +278,10 @@
     right: 15px;
   }
 
-  .pagination button {
-    padding: 8px 14px;
-    font-size: 0.85rem;
-  }
+.pagination button {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
 
   .modal-desc {
     padding: 10px 15px;

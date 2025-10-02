@@ -221,7 +221,7 @@ function renderGallery() {
     card.appendChild(img);
     gallery.appendChild(card);
   }
-// here i add this code for dynamic pagination structure with Previous, page numbers, and Next buttons, matching the UI and functionality from the attached image (showing all page numbers for small total pages, disabling Previous/Next at boundaries, hiding pagination for 1 page or less, and highlighting the active page)
+
   const pagination = document.querySelector('.pagination');
   pagination.innerHTML = '';
   const totalPages = Math.ceil(images.length / pageSize);
@@ -229,24 +229,20 @@ function renderGallery() {
     return;
   }
 
-  // Add Previous
-  const prevItem = document.createElement('li');
-  prevItem.className = 'page-item';
-  const prevLink = document.createElement('a');
-  prevLink.className = 'page-link';
-  prevLink.textContent = 'Previous';
   if (currentPage > 0) {
+    const prevItem = document.createElement('li');
+    prevItem.className = 'page-item';
+    const prevLink = document.createElement('a');
+    prevLink.className = 'page-link nav-button shadow-sm';
+    prevLink.innerHTML = '<i class="bi bi-chevron-left"></i>';
     prevLink.onclick = () => {
       changePage(-1);
       return false;
     };
-  } else {
-    prevItem.classList.add('disabled');
+    prevItem.appendChild(prevLink);
+    pagination.appendChild(prevItem);
   }
-  prevItem.appendChild(prevLink);
-  pagination.appendChild(prevItem);
 
-  // Add page numbers
   for (let p = 0; p < totalPages; p++) {
     const pageItem = document.createElement('li');
     pageItem.className = 'page-item';
@@ -265,22 +261,19 @@ function renderGallery() {
     pagination.appendChild(pageItem);
   }
 
-  // Add Next
-  const nextItem = document.createElement('li');
-  nextItem.className = 'page-item';
-  const nextLink = document.createElement('a');
-  nextLink.className = 'page-link';
-  nextLink.textContent = 'Next';
   if (currentPage < totalPages - 1) {
+    const nextItem = document.createElement('li');
+    nextItem.className = 'page-item';
+    const nextLink = document.createElement('a');
+    nextLink.className = 'page-link nav-button shadow-sm';
+    nextLink.innerHTML = '<i class="bi bi-chevron-right"></i>';
     nextLink.onclick = () => {
       changePage(1);
       return false;
     };
-  } else {
-    nextItem.classList.add('disabled');
+    nextItem.appendChild(nextLink);
+    pagination.appendChild(nextItem);
   }
-  nextItem.appendChild(nextLink);
-  pagination.appendChild(nextItem);
 }
 
 function changePage(step) {
