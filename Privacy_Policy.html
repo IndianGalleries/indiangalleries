@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,21 +16,17 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" id="favicon" type="image/png" href="/Images/favicon-light.png">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- Custom Font -->
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
-<body><!--Header will be loaded here -->
-  <!-- header.html -->
+<body>
   <div id="header"></div> 
-
-  <!-- bread crumbs section start -->
   <!-- Breadcrumb Section -->
   <section class="breadcrumb-section">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
       <div class="breadcrumb-wrapper text-end">
         <a href="index.html" class="breadcrumb-item">
           <i class="fas fa-home"></i> Home
@@ -44,15 +39,14 @@
   <!-- Privacy Policy Content -->
   <section class="py-5" style="background-color: #f5f8ff;">
     <div class="container">
-
       <div class="text-center mb-5">
-        <h2 class="common-title">Privacy Policy</h2>
-        <p class="common-description text-muted">Your trust matters. Learn how we protect and use your information.</p>
+        <h2 class="common-title" data-aos="fade-down">Privacy Policy</h2>
+        <p class="common-description text-muted" data-aos="zoom-in">Your trust matters. Learn how we protect and use your information.</p>
       </div>
 
       <!-- Policy Section -->
-      <div class="terms-content">
-        <h4>Privacy Policy</h4>
+      <div class="terms-content" data-aos="zoom-out-left">
+        <h4 data-aos="fade-right">Privacy Policy</h4>
         <p><strong>Effective Date:</strong> September 2022</p>
         <p>At Indian Galleries, we value your privacy and are committed to protecting your personal information. This
           Privacy Policy outlines how we collect, use, share, and safeguard your data when you visit our website or
@@ -68,7 +62,6 @@
           <li><strong>Communication Data:</strong> Information provided when you contact us or subscribe to our
             newsletters.</li>
         </ul>
-
         <h5>2. How We Use Your Information</h5>
         <p>Your information is used to:</p>
         <ul>
@@ -78,109 +71,52 @@
           <li>Send updates, promotions, and newsletters (only if you opt in)</li>
           <li>Ensure security and prevent fraud</li>
         </ul>
-
         <h5>3. Sharing Your Information</h5>
         <p>We do not sell or rent your personal data. We may share your information with:</p>
         <ul>
           <li>Trusted third-party service providers (e.g., payment gateways, shipping partners)</li>
           <li>Legal authorities, if required by law or to protect our rights</li>
         </ul>
-
         <h5>4. Data Security</h5>
         <p>We implement appropriate security measures to protect your data from unauthorized access, alteration, or
           disclosure. However, no online transmission is 100% secure, and we cannot guarantee absolute security.</p>
-
         <h5>5. Cookies</h5>
         <p>Our website uses cookies to enhance your browsing experience. You can choose to disable cookies through your
           browser settings, though this may affect some site functionality.</p>
-
         <h5>6. Your Rights</h5>
-        <p>You have the right to:</p>
-        <ul>
+        <p>You have the right to:</p>        <ul>
           <li>Access or update your personal data</li>
           <li>Request deletion of your data (subject to legal obligations)</li>
           <li>Opt out of marketing communications at any time</li>
         </ul>
-
         <h5>7. Changes to This Policy</h5>
         <p>We may update this Privacy Policy periodically. Any changes will be posted on this page with a revised
           effective date.</p>
       </div>
-
       <!-- Contact Link -->
-      <div class="text-center mt-5">
+      <div class="text-center mt-5" data-aos="zoom-out">
         <a href="contactus.html" class="btn btn-primary btn-lg">Contact Us for More Info</a>
       </div>
     </div>
   </section>
-
-    <!-- Footer will be loaded here -->
-  <footer class="footer section-gap">
-    <div class="container">
-      <div class="row text-start">
-        <!-- Policy Links -->
-        <div class="col-md-3 mb-3">
-          <h5>Important Links</h5>
-          <ul>
-            <li><a href="Privacy_Policy.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Privacy Policy</a>
-            </li>
-            <li><a href="TermAndCondition.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Terms &
-                Condition</a></li>
-            <li> <a href="career.html"> <i class="fa-solid fa-angle-right me-2 text-maroon"></i>Work With Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Page Navigation -->
-        <div class="col-md-3 mb-3">
-          <h5>Navigation</h5>
-          <ul>
-            <li><a href="career.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Career Wtih Us</a></li>
-            <li><a href="aboutus.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>About Us</a></li>
-            <li><a href="contactus.html"><i class="fa-solid fa-angle-right me-2 text-maroon"></i>Contact Us</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Social Media -->
-        <div class="col-md-3 mb-3">
-          <h5>Social Media</h5>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/_indian_galleries_" target="_blank" class="instagram"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/indian-galleries/" target="_blank" class="linkedin"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <div class="col-md-3 mb-3">
-          <div class="logo-items text-center">
-           <a href="index.html"> <img src="/Images/favicon-light.png" alt="Indian Galleries Logo"
-                 style="max-width: 80px; height: auto; margin-bottom: 10px;">
-             </a>
-            <p>
-              <strong style="font-family: 'Allura', cursive;  font-size: 28px;">Indian Galleries</strong><br>
-              Established in 2022 in <strong>Moradabad, Uttar Pradesh</strong>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Floating Icons (Optional) -->
-    <div class="whatsapp-icon" onclick="openWhatsApp()" style="cursor: pointer;">
-      <i class="fa-brands fa-whatsapp fa-2x"></i>
-    </div>
-
-    <div class="back-to-top" onclick="scrollToTop()">
-      <i class="fa-solid fa-arrow-up"></i>
-    </div>
-  </footer>
+  <!-- Footer will be loaded here -->
+    <div id="footer"></div>
   <!-- Developer Bar -->
   <div class="footer-bottom text-center py-2">
     <p class="mb-0">© All Right Indian Galleries Powered by Monika Maurya</p>
   </div>
 </body>
-<!-- <script src="commonheaderfooter.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="commonheaderfooter.js"></script>
+<script src="js.js"></script><script>
+  document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+      duration: 900,
+      offset: 100,
+      easing: 'ease-in-out',
+      once: false
+    });
+  });
+</script>
 </html>
