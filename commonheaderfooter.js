@@ -17,8 +17,27 @@ window.addEventListener("DOMContentLoaded", async () => {
     loadComponent("header", "header.html"),
     loadComponent("footer", "footer.html")
   ]);
+  
+  //Unified AOS Initialization (only here, after dynamic loads)
+  if (window.AOS) {
+    AOS.init({
+      duration: 900, 
+      offset: 200,   
+      easing: 'ease-in-out',
+      once: true,    
+      disable: 'mobile' 
+    });
 
-  // Now run the initialization code (moved from js.js)
+    // Safeguard: Refresh after init to catch header/footer/gallery AOS attributes
+    setTimeout(() => {
+      AOS.refresh();
+      console.log("✅ AOS refreshed after header/footer load"); 
+    }, 200); 
+  } else {
+    console.warn("⚠️ AOS library not found — make sure it's loaded in your HTML.");
+  }
+
+  // Now run the initialization code (moved from js.js) 
   updateFavicon();
 
   const currentPath = window.location.pathname.toLowerCase();
@@ -63,7 +82,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // Hover animation
+  // Hover animation 
   const elements = document.querySelectorAll(
     ".nav-item, .gallery-image, .card, .btn, .whatsapp-icon, .back-to-top"
   );
@@ -78,7 +97,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  // Coming soon text glow
+  // Coming soon text glow 
   const title = document.querySelector(".coming-soon h2");
   if (title) {
     title.style.textShadow = "0 0 10px rgba(255,255,255,0.5)";
@@ -96,7 +115,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // ✅ Submenu toggle fix
+  // Submenu toggle fix 
   const submenus = document.querySelectorAll(
     ".dropdown-submenu > .dropdown-toggle"
   );
@@ -104,12 +123,10 @@ window.addEventListener("DOMContentLoaded", async () => {
   submenus.forEach((toggle) => {
     toggle.addEventListener("click", function (e) {
       e.preventDefault();
-      e.stopPropagation(); // Stop Bootstrap from closing parent
-
+      e.stopPropagation(); 
       const submenu = this.nextElementSibling;
-
       if (submenu && submenu.classList.contains("dropdown-menu")) {
-        // ✅ Close all submenus inside the same parent
+        //Close all submenus inside the same parent
         const parentMenu = this.closest(".dropdown-menu");
         parentMenu
           .querySelectorAll(".dropdown-menu.show")
@@ -119,13 +136,13 @@ window.addEventListener("DOMContentLoaded", async () => {
             }
           });
 
-        // ✅ Toggle only the clicked submenu
+        //Toggle only the clicked submenu
         submenu.classList.toggle("show");
       }
     });
   });
 
-  // ✅ Close ALL submenus when main dropdown closes
+  //Close ALL submenus when main dropdown closes
   document.querySelectorAll(".dropdown").forEach((dropdown) => {
     dropdown.addEventListener("hide.bs.dropdown", function () {
       this.querySelectorAll(".dropdown-menu.show").forEach((submenu) => {
@@ -134,7 +151,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  // ✅ Assign and add event listener for popup
+  //Assign and add event listener for popup 
   popup = document.getElementById("popupModal");
   if (popup) {
     popup.addEventListener("click", function (e) {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +20,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- Custom Font -->
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!--Header will be loaded here -->
    <div id="header"></div> 
   <!-- Breadcrumb Section -->
   <section class="breadcrumb-section">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
       <div class="breadcrumb-wrapper text-end">
         <a href="index.html" class="breadcrumb-item">
           <i class="fas fa-home"></i> Home
@@ -41,64 +41,53 @@
   <section class="py-5" style="background-color: #f5f8ff;">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="common-title">Terms and Conditions</h2>
-        <p class="common-description text-muted">Learn about our terms & Conditions and user responsibilities.</p>
+        <h2 class="common-title" data-aos="fade-down">Terms and Conditions</h2>
+        <p class="common-description text-muted" data-aos="zoom-in">Learn about our terms & Conditions and user responsibilities.</p>
       </div>
       <!-- Terms & Conditions -->
-      <div class="terms-content">
-        <h4>Terms and Conditions</h4>
+      <div class="terms-content" data-aos="zoom-out-left">
+        <h4 data-aos="fade-right">Terms and Conditions</h4>
         <p><strong>Effective Date:</strong> September 2022</p>
         <p>Welcome to Indian Galleries. These Terms and Conditions ("Terms") govern your use of our website and
           services. By accessing or using our website, you agree to be bound by these Terms. If you do not agree, please
           do not use our site.</p>
-
         <h5>1. Use of Website</h5>
-        <p>You agree to use this website only for lawful purposes and in accordance with these Terms. You must not
+        <p >You agree to use this website only for lawful purposes and in accordance with these Terms. You must not
           misuse our site or its content.</p>
-
         <h5>2. Intellectual Property</h5>
         <p>All content on this website—including images, designs, text, logos, and product listings—is the property of
           Indian Galleries and is protected by applicable copyright and trademark laws. You may not reproduce,
           distribute, or exploit any content without prior written permission.</p>
-
         <h5>3. Product Information</h5>
         <p>We strive to provide accurate product descriptions and images. However, as our products are handmade, slight
           variations in color, design, or finish may occur. These are not defects but part of the uniqueness of
           handcrafted items.</p>
-
         <h5>4. Pricing and Payments</h5>
         <p>Prices listed on our website are in INR (₹) unless stated otherwise. We reserve the right to change prices or
           discontinue products at any time. Orders are confirmed only after successful payment.</p>
-
         <h5>5. Shipping and Delivery</h5>
         <p>We ship across India and to select international locations. Delivery timelines are estimates and may vary due
           to external factors. Shipping charges and delivery details will be shared during checkout.</p>
-
         <h5>6. Returns and Refunds</h5>
         <p>We accept returns only for damaged or defective items reported within 7 days of delivery. Items must be
           unused and returned in original packaging. Please refer to our <a href="#">Returns & Refund Policy</a> for
           full details.</p>
-
         <h5>7. User Accounts</h5>
         <p>If you create an account on our site, you are responsible for maintaining confidentiality and for all
           activities that occur under your login. We reserve the right to suspend or terminate accounts that violate our
           Terms.</p>
-
         <h5>8. Limitation of Liability</h5>
         <p>Indian Galleries is not liable for any indirect, incidental, or consequential damages arising from the use or
           inability to use our website or products.</p>
-
         <h5>9. Governing Law</h5>
         <p>These Terms are governed by the laws of India. Any disputes arising shall be subject to the jurisdiction of
           courts in [Your City/State].</p>
-
         <h5>10. Changes to Terms</h5>
         <p>We reserve the right to update or modify these Terms at any time without prior notice. Continued use of the
           site after changes constitutes your acceptance of the updated Terms.</p>
       </div>
-
       <!-- Contact Link -->
-      <div class="text-center mt-5">
+      <div class="text-center mt-5" data-aos="zoom-out">
         <a href="contactus.html" class="btn btn-primary btn-lg">Contact Us for More Info</a>
       </div>
     </div>
@@ -111,6 +100,16 @@
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="js.js"></script>
-<script src="commonheaderfooter.js"></script>
+<script src="commonheaderfooter.js"></script><script>
+  document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+      duration: 900,
+      offset: 100,
+      easing: 'ease-in-out',
+      once: false
+    });
+  });
+</script>
 </html>
