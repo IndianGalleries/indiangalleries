@@ -1,0 +1,259 @@
+/* HERO SECTION */
+.network-hero-section {
+    position: relative;
+    background-image: url('Images/ExtraImage/Network/FTF-INetworknew.png');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%;             
+    min-height: 40vh;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.network-hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.network-hero-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+}
+/* IMPROVED TEXT STYLING FOR CONTENT SECTION */
+.network-details p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 20px;
+    max-width: 95%;
+}
+
+.network-details .lead {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.network-details .section-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #003681;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+/* DETAILS SECTION */
+.section-title {
+    color: #003681;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* NEW PROFESSIONAL LOGO CARD */
+.ftfi-logo-card {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.ftfi-logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.22);
+}
+
+.ftfi-logo-img {
+    width: 220px;
+    height: auto;
+}
+
+/* CLEAN NETWORK POINT CARDS */
+.np-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.np-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.np-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #003681;
+}
+
+.np-card h5 {
+    font-size: 15px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.np-card p {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+/* HEXAGON GRID */
+.hex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* OUTER HEX - DARK BLUE */
+.hex-border-outer {
+    width: 220px;
+    height: 200px;
+    background: #143d85;
+    clip-path: polygon(50% 0%, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INNER HEX - LIGHT BLUE */
+.hex-border-inner {
+    width: 200px;   
+    height: 165px;  
+    background: #5d88c0;
+    clip-path: polygon(50% 0%, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INNER WHITE CONTENT HEX */
+.hex-content {
+    width: 180px; 
+    height: 160px;
+    background: white;
+    clip-path: polygon(50% 0%, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 12px;  
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+.hex-border-outer:hover {
+    transform: translateY(-8px);
+}
+
+/* ICON */
+.hex-content .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #003681;
+}
+
+/* TEXT */
+.hex-content h5 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #003681;
+}
+
+.hex-content p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+/* ====================================================================================Action page css ================================================================================== */
+/* ACTIVITY HEADING */
+ .activity-heading {
+    font-size: 26px;
+    font-weight: 700;
+    color: #003681;
+    margin-bottom: 20px;
+}
+.activity-slider {
+    background: #fff;
+    border: none;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.10);
+}
+
+.activity-slider .carousel-item {
+    height: 420px;              
+    background: #fff !important;  
+    transition: transform 0.6s ease-in-out;      
+}
+
+.activity-slider .carousel-item img {
+    max-width: 100%;           
+    max-height: 100%;        
+    object-fit: contain;      
+    object-position: center;     
+    background: #fff !important;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.slider-arrow {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    padding: 18px;
+}
+
+.activity-text {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    max-width: 95%;
+    margin-top: 20px;
+}
+.activity-slider .carousel-control-prev,
+.activity-slider .carousel-control-next {
+    width: 60px;       
+}
+
+.activity-slider .carousel-control-prev-icon,
+.activity-slider .carousel-control-next-icon {
+    background-color: rgba(0, 48, 104, 0.8);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50% 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.activity-slider .carousel-control-prev-icon:hover,
+.activity-slider .carousel-control-next-icon:hover {
+    background-color: rgba(0, 48, 104, 1);
+    transform: scale(1.1);
+} 
+
