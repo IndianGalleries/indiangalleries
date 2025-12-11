@@ -16,7 +16,7 @@ function scrollToTop() {
 
 // Open WhatsApp chat
 function openWhatsApp() {
-  const phoneNumber = "+918077155004";
+  const phoneNumber = "+919997515438";
   const message = "Hello! I'm interested in your products.";
   const whatsappUrl =
     "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
   submenus.forEach((toggle) => {
     toggle.addEventListener("click", function (e) {
       e.preventDefault();
-      e.stopPropagation(); // Stop Bootstrap from closing parent
+      e.stopPropagation(); 
 
       const submenu = this.nextElementSibling;
 

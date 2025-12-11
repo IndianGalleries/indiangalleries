@@ -180,8 +180,8 @@ header .logo-img {
 
 /* carousel css start */
 .carousel-inner img {
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 81vh;
   object-fit: cover;
 }
 .carousel-caption {
@@ -191,15 +191,15 @@ header .logo-img {
 }
 .carousel-title {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem; /* larger title */
+  font-size: 3.5rem; 
   font-weight: 700;
-  color: #ffffff; /* white text */
+  color: #ffffff; 
   animation: fadeInDown 1s;
 }
 .carousel-subtext {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.8rem; /* larger subtitle */
-  color: #ffffff; /* white text */
+  font-size: 1.8rem; 
+  color: #ffffff; 
   animation: fadeInUp 1s;
 }
 
@@ -418,6 +418,117 @@ header .logo-img {
   min-height: 350px;
   border: 2px solid #003681;
 }
+/* Contact Register Form Section */
+/* #contact-register {
+  padding: 60px 0;
+}
+
+.contact-illustration {
+  max-width: 80%;
+}
+
+.form-wrapper {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #00368122;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #003681;
+  margin-bottom: 20px;
+}
+
+.custom-input,
+.custom-textarea {
+  border-radius: 30px;
+  border: 2px solid #00368140;
+  padding: 12px 18px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  background: #f6f6f6;
+}
+
+.custom-input:focus,
+.custom-textarea:focus {
+  border-color: #003681;
+  box-shadow: 0 0 5px #00368166;
+}
+.custom-btn {
+  background: linear-gradient(90deg, #003681, #304e77);
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .form-title {
+    text-align: center;
+  }
+  .contact-illustration {
+    max-width: 60%;
+  }
+} */
+#about-company-contact .company-info {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 15px;
+   text-align: justify;
+}
+
+#about-company-contact .section-title {
+  color: #003681;
+  font-weight: 700;
+  font-size: 2rem;
+}
+/* Why Choose Boxes */
+.why-box {
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.3s ease;
+  border: 2px solid #00368122;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+.why-icon {
+  font-size: 2rem;
+  color: #003681;
+}
+
+.why-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #003681;
+  margin-bottom: 8px;
+}
+
+.why-text {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Contact form subheading */
+.contact-subheading {
+  font-size: 1.4rem;
+  color: #003681;
+  font-weight: 600;
+}
+
 /* contact css end */
 .whatsapp-icon,
 .back-to-top {
