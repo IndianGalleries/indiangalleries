@@ -38,7 +38,9 @@ function closeImagePopup() {
 }
 
 // DOM Ready
+history.scrollRestoration = "manual";
 document.addEventListener("DOMContentLoaded", function () {
+  window.scrollTo({ top: 0, behavior: "auto" });
   updateFavicon();
 
   const currentPath = window.location.pathname.toLowerCase();
