@@ -18,12 +18,12 @@ if (path.includes("tablelamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Wall_Lamps/";
 
   // const fileNames = Array(23).fill("WallLamps.jpg");
-  const fileNames = ["w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg","w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
-    "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg","w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
-    "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg","w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
-    "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg"
-  ,"w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
-    "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg"
+  const fileNames = ["w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg","w7.jpeg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
+    "w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg","w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
+    "w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg","w1.jpg", "w2.JPG", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
+    "w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg"
+  ,"w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg",
+    "w7.jpeg", "w8.jpeg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg"
   ];
   images = fileNames.map(file => basePath + file);
 
@@ -46,12 +46,10 @@ else if (path.includes("chandeliers"))
   {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Chandeliers/";
   const fileNames = [
-    "chandelier.jpg", "Chandelier1.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG", "Chandelier5.PNG",    "chandelier6.JPG", "Chandelier7.JPG", "Chandelier8.JPG", "Chandelier9.JPG", "Chandelier10.JPG",
-    "Chandelier11.JPG", "Chandelier12.JPG", "Chandelier13.JPG", "Chandelier14.JPG", "Chandelier15.JPG", "Chandelier16.PNG", "Chandelier17.JPG", "Chandelier18.JPG", "Chandelier19.JPG", "Chandelier20.JPG",
-    "Chandelier21.JPG", "Chandelier22.JPG", "Chandelier23.JPG", "Chandelier24.JPG", "Chandelier25.JPG", "Chandelier26.JPG", "Chandelier27.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG",
-    "Chandelier1.JPG","chandelier.jpg", "Chandelier1.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG", "Chandelier5.PNG",    "chandelier6.JPG", "Chandelier7.JPG", "Chandelier8.JPG", "Chandelier9.JPG", "Chandelier10.JPG",
-    "Chandelier11.JPG", "Chandelier12.JPG", "Chandelier13.JPG", "Chandelier14.JPG", "Chandelier15.JPG", "Chandelier16.PNG", "Chandelier17.JPG", "Chandelier18.JPG", "Chandelier19.JPG", "Chandelier20.JPG",
-    "Chandelier21.JPG", "Chandelier22.JPG", "Chandelier23.JPG", "Chandelier24.JPG", "Chandelier25.JPG", "Chandelier26.JPG", "Chandelier27.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG",
+    "chandelier.jpg", "Chandelier1.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG", "Chandelier5.PNG", "chandelier6.JPG","NewChandelier9.jpeg",
+    "NewChandelier8.png", "NewChandelier5.jpeg", "Chandelier13.JPG", "Chandelier14.JPG", "Chandelier15.JPG", "Chandelier16.PNG", "Chandelier17.JPG", "Chandelier18.JPG", "Chandelier19.JPG", "Chandelier20.JPG",
+    "Chandelier21.JPG", "Chandelier22.JPG", "Chandelier23.JPG", "Chandelier24.JPG", "Chandelier25.JPG", "Chandelier26.jpeg", "Chandelier27.JPG", "NewChandelier1.jpeg","NewChandelier2.jpeg", "NewChandelier8.png",
+    "NewChandelier4.jpeg","chandelier.jpg", "Chandelier1.JPG", "Chandelier2.JPG","NewChandelier7.jpeg","Chandelier8.JPG","NewChandelier9.jpeg", "Chandelier3.PNG", "Chandelier4.PNG",
     "Chandelier1.JPG","chandelier.jpg", "Chandelier1.JPG", "Chandelier2.JPG", "Chandelier3.PNG", "Chandelier4.PNG", "Chandelier5.PNG",    "chandelier6.JPG", "Chandelier7.JPG", "Chandelier8.JPG", "Chandelier9.JPG", "Chandelier10.JPG"
   ];
    images = fileNames.map(file => basePath + file);
@@ -60,10 +58,10 @@ else if (path.includes("chandeliers"))
   // const fileNames = Array(15).fill("Pendants.jpg");
   const fileNames = [
     "Pendants.jpg", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
-  "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG","Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
-  "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG","Pendants.jpg", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
+  "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG", "Pendent13.jpeg", "Pendent14.jpeg", "Pendent15.jpeg","Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
+  "p11.JPG", "p12.jpg", "p13.JPG", "Pendent13.jpeg", "Pendent14.jpeg", "Pendent15.jpeg", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG","Pendants.jpg", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
   "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG", "Pendent3.JPG", "Pendent4.JPG","Pendants.jpg", "Pendent3.JPG", "Pendent4.JPG", "Pendent5.JPG", "Pendent9.JPG", "Pendent10.JPG","Pendent12.JPG",
-  "p11.JPG", "p12.jpg", "p13.JPG", "p14.JPG", "p15.JPG", "p17.JPG"];
+  "Pendent13.jpeg", "Pendent14.jpeg", "Pendent15.jpeg", "p14.JPG", "p15.JPG", "p17.JPG"];
 
   images = fileNames.map(file => basePath + file);
 
@@ -81,11 +79,11 @@ else if (path.includes("chandeliers"))
 else if (path.includes("tabletopitem")) {
   basePath = "/Images/Product Images/HomeDecor/TableTopItems/";
   const fileNames = [
-    "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",     "tabletop4.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop7.jpg", "tabletop6.jpg",
-     "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg","tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
-    "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
-     "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
-      "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",];
+    "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop4.jpg", "tabletop3.jpg", "tabletop2.jpg", "tabletop7.jpg", "tabletop6.jpg",
+     "tabletop7.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg","tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
+    "tabletop7.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
+     "tabletop3.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
+      "tabletop4.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",];
   images = fileNames.map(file => basePath + file);
 }
 

@@ -409,22 +409,6 @@ header .logo-img {
 }
 /* 1st segment */
 /* gallery image css end  */
-
-/* css for discound banner on imagen start */
-.discount-banner {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: linear-gradient(135deg, #ff4d4d, #aa1f1a);
-  color: white;
-  padding: 0.5rem 0.875rem;
-  font-weight: bold;
-  font-size: 0.875rem; /* 14px */
-  z-index: 2;
-  clip-path: polygon(10% 0%, 90% 0%, 100% 30%, 90% 100%, 10% 100%, 0% 70%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-/* css for discound banner on imagen end */
 .custom-img {
   width: 100%;
   height: 250px;
@@ -1312,18 +1296,21 @@ h3.section-heading {
   color: #000 !important;
   background: linear-gradient(
     to right,
-    rgba(208, 239, 255, 0.4) 0%,
-    rgba(208, 239, 255, 1) 20%,
-    rgba(208, 239, 255, 1) 80%,
-    rgba(208, 239, 255, 0.4) 100%
+    rgb(251, 248, 248) 0%,
+    rgba(208, 239, 255, 1) 100%,
+    rgb(191, 214, 245) 100%,
+    rgb(245, 248, 249) 100%
   );
-  padding: 8px 16px;
-  width: 100%;
+  padding:  8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.3s ease;
 }
 .nav-link.active:hover,
 .dropdown-item.active:hover {
-  color: #000 !important; /* Force black text */
+  color: #000 !important;
+   /* Force black text */
 }
 /* -------------------- 4th Segment: Responsive Adjustments -------------------- */
 
