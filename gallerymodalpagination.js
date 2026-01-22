@@ -79,11 +79,16 @@ else if (path.includes("chandeliers"))
 else if (path.includes("tabletopitem")) {
   basePath = "/Images/Product Images/HomeDecor/TableTopItems/";
   const fileNames = [
-    "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop4.jpg", "tabletop3.jpg", "tabletop2.jpg", "tabletop7.jpg", "tabletop6.jpg",
-     "tabletop7.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg","tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
-    "tabletop7.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
-     "tabletop3.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg", "tabletop1.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",
-      "tabletop4.jpg", "tabletop2.jpg", "tabletop3.jpg", "tabletop4.jpg", "tabletop5.jpg",];
+    "tabletopitem10.png","tabletopitem11.png","tabletopitem12.png","tabletopitem13.png","tabletopitem14.png","tabletopitem15.png",
+    "tabletopitem16.png","tabletopitem17.png","tabletopitem18.png","tabletopitem20.png","tabletopitem21.png",
+    "tabletopitem22.png","tabletopitem23.png","tabletopitem24.png","tabletopitem25.png","tabletopitem26.png","tabletopitem27.png",
+    "tabletopitem28.png","tabletopitem29.png","tabletopitem30.png","tabletopitem34.png","tabletopitem33.png","tabletopitem32.png",
+    "tabletopitem31.png","tabletopitem14.png","tabletopitem15.png","tabletopitem16.png","tabletopitem17.png","tabletopitem18.png",
+    "tabletopitem20.png","tabletopitem21.png","tabletopitem22.png","tabletopitem23.png","tabletopitem24.png","tabletopitem25.png",
+    "tabletopitem22.png","tabletopitem23.png","tabletopitem24.png","tabletopitem25.png","tabletopitem26.png","tabletopitem27.png",
+    "tabletopitem28.png","tabletopitem29.png","tabletopitem30.png","tabletopitem34.png","tabletopitem33.png","tabletopitem32.png",
+    "tabletopitem31.png","tabletopitem14.png","tabletopitem15.png","tabletopitem16.png","tabletopitem17.png","tabletopitem18.png",
+    "tabletopitem20.png","tabletopitem21.png","tabletopitem22.png","tabletopitem23.png","tabletopitem24.png","tabletopitem25.png"];
   images = fileNames.map(file => basePath + file);
 }
 
