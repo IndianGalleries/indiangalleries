@@ -236,6 +236,9 @@ header .logo-img {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 54, 129, 0.1);
 }
+#about-us {
+  font-family: "Inter", sans-serif;
+}
 
 #about-us h2 {
   color: #003681;
