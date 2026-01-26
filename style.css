@@ -179,28 +179,59 @@ header .logo-img {
 }
 
 /* carousel css start */
-.carousel-inner img {
-  width: 95%;
-  height: 81vh;
-  object-fit: cover;
+#carouselExampleControls {
+  overflow: hidden;
+   margin: 1vh;
+  padding: 0 !important;
 }
+
+/* Slide height control */
+.carousel-item {
+  height: calc(100vh - 70px); 
+  max-height: 850px;
+   position: relative;
+}
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* adjust transparency */
+  z-index: 1;
+}
+/* Image always fills slide */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; 
+  display: block;
+}
+
 .carousel-caption {
-  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
   text-align: center;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+   position: absolute;
+  z-index: 2;
 }
+
 .carousel-title {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem; 
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
-  color: #ffffff; 
-  animation: fadeInDown 1s;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease-in-out;
 }
+
 .carousel-subtext {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.8rem; 
-  color: #ffffff; 
-  animation: fadeInUp 1s;
+  font-size: clamp(1.1rem, 2vw, 1.8rem);
+  color: #ffffff;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 @keyframes fadeInDown {
@@ -222,6 +253,28 @@ header .logo-img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .carousel-caption {
+    bottom: 10%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 50vh;
+  }
+
+  .carousel-caption {
+    bottom: 8%;
   }
 }
 /* carousel css end */
@@ -464,66 +517,6 @@ header .logo-img {
   min-height: 350px;
   border: 2px solid #003681;
 }
-/* Contact Register Form Section */
-/* #contact-register {
-  padding: 60px 0;
-}
-
-.contact-illustration {
-  max-width: 80%;
-}
-
-.form-wrapper {
-  background: #ffffff;
-  border-radius: 15px;
-  border: 2px solid #00368122;
-}
-
-.form-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #003681;
-  margin-bottom: 20px;
-}
-
-.custom-input,
-.custom-textarea {
-  border-radius: 30px;
-  border: 2px solid #00368140;
-  padding: 12px 18px;
-  font-size: 1rem;
-  transition: 0.3s ease;
-  background: #f6f6f6;
-}
-
-.custom-input:focus,
-.custom-textarea:focus {
-  border-color: #003681;
-  box-shadow: 0 0 5px #00368166;
-}
-.custom-btn {
-  background: linear-gradient(90deg, #003681, #304e77);
-  border-radius: 30px;
-  padding: 12px;
-  font-weight: 600;
-  color: #fff;
-  font-size: 1.1rem;
-  border: none;
-  transition: 0.3s ease;
-}
-
-.custom-btn:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
-}
-@media (max-width: 768px) {
-  .form-title {
-    text-align: center;
-  }
-  .contact-illustration {
-    max-width: 60%;
-  }
-} */
 #about-company-contact .company-info {
   font-size: 1rem;
   color: #444;
