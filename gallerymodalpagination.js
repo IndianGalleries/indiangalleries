@@ -29,14 +29,13 @@ if (path.includes("tablelamps")) {
 } else if (path.includes("floorlamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Floor_lamps/";
   // const fileNames = Array(20).fill("floorLamps.jpg");
-  const fileNames = ["f1.JPG", "f2.JPG", "f3.JPG", "f4.JPG", "f5.JPG", "f6.JPG","floor1.JPG", "floor2.JPG", "floor3.JPG", "floor4.JPG", "floor5.JPG",
-    "floor6.JPG", "floor7.PNG", "floor8.PNG", "floor9.PNG", "floor10.PNG","floor11.PNG", "floor13.PNG","f1.JPG", "f2.JPG", "f3.JPG", "f4.JPG", "f5.JPG", "f6.JPG",
-    "floor1.JPG", "floor2.JPG", "floor3.JPG", "floor4.JPG", "floor5.JPG", "floor6.JPG", "floor7.PNG", "floor8.PNG", "floor9.PNG", "floor10.PNG",
-    "floor11.PNG", "floor13.PNG","f1.JPG", "f2.JPG", "f3.JPG", "f4.JPG", "f5.JPG", "f6.JPG",
-    "floor1.JPG", "floor2.JPG", "floor3.JPG", "floor4.JPG", "floor5.JPG", "floor6.JPG", "floor7.PNG", "floor8.PNG", "floor9.PNG", "floor10.PNG",
-    "floor11.PNG", "floor13.PNG","f1.JPG", "f2.JPG", "f3.JPG", "f4.JPG", "f5.JPG", "f6.JPG", "floor1.JPG", "floor2.JPG", "floor3.JPG", "floor4.JPG", "floor5.JPG",
-    "floor6.JPG", "floor7.PNG", "floor8.PNG", "floor9.PNG", "floor10.PNG",
-    "floor11.PNG", "floor13.PNG"
+  const fileNames = ["fl1.png", "fl2.png", "fl3.png", "fl4.png", "fl5.png", "fl6.png", "fl7.png", "fl8.png", "fl9.png", "fl10.png",
+    "fl11.png", "fl12.png", "fl13.png", "fl14.png", "fl15.png", "fl16.png", "fl17.png", "fl18.png", "fl19.JPG", "fl20.JPG","fl21.png", "fl22.JPG", "fl23.JPG", "fl24.JPG", "fl25.PNG",
+    "fl26.PNG", "fl27.jpg", "fl28.PNG", "fl29.PNG", "fl30.PNG","fl31.png", "fl32.png", "fl33.png", "fl34.png", "fl35.png","fl36.png", "fl37.png", "fl38.jpg", "fl39.png", "fl40.png",
+    "fl41.png", "fl42.png", "fl43.png", "fl44.jpg", "fl45.png","fl45.JPG","fl46.png", "fl47.jpg", "fl48.JPG", "fl49.jpg", "fl50.JPG","fl51.png", "fl52.png", "fl53.png", "fl54.png", "fl55.png","fl56.png",
+    
+    "fl1.png", "fl2.png", "fl3.png", "fl4.png", "fl5.png", "fl6.png", "fl7.png", "fl8.png", "fl9.png", "fl10.png","fl11.png", "fl12.png", "fl13.png", "fl14.png", "fl15.png", 
+    "fl16.png", "fl17.png","fl18.png"
   ];
   images = fileNames.map(file => basePath + file);
 
