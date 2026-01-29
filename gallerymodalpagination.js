@@ -66,12 +66,16 @@ else if (path.includes("chandeliers"))
 } else if (path.includes("outdoorlamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/OutDoor_lamps/";
   // const fileNames = Array(27).fill("outdoorLamps.jpg");
-  const fileNames = [
-    "O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg",
-    "O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", 
-    "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", 
-    "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", "O3.jpeg",
-     "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg","O1.jpeg", "O2.jpeg", "O3.jpeg", "O4.jpeg", "O5.jpeg", "OutDoorLamps.jpg"];
+  const fileNames = ["odl1.jpeg", "odl2.jpg", "odl3.png", "odl4.png", "odl5.jpg", "odl6.png", "odl7.jpg", "odl8.png", "odl9.png", "odl10.jpg",
+    "odl11.jpg", "odl12.png", "odl13.png", "odl14.png", "odl15.jpg", "odl16.png", "odl17.png", "odl18.png", "odl19.png", "odl20.png",
+    "odl21.png", "odl22.png", "odl23.png", "odl24.png", "odl25.png", "odl26.png", "odl27.png","odl28.jpeg", "odl29.jpeg","odl30.jpg",
+    "odl31.png", "odl32.jpg",
+
+    "odl1.jpeg", "odl2.jpg", "odl3.png", "odl4.png", "odl5.jpg", "odl6.png", "odl7.jpg", "odl8.png", "odl9.png", "odl10.jpg",
+    "odl11.jpg", "odl12.png", "odl13.png", "odl14.png", "odl15.jpg", "odl16.png", "odl17.png", "odl18.png", "odl19.png", "odl20.png",
+    "odl21.png", "odl22.png", "odl23.png", "odl24.png", "odl25.png", "odl26.png", "odl27.png","odl28.jpeg", "odl29.jpeg","odl30.jpg",
+    "odl31.png", "odl32.jpg", "odl1.jpeg", "odl2.jpg", "odl3.png", "odl4.png", "odl5.jpg", "odl6.png", "odl7.jpg", "odl8.png", "odl9.png", "odl10.jpg",
+    "odl11.jpg"];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("tabletopitem")) {
@@ -181,20 +185,15 @@ else if (path.includes("rural_handicrafts")) {
 }
 else if (path.includes("metalliccolorswatches")) {
   basePath = "/Images/Product Images/MetallicColorSwatches/";
-  const fileNames = [
-    "metalliccolorswatches6.png",  "metalliccolorswatches1.jpeg", "metalliccolorswatches3.jpeg","metalliccolorswatches4.png",
-    "metalliccolorswatches5.png","metalliccolorswatches7.png","metalliccolorswatches8.png","metalliccolorswatches9.png","metalliccolorswatches10.png",
-    "metalliccolorswatches11.png",  "metalliccolorswatches6.png",  "metalliccolorswatches1.jpeg", "metalliccolorswatches3.jpeg","metalliccolorswatches4.png",
-    "metalliccolorswatches5.png","metalliccolorswatches7.png","metalliccolorswatches8.png","metalliccolorswatches9.png","metalliccolorswatches10.png",
-    "metalliccolorswatches11.png",  "metalliccolorswatches6.png",  "metalliccolorswatches1.jpeg", "metalliccolorswatches3.jpeg","metalliccolorswatches4.png",
-    "metalliccolorswatches5.png","metalliccolorswatches7.png","metalliccolorswatches8.png","metalliccolorswatches9.png","metalliccolorswatches10.png",
-    "metalliccolorswatches11.png",  "metalliccolorswatches6.png",  "metalliccolorswatches1.jpeg", "metalliccolorswatches3.jpeg","metalliccolorswatches4.png",
-    "metalliccolorswatches5.png","metalliccolorswatches7.png","metalliccolorswatches8.png","metalliccolorswatches9.png","metalliccolorswatches10.png",
-    "metalliccolorswatches11.png",  "metalliccolorswatches6.png",  "metalliccolorswatches1.jpeg", "metalliccolorswatches3.jpeg","metalliccolorswatches4.png",
-    "metalliccolorswatches5.png","metalliccolorswatches7.png","metalliccolorswatches8.png","metalliccolorswatches9.png","metalliccolorswatches10.png",
-    "metalliccolorswatches11.png",  "metalliccolorswatches6.png",  "metalliccolorswatches1.jpeg", "metalliccolorswatches3.jpeg","metalliccolorswatches4.png",
-    "metalliccolorswatches5.png","metalliccolorswatches7.png","metalliccolorswatches8.png","metalliccolorswatches9.png","metalliccolorswatches10.png",
-    "metalliccolorswatches11.png"];
+  const fileNames = ["ms1.png", "ms2.png", "ms3.png", "ms4.png", "ms5.png", "ms6.png", "ms7.png", "ms8.png", "ms9.png", "ms10.png",
+    "ms11.png", "ms12.png", "ms13.png", "ms14.png", "ms16.png", "ms17.png", "ms18.png", "ms19.png", "ms20.png",
+    "ms21.png", "ms22.png", "ms23.png", "ms24.png", "ms25.png", "ms26.png", "ms27.png", "ms28.png", "ms29.png", "ms30.png",
+    "ms31.png", "ms32.png", "ms33.png", "ms34.png", "ms35.png", "ms36.png", "ms37.png", "ms38.png", "ms39.png", "ms40.png",
+
+    "ms1.png", "ms2.png", "ms3.png", "ms4.png", "ms5.png", "ms6.png", "ms7.png", "ms8.png", "ms9.png", "ms10.png",
+    "ms11.png", "ms12.png", "ms13.png", "ms14.png", "ms16.png", "ms17.png", "ms18.png", "ms19.png", "ms20.png",
+    "ms21.png", "ms22.png", "ms23.png", "ms24.png", "ms25.png", "ms26.png", "ms27.png", "ms28.png", "ms29.png", "ms30.png","ms31.png", "ms32.png",
+   ];
   images = fileNames.map(file => basePath + file);
 }
 // Pagination setup
