@@ -94,28 +94,28 @@ else if (path.includes("tabletopitem")) {
 
 else if (path.includes("flowervases")) {
   basePath = "/Images/Product Images/HomeDecor/FlowerVases/";
-  const fileNames = [
-    "flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg","flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg","flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg","flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg", "flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg"];
+  const fileNames = ["fv1.png", "fv2.png", "fv3.png", "fv4.png", "fv5.png", "fv6.png", "fv7.png", "fv8.png", "fv9.png", "fv10.png",
+    "fv11.png", "fv12.png", "fv13.png", "fv14.png", "fv15.png", "fv16.png", "fv17.jpg", "fv18.jpg", "fv19.jpg", "fv20.png",
+    "fv21.png", "fv22.png", "fv23.png", "fv24.png", "fv25.png", "fv26.png", "fv27.png", "fv28.png", "fv29.png", "fv30.png",
+    "fv31.png", "fv32.png", "fv33.png", "fv34.png", "fv35.png", "fv36.png", "fv37.png", "fv38.png", "fv39.png", "fv40.png",
+
+    "fv1.png", "fv2.png", "fv3.png", "fv4.png", "fv5.png", "fv6.png", "fv7.png", "fv8.png", "fv9.png", "fv10.png",
+    "fv11.png", "fv12.png", "fv13.png", "fv14.png", "fv15.png", "fv16.png", "fv17.jpg", "fv18.jpg", "fv19.jpg", "fv20.png",
+    "fv21.png", "fv22.png", "fv23.png", "fv24.png", "fv25.png", "fv26.png", "fv27.png", "fv28.png", "fv29.png", "fv30.png","fv31.png", "fv32.png",
+    "fv33.png", "fv41.png", "fv42.png"
+  ];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("walldecor")) {
   basePath = "/Images/Product Images/HomeDecor/WallDecor/";
-  const fileNames = [
-    "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor4.jpg", "walldecor5.jpeg",
-     "walldecor6.jpg", "walldecor7.jpg", "walldecor8.jpeg", "walldecor9.jpeg", "walldecor10.jpeg",
-     "walldecor11.jpeg", "walldecor12.jpeg", "walldecor13.jpeg", "walldecor14.jpeg","walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor4.jpg", "walldecor5.jpeg",
-     "walldecor6.jpg", "walldecor7.jpg", "walldecor8.jpeg", "walldecor9.jpeg", "walldecor10.jpeg",
-     "walldecor11.jpeg", "walldecor12.jpeg", "walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor4.jpg", "walldecor5.jpeg",
-     "walldecor6.jpg", "walldecor7.jpg", "walldecor8.jpeg", "walldecor9.jpeg", "walldecor10.jpeg",
-     "walldecor11.jpeg", "walldecor12.jpeg", "walldecor13.jpeg", "walldecor14.jpeg","walldecor1.jpg", "walldecor2.jpg", "walldecor3.jpg", "walldecor4.jpg", "walldecor5.jpeg",
-     "walldecor6.jpg", "walldecor7.jpg", "walldecor8.jpeg", "walldecor9.jpeg", "walldecor10.jpeg",
-     "walldecor11.jpeg", "walldecor12.jpeg"];
+  const fileNames = ["wd1.jpg", "wd2.jpg", "wd3.jpg", "wd4.jpg", "wd5.jpg","wd6.jpg", "wd7.jpg", "wd8.jpg", "wd9.jpg", "wd10.jpg",
+    "wd11.jpg", "wd12.jpg", "wd13.jpg", "wd14.jpg", "wd15.jpg", "wd16.jpg", "wd17.jpg", "wd18.jpeg", "wd19.jpg", "wd20.jpg",
+    "wd21.JPG", "wd22.jpg", "wd23.png", "wd24.png", "wd25.png", "wd26.png", "wd27.JPG", "wd28.JPG", "wd29.JPG", "wd30.jpg","wd31.jpg",
+     "wd32.jpg", "wd33.jpg", "wd34.jpg", "wd35.JPG", "wd36.JPG", "wd37.jpg", "wd38.jpg", "wd39.jpg", "wd40.jpg","wd41.jpg", "wd42.jpg", "wd43.jpg", 
+     "wd44.jpg", "wd45.jpg", "wd46.jpg", "wd47.jpg", "wd48.jpg", "wd49.jpg", "wd50.jpg","wd51.jpg", "wd52.jpg", "wd53.jpg", "wd54.jpg", "wd55.jpg", "wd56.jpg",
+     "wd57.jpg", "wd58.jpg", "wd59.jpg", "wd60.jpg","wd61.jpg", "wd62.jpg", "wd63.jpg", "wd64.jpg", "wd65.jpg", "wd66.jpg", "wd67.jpg", "wd68.jpg", "wd69.jpg",
+      "wd70.jpg","wd71.jpg", "wd72.jpg", "wd73.jpg", "wd74.JPG", "wd75.JPG"];
   images = fileNames.map(file => basePath + file);
 }
 
