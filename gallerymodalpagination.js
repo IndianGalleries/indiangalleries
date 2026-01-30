@@ -94,13 +94,16 @@ else if (path.includes("tabletopitem")) {
 
 else if (path.includes("flowervases")) {
   basePath = "/Images/Product Images/HomeDecor/FlowerVases/";
-  const fileNames = [
-    "flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg","flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg","flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg","flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg", "flower1.jpg", "flower2.jpg", "flower3.jpg", "flower4.jpg", "flower5.jpg",
-     "flower6.jpg", "flower7.jpg", "flower8.jpg", "flower9.jpg", "flower10.jpg","flower11.jpg", "flower12.jpg"];
+  const fileNames = ["fv1.png", "fv2.png", "fv3.png", "fv4.png", "fv5.png", "fv6.png", "fv7.png", "fv8.png", "fv9.png", "fv10.png",
+    "fv11.png", "fv12.png", "fv13.png", "fv14.png", "fv15.png", "fv16.png", "fv17.jpg", "fv18.jpg", "fv19.jpg", "fv20.png",
+    "fv21.png", "fv22.png", "fv23.png", "fv24.png", "fv25.png", "fv26.png", "fv27.png", "fv28.png", "fv29.png", "fv30.png",
+    "fv31.png", "fv32.png", "fv33.png", "fv34.png", "fv35.png", "fv36.png", "fv37.png", "fv38.png", "fv39.png", "fv40.png",
+
+    "fv1.png", "fv2.png", "fv3.png", "fv4.png", "fv5.png", "fv6.png", "fv7.png", "fv8.png", "fv9.png", "fv10.png",
+    "fv11.png", "fv12.png", "fv13.png", "fv14.png", "fv15.png", "fv16.png", "fv17.jpg", "fv18.jpg", "fv19.jpg", "fv20.png",
+    "fv21.png", "fv22.png", "fv23.png", "fv24.png", "fv25.png", "fv26.png", "fv27.png", "fv28.png", "fv29.png", "fv30.png","fv31.png", "fv32.png",
+    "fv33.png", "fv41.png", "fv42.png"
+  ];
   images = fileNames.map(file => basePath + file);
 }
 
