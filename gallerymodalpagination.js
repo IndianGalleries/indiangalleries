@@ -112,7 +112,7 @@ else if (path.includes("walldecor")) {
   const fileNames = ["wd1.jpg", "wd2.jpg", "wd3.jpg", "wd4.jpg", "wd5.jpg","wd6.jpg", "wd7.jpg", "wd8.jpg", "wd9.jpg", "wd10.jpg",
     "wd11.jpg", "wd12.jpg", "wd13.jpg", "wd14.jpg", "wd15.jpg", "wd16.jpg", "wd17.jpg", "wd18.jpeg", "wd19.jpg", "wd20.jpg",
     "wd21.JPG", "wd22.jpg", "wd23.png", "wd24.png", "wd25.png", "wd26.png", "wd27.JPG", "wd28.JPG", "wd29.JPG", "wd30.jpg","wd31.jpg",
-     "wd32.jpg", "wd33.jpg", "wd34.jpg", "wd35.JPG", "wd36.JPG", "wd37.jpg", "wd38.jpg", "wd39.jpg", "wd40.jpg","wd41.jpg", "wd42.jpg", "wd43.jpg", 
+     "wd32.jpg", "wd33.jpg", "wd34.jpg", "wd35.JPG", "wd36.jpg", "wd37.jpg", "wd38.jpg", "wd39.jpg", "wd40.jpg","wd41.jpg", "wd42.jpg", "wd43.jpg", 
      "wd44.jpg", "wd45.jpg", "wd46.jpg", "wd47.jpg", "wd48.jpg", "wd49.jpg", "wd50.jpg","wd51.jpg", "wd52.jpg", "wd53.jpg", "wd54.jpg", "wd55.jpg", "wd56.jpg",
      "wd57.jpg", "wd58.jpg", "wd59.jpg", "wd60.jpg","wd61.jpg", "wd62.jpg", "wd63.jpg", "wd64.jpg", "wd65.jpg", "wd66.jpg", "wd67.jpg", "wd68.jpg", "wd69.jpg",
       "wd70.jpg","wd71.jpg", "wd72.jpg", "wd73.jpg", "wd74.JPG", "wd75.JPG"];
