@@ -4,7 +4,9 @@ const path = window.location.pathname.toLowerCase();
 
 if (path.includes("tablelamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Table_lamps/";
-  const fileNames = ["tbl1.png", "tbl2.png", "tbl3.png", "tbl4.png", "tbl5.png", "tbl6.png", "tbl7.png", "tbl8.png", "tbl9.png", "tbl10.png","tbl11.png", "tbl12.png", "tbl13.png", "tbl14.png", "tbl15.png",
+  const fileNames = ["a1.png", "a2.png", "a3.png", "a4.png", "a5.png", "a6.png", "a7.png", "a8.png", "a9.png", "a10.png","a11.png", "a12.png", "a13.png", "a14.png", "a15.png",
+    "a16.png", "a17.png", "a18.png", "a19.png", "a20.png","a21.png", "a22.png", "a23.png", "a24.png", "a25.png",    
+    "tbl1.png", "tbl2.png", "tbl3.png", "tbl4.png", "tbl5.png", "tbl6.png", "tbl7.png", "tbl8.png", "tbl9.png", "tbl10.png","tbl11.png", "tbl12.png", "tbl13.png", "tbl14.png", "tbl15.png",
     "tbl16.png", "tbl17.png", "tbl18.png", "tbl19.png", "tbl20.png","tbl21.png", "tbl22.png", "tbl23.png", "tbl24.png", "tbl25.png","tbl26.png", "tbl27.png", "tbl28.png", "tbl29.png", "tbl30.png",
     "tbl31.png", "tbl32.png", "tbl33.png", "tbl34.png", "tbl35.png","tbl36.png", "tbl37.png", "tbl38.png", "tbl39.png", "tbl40.png","tbl41.png", "tbl42.png", "tbl43.png", "tbl44.png", "tbl45.png","tbl46.png", "tbl47.png", "tbl48.png", "tbl49.png", "tbl50.png",
   "tbl51.png", "tbl52.png", "tbl53.png", "tbl54.png", "tbl55.png","tbl56.png", "tbl57.png", "tbl58.png", "tbl59.png", "tbl60.png","tbl61.png", "tbl62.png", "tbl63.png", "tbl64.png", "tbl65.png", "tbl66.png", "tbl67.png", "tbl68.png", "tbl69.png", "tbl70.png","tbl71.png", "tbl72.png", "tbl73.png", "tbl74.png", "tbl75.png",
@@ -15,18 +17,21 @@ if (path.includes("tablelamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Wall_Lamps/";
 
   // const fileNames = Array(23).fill("WallLamps.jpg");
-  const fileNames = ["wl1.png", "wl2.png", "wl3.png", "wl4.png", "wl5.png", "wl6.png", "wl7.png", "wl8.png", "wl9.png", "wl10.png", "wl11.png",
+  const fileNames = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "i.png", "j.png","k.png", "l.png", "m.png", "n.png", "o.png",
+    "p.png", "q.png", "r.png", "s.png", "t.png","u.png", "v.png", "w.png","x.png", "y.png",
+    "wl1.png", "wl2.png", "wl3.png", "wl4.png", "wl5.png", "wl6.png", "wl7.png", "wl8.png", "wl9.png", "wl10.png", "wl11.png",
     "wl12.png", "wl13.png", "wl14.png", "wl15.png", "wl16.png", "wl17.png", "wl18.png", "wl19.png", "wl20.png", "wl21.png", "wl22.png", "wl23.png",
     "wl24.png","wl25.png","wl26.png", "wl27.png", "wl28.JPG", "wl29.jpg", "wl30.jpg", "wl31.jpeg", "wl32.jpg", "wl33.jpeg", "wl34.jpg",
     "wl1.png", "wl2.png", "wl3.png", "wl4.png", "wl5.png", "wl6.png", "wl7.png", "wl8.png", "wl9.png", "wl10.png", "wl11.png",
-    "wl12.png", "wl13.png", "wl14.png", "wl15.png", "wl16.png", "wl17.png", "wl18.png", "wl19.png", "wl20.png", "wl21.png", "wl22.png", "wl23.png",
-    "wl24.png","wl25.png","wl26.png", "wl27.png", "wl28.JPG", "wl29.jpg", "wl30.jpg", "wl31.jpeg", "wl32.jpg", "wl33.jpeg", "wl34.jpg","wl8.png", "wl9.png"];
+    "wl12.png", "wl13.png", "wl14.png", "wl15.png", "wl16.png"];
   images = fileNames.map(file => basePath + file);
 } 
 else if (path.includes("floorlamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Floor_lamps/";
   // const fileNames = Array(20).fill("floorLamps.jpg");
-  const fileNames = ["flr1.png", "flr2.png", "flr3.png", "flr4.png", "flr5.png", "flr6.png", "flr7.png", "flr8.png", "flr9.png", "flr10.png","flr11.png","flr12.png",
+  const fileNames = ["a1.png", "a2.png", "a3.png", "a4.png", "a5.png", "a6.png", "a7.png", "a8.png", "a9.png", "a10.png","a11.png", "a12.png", "a13.png", "a14.png", "a15.png",
+    "a16.png", "a17.png", "a18.png", "a19.png", "a20.png","a21.png", "a22.png", "a23.png", "a24.png", "a25.png",
+    "flr1.png", "flr2.png", "flr3.png", "flr4.png", "flr5.png", "flr6.png", "flr7.png", "flr8.png", "flr9.png", "flr10.png","flr11.png","flr12.png",
     "flr13.png", "flr14.png", "flr15.png", "flr16.png", "flr17.png", "flr18.png", "flr19.png", "flr20.png","flr21.png", "flr22.png", "flr23.png", "flr24.png", "flr25.png",
     "flr26.png", "flr27.png", "flr28.png", "flr29.png", "flr30.png","flr31.png", "flr32.png", "flr33.png", "flr34.png", "flr35.png","flr36.png", "flr37.png", "flr38.png", "flr39.png", "flr40.png",
     "flr41.png", "flr42.png", "flr43.png", "flr44.png", "flr45.png","flr46.png", "flr47.png", "flr48.png", "flr49.png", "flr50.png","flr51.png", "flr52.png", "flr53.png", "flr54.png", "flr55.png",
@@ -37,23 +42,24 @@ else if (path.includes("floorlamps")) {
 else if (path.includes("chandeliers")) 
   {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Chandeliers/";
-  const fileNames = ["chn1.png", "chn2.png", "chn4.png", "chn5.png", "chn6.png", "chn7.png", "chn8.png", "chn9.png", "chn10.png",
-    "chn11.png", "chn12.png", "chn13.png", "chn14.png", "chn15.png","chn16.png", "chn17.png","chn18.png", "chn19.png","chn20.png", "chn21.png", "chn22.png", "chn23.png", "chn24.png", "chn25.png", "chn26.png", "chn27.png"
-  ,"chn28.png", "chn29.png", "chn30.png","chn31.png", "chn32.png", "chn33.png", "chn34.png", "chn35.png","chn36.png", "chn37.png", "chn39.png", "chn40.png",
+  const fileNames = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.PNG", "h.png", "i.png", "j.png","k.png", "l.png",
+     "chn13.png", "chn14.png", "chn15.png","chn16.png", "chn17.png","chn18.png", "chn19.png","chn20.png", "chn21.png", "chn22.png", "chn23.png", "chn24.png", "chn25.png", "chn27.png"
+  , "chn29.png", "chn30.png","chn31.png", "chn32.png", "chn33.png", "chn34.png","chn36.png", "chn37.png", "chn39.png", "chn40.png",
 "chn41.png", "chn42.png", "chn43.png", "chn44.png", "chn45.png","chn46.png","chn47.png", "chn48.png", "chn49.png", "chn50.png","chn51.png", "chn52.png", "chn53.png", "chn54.png", "chn55.png","chn56.png",
-"chn57.png", "chn58.png", "chn59.png", "chn60.png","chn61.png", "chn62.png", "chn63.png", "chn64.png", "chn65.png","chn66.png", "chn1.png", "chn2.png", "chn4.png", "chn5.png", "chn6.png", "chn7.png", "chn8.png", "chn9.png", "chn10.png","chn11.png","chn12.png"
+"chn57.png", "chn58.png", "chn59.png", "chn60.png","chn61.png", "chn62.png", "chn63.png", "chn64.png", "chn65.png","chn66.png", "chn1.png", "chn2.png", "chn4.png", "chn5.png", "chn6.png", "chn7.png", "chn8.png", 
+"chn9.png", "chn10.png","chn11.png","chn12.png","chn35.png","chn38.png"
 ];
    images = fileNames.map(file => basePath + file);
 } 
 else if (path.includes("pendants")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Pendants/";
   // const fileNames = Array(15).fill("Pendants.jpg");
-  const fileNames = ["pn1.png", "pn2.png", "pn3.png", "pn4.png", "pn5.png", "pn6.png", "pn7.png", "pn8.png", "pn9.png", "pn10.png","pn11.png", "pn12.png", "pn13.png", "pn14.png", "pn15.png",
+  const fileNames = ["a.png", "b.png", "c.png", "d.jpg", "e.jpg", "f.jpg", "g.jpeg", "h.jpg", "i.jpg", "j.png","k.png", "l.jpg", "m.jpg", "n.jpg", "o.jpg",
+    "p.JPG", "q.jpg", "r.jpg", "s.JPG", "t.png","u.png", "v.png", "w.png","x.png", "y.jpg","z.jpg","pn1.png", "pn2.png", "pn3.png", "pn4.png", "pn5.png", "pn6.png", "pn7.png", "pn8.png", "pn9.png", "pn10.png","pn11.png", "pn12.png", "pn13.png", "pn14.png", "pn15.png",
     "pn16.png", "pn17.png", "pn18.png", "pn19.png", "pn20.png","pn21.png", "pn22.png", "pn23.png", "pn24.png", "pn25.png","pn26.png", "pn27.png", "pn28.png", "pn29.png", "pn30.png",
-    "pn31.png", "pn32.png", "pn33.png", "pn34.png", "pn35.png","pn36.png", "pn37.png", "pn38.png", "pn39.png", "pn40.png","pn41.png", "pn42.png", "pn43.png", "pn44.png", "pn45.png","pn46.png", "pn47.png", "pn48.png", "pn49.png", "pn50.png",
+    "pn31.png", "pn32.png", "pn33.png", "pn34.png", "pn35.png","pn36.png", "pn37.png", "pn38.png", "pn39.png", "pn40.png","pn41.png", "pn42.png", "pn43.png", "pn44.png", "pn45.png","pn46.png", "pn47.png", "pn48.png", "pn49.jpg", "pn50.png",
   "pn51.png", "pn52.png", "pn53.png", "pn54.png", "pn55.png","pn56.png", "pn57.png", "pn59.png", "pn60.png","pn61.png", "pn62.png", "pn63.png", "pn64.png", "pn65.png",
-  "pn66.png", "pn67.png", "pn68.png", "pn69.png", "pn70.png","pn71.png", "pn72.png", "pn73.png", "pn74.png", "pn75.png","pn76.png", "pn77.png", "pn78.png", "pn79.png", "pn80.png","pn81.png", "pn82.png", "pn83.png", "pn84.png", "pn85.png", 
-  "pn86.png","pn87.png", "pn88.png", "pn89.png", "pn90.png", "pn91.png", "pn92.png", "pn93.png", "pn94.png", "pn8.png", "pn9.png", "pn10.png","pn11.png", "pn12.png", "pn13.png","pn14.png"
+  "pn66.png", "pn67.png", "pn68.png", "pn69.png", "pn70.png","pn71.png", "pn72.png", "pn73.png", "pn74.png", "pn75.png",
   ];
   images = fileNames.map(file => basePath + file);
 }
@@ -61,11 +67,12 @@ else if (path.includes("pendants")) {
   {
   basePath = "/Images/Product Images/Lamps_and_Lightening/OutDoor_lamps/";
   // const fileNames = Array(27).fill("outdoorLamps.jpg");
-  const fileNames = ["od1.png", "od2.png", "od3.png", "od4.png", "od5.png", "od6.png", "od7.png", "od8.png", "od9.png", "od10.png", "od12.png", "od14.png", "od15.png",
+  const fileNames = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "i.png", "j.png","k.png", "l.png", "m.png", "n.png", "o.png",
+    "p.png", "q.png", "r.png", "s.png", "t.png","u.png", "v.png", "w.png","x.png", "y.png",
+    "od1.png", "od2.png", "od3.png", "od4.png", "od5.png", "od6.png", "od7.png", "od8.png", "od9.png", "od10.png", "od12.png", "od14.png", "od15.png",
     "od16.png", "od18.png", "od19.png","od21.png", "od22.png", "od23.png", "od24.png", "od25.png","od26.png", "od27.png", "od28.png", "od29.png", "od30.png",
-    "od31.png", "od32.png", "od33.png", "od34.png", "od35.png","od36.png", "od37.png", "od38.png", "od39.png", "od40.png","od41.png", "od42.png", "od43.png", "od44.png", "od45.png","od46.png", "od47.png", "od48.png", "od49.png", "od50.png",
-  "od51.png", "od52.png", "od53.png", "od54.png", "od55.png","od56.png", "od57.png", "od58.png", "od59.png", "od60.png","od61.png", "od62.png", "od1.png", "od2.png", "od3.png", "od4.png", "od5.png", "od6.png", "od7.png", "od8.png", "od9.png", 
-  "od10.png","od11.png", "od12.png","od14.png", "od15.png","od16.png","od18.png","od19.png"
+    "od31.png", "od32.png", "od33.png", "od34.png", "od35.png","od36.png", "od37.png", "od38.png", "od39.png", "od40.png","od41.png", "od42.png", "od43.png",
+     "od44.png", "od45.png","od46.png", "od47.png", "od48.png", "od49.png", "od50.png","a.png", "b.png", "c.png", "d.png",
   ];
   images = fileNames.map(file => basePath + file);
 }
