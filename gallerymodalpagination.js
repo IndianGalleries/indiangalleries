@@ -175,10 +175,27 @@ else if (path.includes("metalliccolorswatches")) {
    ];
   images = fileNames.map(file => basePath + file);
 }
+
+else if (path.includes("fairtradeproducts")) {
+  basePath = "/Images/Product Images/Lamps_and_Lightening/FairTrade_Products/";
+  const fileNames = ["ft1.png", "ft2.png", "ft3.png", "ft4.png", "ft5.png", "ft6.png", "ft7.png", "ft8.png", "ft9.png", "ft10.png","ft11.png", "ft12.png", "ft13.png", "ft14.png", "ft15.png", "ft16.png", "ft17.png", "ft18.png", "ft19.png", "ft20.png",
+    "ft21.png", "ft22.png", "ft23.png", "ft24.png", "ft25.png", "ft26.png", "ft27.png", "ft28.png", "ft29.png", "ft30.png","ft31.png", "ft32.png","ft33.png", "ft34.png", "ft35.png", "ft36.png", "ft37.png", "ft38.png", "ft39.png", "ft40.png","ft41.png", "ft42.png", "ft43.png", "ft44.png","ft45.png",
+    "ft46.png", "ft47.png", "ft48.png", "ft49.png","ft50.png","ft51.png", "ft52.png", "ft53.png", "ft54.png", "ft55.png", "ft56.png", "ft57.png", "ft58.png", "ft59.png", "ft60.png","ft61.png", "ft62.png", "ft63.png", "ft64.png", "ft65.png", "ft66.png", "ft67.png", "ft68.png", "ft69.png", "ft70.png","ft71.png",
+     "ft72.png", "ft73.png", "ft74.png", "ft75.png","ft76.png", "ft77.png", "ft78.png", "ft79.png", "ft80.png","ft81.png", "ft82.png",      
+     "ft1.png", "ft2.png", "ft3.png", "ft4.png", "ft5.png", "ft6.png", "ft7.png", "ft8.png", "ft9.png", "ft10.png","ft11.png", "ft12.png", "ft13.png", "ft14.png", "ft15.png", "ft16.png","ft17.png", "ft18.png"
+   ];
+  images = fileNames.map(file => basePath + file);
+}
 // Pagination setup
 let currentPage = 0;
 const pageSize = 25;
-
+// ===== Shuffle Images Function =====
+function shuffleImages(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
 // ===== Render Gallery =====
 function renderGallery() {
   const gallery = document.getElementById('gallery');
@@ -275,4 +292,7 @@ function closeModal(event) {
   }
 }
 
-window.addEventListener("DOMContentLoaded", renderGallery);
+window.addEventListener("DOMContentLoaded", () => {
+  shuffleImages(images);   // Shuffle images on every refresh
+  renderGallery();         // Then render gallery
+});
