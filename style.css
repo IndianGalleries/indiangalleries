@@ -568,6 +568,11 @@ header .logo-img {
   font-weight: 600;
 }
 
+/* Move AI Assistant above WhatsApp */
+#retell-webcall-widget {
+  bottom: 140px !important;
+}
+
 /* contact css end */
 .whatsapp-icon,
 .back-to-top {
