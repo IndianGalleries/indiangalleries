@@ -6,10 +6,7 @@
    ============================================= */
 
 // ── CONFIG ─────────────────────────────────────
-// Replace with your deployed Apps Script Web App URL after setup
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyIntxjdwUHFQn-mHpqsMZfOXbGw-PtE7TOmeNjrNNTnX4wyxgpP9IcrfEia8Ejm25Qyw/exec";
-
-// Replace with your Google Business review link
 const GOOGLE_REVIEW_URL = "https://www.google.com";
 
 // ── STATE ──────────────────────────────────────
@@ -25,7 +22,6 @@ let npsScore = null;
 document.addEventListener("DOMContentLoaded", () => {
   initStarRatings();
   initNPS();
-  // Update Google review URL in DOM
   const reviewBtn = document.querySelector(".btn-google-review");
   if (reviewBtn) reviewBtn.href = GOOGLE_REVIEW_URL;
 });
@@ -38,25 +34,23 @@ function initStarRatings() {
     const stars = group.querySelectorAll("span");
 
     stars.forEach((star) => {
-      // Hover highlight
       star.addEventListener("mouseenter", () => {
         const val = parseInt(star.dataset.value);
         highlightStars(stars, val, "hovered");
       });
 
-      // Hover reset
       star.addEventListener("mouseleave", () => {
         clearStarClass(stars, "hovered");
         highlightStars(stars, ratings[field], "selected");
       });
 
-      // Click
       star.addEventListener("click", () => {
         const val = parseInt(star.dataset.value);
         ratings[field] = val;
         document.getElementById(field).value = val;
         clearStarClass(stars, "selected");
         highlightStars(stars, val, "selected");
+
         // Hide error
         const err = group.nextElementSibling?.nextElementSibling;
         if (err && err.classList.contains("rating-error")) {
@@ -102,9 +96,17 @@ function sanitize(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;")
-    .replace(/[<>]/g, "")
     .trim()
     .substring(0, 2000);
+}
+
+// ── MOBILE CLEANER (Handles +91, 91, 10 digits) ─────────────────────────────
+function cleanMobileNumber(value) {
+  let clean = value.replace(/\D/g, "");
+  if (clean.startsWith("91") && clean.length === 12) {
+    clean = clean.substring(2);
+  }
+  return clean;
 }
 
 // ── VALIDATE ────────────────────────────────────
@@ -120,10 +122,10 @@ function validateForm() {
     name.classList.remove("is-invalid");
   }
 
-  // Mobile
+  // Mobile (Improved: supports +91, 91, 10 digits)
   const mobile = document.getElementById("mobileNumber");
+  const cleanMobile = cleanMobileNumber(mobile.value);
   const mobilePattern = /^[6-9]\d{9}$/;
-  const cleanMobile = mobile.value.replace(/\D/g, "");
   if (!mobilePattern.test(cleanMobile)) {
     mobile.classList.add("is-invalid");
     valid = false;
@@ -131,7 +133,7 @@ function validateForm() {
     mobile.classList.remove("is-invalid");
   }
 
-  // Email (optional but validate format if filled)
+  // Email (optional)
   const email = document.getElementById("emailAddress");
   if (email.value.trim()) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -141,13 +143,23 @@ function validateForm() {
     } else {
       email.classList.remove("is-invalid");
     }
+  } else {
+    email.classList.remove("is-invalid");
   }
 
-  // Star ratings
+  // Invoice ID (Mandatory)
+  const invoice = document.getElementById("invoiceId");
+  if (!invoice.value.trim() || invoice.value.trim().length < 2) {
+    invoice.classList.add("is-invalid");
+    valid = false;
+  } else {
+    invoice.classList.remove("is-invalid");
+  }
+
+  // Star Ratings
   const ratingFields = ["productQuality", "packaging", "delivery", "overall"];
   ratingFields.forEach((field) => {
-    const group = document.getElementById(field + "Rating") ||
-      document.querySelector(`[data-field="${field}"]`);
+    const group = document.querySelector(`[data-field="${field}"]`);
     const errEl = group?.nextElementSibling?.nextElementSibling;
     if (!ratings[field]) {
       if (errEl && errEl.classList.contains("rating-error")) {
@@ -161,8 +173,8 @@ function validateForm() {
     }
   });
 
-  // NPS
-  if (npsScore === null) {
+  // NPS Score
+  if (npsScore === null || npsScore < 0 || npsScore > 10) {
     document.getElementById("npsError").classList.remove("d-none");
     valid = false;
   }
@@ -183,7 +195,6 @@ function validateForm() {
 
 // ── SUBMIT ──────────────────────────────────────
 async function submitFeedback() {
-  // Hide previous errors
   const formError = document.getElementById("formError");
   formError.classList.add("d-none");
 
@@ -194,18 +205,16 @@ async function submitFeedback() {
     return;
   }
 
-  // reCAPTCHA token
   let recaptchaToken = "";
   if (typeof grecaptcha !== "undefined") {
     recaptchaToken = grecaptcha.getResponse();
   }
 
-  // Collect data
   const payload = {
     fullName: sanitize(document.getElementById("fullName").value),
-    mobileNumber: sanitize(document.getElementById("mobileNumber").value.replace(/\D/g, "")),
+    mobileNumber: cleanMobileNumber(document.getElementById("mobileNumber").value),
     emailAddress: sanitize(document.getElementById("emailAddress").value),
-    orderId: sanitize(document.getElementById("orderId").value),
+    invoiceId: sanitize(document.getElementById("invoiceId").value),
     productQuality: ratings.productQuality,
     packaging: ratings.packaging,
     delivery: ratings.delivery,
@@ -218,28 +227,25 @@ async function submitFeedback() {
     userAgent: navigator.userAgent.substring(0, 250),
   };
 
-  // UI: loading state
+  // Loading state
   document.getElementById("submitText").classList.add("d-none");
   document.getElementById("submitSpinner").classList.remove("d-none");
   document.getElementById("submitBtn").disabled = true;
 
   try {
-    const response = await fetch(APPS_SCRIPT_URL, {
+    await fetch(APPS_SCRIPT_URL, {
       method: "POST",
-      mode: "no-cors", // Google Apps Script requires this
+      mode: "no-cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
 
-    // no-cors means we can't read response — show success anyway
     showSuccess(payload.overall);
   } catch (error) {
     console.error("Submission error:", error);
-    formError.textContent =
-      "There was an error submitting your feedback. Please try again or contact us directly.";
+    formError.textContent = "There was an error submitting your feedback. Please try again or contact us directly.";
     formError.classList.remove("d-none");
 
-    // Restore button
     document.getElementById("submitText").classList.remove("d-none");
     document.getElementById("submitSpinner").classList.add("d-none");
     document.getElementById("submitBtn").disabled = false;
@@ -252,7 +258,6 @@ function showSuccess(overallRating) {
   const successMsg = document.getElementById("successMessage");
   successMsg.classList.remove("d-none");
 
-  // Show Google review prompt only for high ratings
   if (overallRating >= 4) {
     document.getElementById("googleReviewPrompt").classList.remove("d-none");
   }
@@ -260,15 +265,62 @@ function showSuccess(overallRating) {
   successMsg.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
+// ── REAL-TIME VALIDATION ────────────────────────
+const mobileInput = document.getElementById("mobileNumber");
+mobileInput.addEventListener("input", function () {
+  this.value = this.value.replace(/\D/g, '');
+  const clean = cleanMobileNumber(this.value);
+  if (/^[6-9]\d{9}$/.test(clean)) {
+    this.classList.remove("is-invalid");
+  }
+});
+mobileInput.addEventListener("blur", function () {
+  const clean = cleanMobileNumber(this.value);
+  if (!/^[6-9]\d{9}$/.test(clean)) {
+    this.classList.add("is-invalid");
+  } else {
+    this.classList.remove("is-invalid");
+  }
+});
+
+const fullNameInput = document.getElementById("fullName");
+fullNameInput.addEventListener("input", function () {
+  if (this.value.trim().length >= 2) this.classList.remove("is-invalid");
+});
+fullNameInput.addEventListener("blur", function () {
+  if (this.value.trim().length < 2) this.classList.add("is-invalid");
+  else this.classList.remove("is-invalid");
+});
+
+const emailInput = document.getElementById("emailAddress");
+emailInput.addEventListener("input", function () {
+  this.classList.remove("is-invalid");
+});
+emailInput.addEventListener("blur", function () {
+  const email = this.value.trim();
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    this.classList.add("is-invalid");
+  } else {
+    this.classList.remove("is-invalid");
+  }
+});
+
+const invoiceInput = document.getElementById("invoiceId");
+invoiceInput.addEventListener("input", function () {
+  if (this.value.trim().length >= 2) this.classList.remove("is-invalid");
+});
+invoiceInput.addEventListener("blur", function () {
+  if (this.value.trim().length < 2) this.classList.add("is-invalid");
+  else this.classList.remove("is-invalid");
+});
+
 // ── RESET ───────────────────────────────────────
 function resetForm() {
-  // Reset ratings
   Object.keys(ratings).forEach((k) => (ratings[k] = 0));
   npsScore = null;
 
-  // Clear all inputs
-  ["fullName","mobileNumber","emailAddress","orderId",
-   "productQuality","packaging","delivery","overall","recommendScore"
+  ["fullName", "mobileNumber", "emailAddress", "invoiceId",
+   "productQuality", "packaging", "delivery", "overall", "recommendScore"
   ].forEach((id) => {
     const el = document.getElementById(id);
     if (el) el.value = "";
@@ -278,26 +330,28 @@ function resetForm() {
   document.getElementById("improvementSuggestions").value = "";
   document.getElementById("permissionGranted").checked = false;
 
-  // Reset star visuals
+  // Reset stars
   document.querySelectorAll(".star-rating span").forEach((s) => {
     s.classList.remove("selected", "hovered");
   });
 
-  // Reset NPS buttons
+  // Reset NPS
   document.querySelectorAll(".nps-btn").forEach((b) => b.classList.remove("selected"));
 
   // Reset reCAPTCHA
   if (typeof grecaptcha !== "undefined") grecaptcha.reset();
 
-  // Remove validation classes
+  // Clear all validation styles
   document.querySelectorAll(".is-invalid").forEach((el) => el.classList.remove("is-invalid"));
+  document.querySelectorAll(".rating-error").forEach((el) => el.classList.add("d-none"));
+  document.getElementById("npsError").classList.add("d-none");
+  document.getElementById("recaptchaError").classList.add("d-none");
 
-  // Restore form, hide success
+  // Restore UI
   document.getElementById("feedbackFormWrapper").classList.remove("d-none");
   document.getElementById("successMessage").classList.add("d-none");
   document.getElementById("googleReviewPrompt").classList.add("d-none");
 
-  // Restore button
   document.getElementById("submitText").classList.remove("d-none");
   document.getElementById("submitSpinner").classList.add("d-none");
   document.getElementById("submitBtn").disabled = false;
