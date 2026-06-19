@@ -284,36 +284,52 @@ mobileInput.addEventListener("blur", function () {
 });
 
 const fullNameInput = document.getElementById("fullName");
-fullNameInput.addEventListener("input", function () {
-  if (this.value.trim().length >= 2) this.classList.remove("is-invalid");
-});
-fullNameInput.addEventListener("blur", function () {
-  if (this.value.trim().length < 2) this.classList.add("is-invalid");
-  else this.classList.remove("is-invalid");
-});
+
+if (fullNameInput) {
+  fullNameInput.addEventListener("input", function () {
+    this.classList.remove("is-invalid");
+  });
+
+  fullNameInput.addEventListener("blur", function () {
+    if (this.value.trim().length < 2)
+      this.classList.add("is-invalid");
+    else
+      this.classList.remove("is-invalid");
+  });
+}
 
 const emailInput = document.getElementById("emailAddress");
-emailInput.addEventListener("input", function () {
-  this.classList.remove("is-invalid");
-});
-emailInput.addEventListener("blur", function () {
-  const email = this.value.trim();
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    this.classList.add("is-invalid");
-  } else {
+
+if (emailInput) {
+  emailInput.addEventListener("input", function () {
     this.classList.remove("is-invalid");
-  }
-});
+  });
+
+  emailInput.addEventListener("blur", function () {
+    const email = this.value.trim();
+
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      this.classList.add("is-invalid");
+    else
+      this.classList.remove("is-invalid");
+  });
+}
 
 const invoiceInput = document.getElementById("invoiceId");
-invoiceInput.addEventListener("input", function () {
-  if (this.value.trim().length >= 2) this.classList.remove("is-invalid");
-});
-invoiceInput.addEventListener("blur", function () {
-  if (this.value.trim().length < 2) this.classList.add("is-invalid");
-  else this.classList.remove("is-invalid");
-});
 
+if (invoiceInput) {
+  invoiceInput.addEventListener("input", function () {
+    if (this.value.trim().length >= 2)
+      this.classList.remove("is-invalid");
+  });
+
+  invoiceInput.addEventListener("blur", function () {
+    if (this.value.trim().length < 2)
+      this.classList.add("is-invalid");
+    else
+      this.classList.remove("is-invalid");
+  });
+}
 // ── RESET ───────────────────────────────────────
 function resetForm() {
   Object.keys(ratings).forEach((k) => (ratings[k] = 0));
