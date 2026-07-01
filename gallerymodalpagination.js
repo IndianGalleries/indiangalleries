@@ -197,18 +197,52 @@ function shuffleImages(array) {
   }
 }
 // ===== Render Gallery =====
+// ===== Category Label Map for ALT Text =====
+const categoryAltMap = {
+  tablelamps:           { label: "Handcrafted table lamp",         brand: "Indian Galleries" },
+  walllamps:            { label: "Artisan wall lamp",              brand: "Indian Galleries" },
+  floorlamps:           { label: "Handcrafted floor lamp",         brand: "Indian Galleries" },
+  chandeliers:          { label: "Luxury handcrafted chandelier",  brand: "Indian Galleries" },
+  pendants:             { label: "Artisan pendant light",          brand: "Indian Galleries" },
+  outdoorlamps:         { label: "Handcrafted outdoor lamp",       brand: "Indian Galleries" },
+  tabletopitem:         { label: "Decorative table top item",      brand: "Indian Galleries" },
+  flowervases:          { label: "Handcrafted flower vase",        brand: "Indian Galleries" },
+  walldecor:            { label: "Artisan wall décor piece",       brand: "Indian Galleries" },
+  handpainteditems:     { label: "Hand painted decorative item",   brand: "Indian Galleries" },
+  silverteacupset:      { label: "Silver tea cup set",             brand: "Indian Galleries" },
+  etagere:              { label: "Handcrafted etagere display shelf", brand: "Indian Galleries" },
+  trays:                { label: "Decorative handcrafted tray",    brand: "Indian Galleries" },
+  rural_handicrafts:    { label: "Rural handicraft piece",         brand: "Indian Galleries" },
+  metalliccolorswatches:{ label: "Metallic colour swatch",        brand: "Indian Galleries" },
+  fairtradeproducts:    { label: "Fair trade handcrafted product", brand: "Indian Galleries" },
+};
+
+function getCategoryAlt(index) {
+  const currentPath = window.location.pathname.toLowerCase();
+  for (const [key, value] of Object.entries(categoryAltMap)) {
+    if (currentPath.includes(key)) {
+      return `${value.label} ${index + 1} – ${value.brand}`;
+    }
+  }
+  return `Handcrafted home décor item ${index + 1} – Indian Galleries`;
+}
+
+// ===== Render Gallery =====
 function renderGallery() {
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = "";
 
   const start = currentPage * pageSize;
   const end = Math.min(start + pageSize, images.length);
-//new dynamic code for gallery
+
   for (let i = start; i < end; i++) {
+    const altText = getCategoryAlt(i);
+
     const img = document.createElement('img');
     img.src = images[i];
-    img.alt = `Gallery Item ${i + 1}`;
-    img.onclick = () => openModal(images[i]);
+    img.alt = altText;
+    img.loading = "lazy";
+    img.onclick = () => openModal(images[i], altText);
 
     const card = document.createElement('div');
     card.className = "gallery-card";
@@ -279,11 +313,19 @@ function changePage(step) {
 
   renderGallery();
 }
-function openModal(src) {
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImage");
-  modalImg.src = src;
-  modal.style.display = "flex";
+function openModal(src, altText) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+
+    if (!modal || !modalImg) {
+        console.error("Modal elements not found!");
+        return;
+    }
+
+    modal.classList.remove("wm-ignore");
+    modalImg.src = src;
+    modalImg.alt = altText || "Handcrafted product – Indian Galleries";
+    modal.style.display = "flex";
 }
 
 function closeModal(event) {

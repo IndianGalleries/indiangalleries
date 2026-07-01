@@ -30,14 +30,36 @@
         </div>
         <!-- Social Media -->
         <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="300">
-          <h5>Social Media</h5>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/_indian_galleries_" target="_blank" class="instagram"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/indian-galleries/" target="_blank" class="linkedin"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
+    <h5>Social Media</h5>
+
+    <div class="social-icons">
+
+        <a href="https://www.instagram.com/_indian_galleries_/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Follow Indian Galleries on Instagram"
+           class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/indian-galleries/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Follow Indian Galleries on LinkedIn"
+           class="linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@IndianGalleries22"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Subscribe to Indian Galleries on YouTube"
+           class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+</div>
         <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-delay="400">
           <div class="logo-items text-center" data-aos="zoom-in" data-aos-delay="500">
            <a href="index.html"> <img src="/Images/favicon-light.png" alt="Indian Galleries Logo"
@@ -50,7 +72,9 @@
           </div>
         </div>
       </div>
+      
     </div>
+
     <!-- Floating Icons (Optional) -->
     <div class="whatsapp-icon" onclick="openWhatsApp()" style="cursor: pointer;">
       <i class="fa-brands fa-whatsapp fa-2x"></i>
@@ -59,5 +83,13 @@
       <i class="fa-solid fa-arrow-up"></i>
     </div>
   </footer>
+  <div class="footer-bottom text-center py-2">
+      <p class="mb-0">
+        &copy; <span id="footer-year"></span> Indian Galleries. All Rights Reserved.
+      </p>
+    </div>
+    <script>
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
   </body>
   </html>

@@ -4,16 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flower Vases - Indian Galleries</title>
-  <!-- SEO Meta Description -->
-  <meta name="description" content="Explore Indian Galleries - Premium flower vases, handmade décor, and luxury home collections across India.">
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Flower Vases - Indian Galleries">
-  <meta property="og:description" content="Explore our collection of premium flower vases, home décor, and handicrafts.">
-  <meta property="og:image" content="https://www.indiangalleries.net/Images/favicon-light.png">
-  <meta property="og:url" content="https://www.indiangalleries.net/flowervases.html">
-  <meta property="og:type" content="website">
-  <link rel="icon" id="favicon"  type="image/png" href="/Images/favicon-light.png" />
+   <!-- Primary SEO Meta -->
+  <title>Handcrafted Flower Vases | Indian Galleries – Artisan Decorative Vases India</title>
+  <meta name="description" content="Explore handcrafted flower vases from Indian Galleries, Moradabad. Artisan brass, metal &amp; ceramic vases for home, hotel &amp; gifting — ethically made in India." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Indian Galleries" />
+  <meta name="theme-color" content="#8b6914" />
+  <link rel="canonical" href="https://www.indiangalleries.net/flowervases.html" />
+ 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Indian Galleries" />
+  <meta property="og:title" content="Handcrafted Flower Vases | Indian Galleries" />
+  <meta property="og:description" content="Artisan-made decorative vases from Moradabad craftsmen. Brass, metal &amp; ceramic flower vases for home &amp; hospitality décor." />
+  <meta property="og:image" content="https://www.indiangalleries.net/Images/flowervases-og-cover.jpg" />
+  <meta property="og:image:alt" content="Handcrafted brass and metal flower vases by Indian Galleries artisans" />
+  <meta property="og:url" content="https://www.indiangalleries.net/flowervases.html" />
+ 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Handcrafted Flower Vases | Indian Galleries" />
+  <meta name="twitter:description" content="Beautiful artisan flower vases handcrafted in Moradabad. Brass, metal &amp; ceramic styles for every interior." />
+  <meta name="twitter:image" content="https://www.indiangalleries.net/Images/flowervases-og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Artisan decorative flower vases from Indian Galleries, Moradabad" />
+ 
+  <!-- Favicon -->
+  <link rel="icon" id="favicon" type="image/png" href="/Images/favicon-light.png" />
+ 
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.indiangalleries.net/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Flower Vases", "item": "https://www.indiangalleries.net/flowervases.html" }
+    ]
+  }
+  </script>
+ 
+  <!-- Structured Data: CollectionPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Handcrafted Flower Vases – Indian Galleries",
+    "description": "Explore handcrafted flower vases from Indian Galleries, Moradabad. Artisan brass, metal & ceramic vases for home, hotel & gifting — ethically made in India.",
+    "url": "https://www.indiangalleries.net/flowervases.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Indian Galleries",
+      "url": "https://www.indiangalleries.net",
+      "logo": { "@type": "ImageObject", "url": "https://www.indiangalleries.net/Images/favicon-light.png" }
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -21,6 +67,7 @@
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="gallerypagination.css" />
+  <link rel="stylesheet" href="watermark.css">
 </head>
 <body>
 <!--Header will be loaded here -->
@@ -35,10 +82,26 @@
       </div>
     </div>
   </section>
+ 
   <!-- Gallery Section -->
-  <section class="gallery-section">
-    <h2 class="gallery-title" data-aos="zoom-in">Flower Vases</h2>
-    <div class="gallery-grid" id="gallery" ></div>
+  <section class="gallery-section" aria-labelledby="flowervases-heading">
+    <h1 class="gallery-title" id="flowervases-heading" data-aos="zoom-in">
+      Handcrafted Flower Vases
+    </h1>
+ 
+    <!-- SEO Introductory Content -->
+    <div class="container mb-4" data-aos="fade-up">
+      <p class="text-center" style="max-width:720px; margin:0 auto; font-size:1.05rem; color:inherit;">
+        Our handcrafted flower vases are lovingly crafted by skilled artisans in Moradabad, India, using brass, metal, and ceramic to produce decorative vases that bring elegance to any home, hotel lobby, or gifting occasion. Each vase reflects centuries of Indian craft heritage, with intricate finishes and unique silhouettes that make every piece a conversation starter. Pair them with our
+        <a href="tabletopitem.html" title="Decorative Table Top Items – Indian Galleries" class="seo-link">decorative table top items</a>,
+        <a href="walldecor.html" title="Handcrafted Wall Décor – Indian Galleries" class="seo-link">artisan wall décor</a>, or
+        <a href="trays.html" title="Decorative Handcrafted Trays – Indian Galleries" class="seo-link">handcrafted decorative trays</a>
+        to complete your interior.
+      </p>
+    </div>
+ 
+    <div class="gallery-grid" id="gallery" aria-label="Handcrafted flower vases gallery"></div>
+
   <div class="pagination-wrapper">
     <nav aria-label="Gallery pagination" data-aos="zoom-in">
         <ul class="pagination">
@@ -49,9 +112,6 @@
   </section>
     <!-- Footer will be loaded here -->
     <div id="footer"></div>
-  <div class="footer-bottom text-center py-2">
-    <p class="mb-0">© All Right Indian Galleries Powered by Monika Maurya</p>
-  </div>
   <!-- Modal -->
   <div id="imageModal" class="image-modal" onclick="closeModal(event)">
     <span class="close-btn" onclick="closeModal(event)">&times;</span>
@@ -63,6 +123,7 @@
   <script src="gallerymodalpagination.js"></script>
   <script src="js.js"></script>
   <script src="commonheaderfooter.js"></script>  
+  <script src="watermark.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", function() {
     AOS.init({
