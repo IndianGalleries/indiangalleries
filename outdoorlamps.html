@@ -3,23 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Outdoor Lamps - Indian Galleries</title>
- <!-- SEO Meta Description -->
-  <meta name="description" content="Explore Indian Galleries - Premium lamps, lighting, and home décor collections across India.">
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Outdoor Lamps - Indian Galleries">
-  <meta property="og:description" content="Explore our collection of premium lamps, lighting, and home décor.">
-  <meta property="og:image" content="https://www.indiangalleries.net/Images/favicon-light.png">
-  <meta property="og:url" content="https://www.indiangalleries.net/outdoorlamps.html">
-  <meta property="og:type" content="website">
-  <link rel="icon" id="favicon"  type="image/png" href="/Images/favicon-light.png" />
+  <!-- Primary SEO Meta -->
+  <title>Outdoor Lamps | Indian Galleries – Handcrafted Exterior Lighting India</title>
+  <meta name="description" content="Shop durable handcrafted outdoor lamps from Indian Galleries. Weather-resistant artisan-made garden, patio and exterior lighting crafted in Moradabad. Enhance your outdoor spaces with elegance and quality." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Indian Galleries" />
+  <meta name="theme-color" content="#8b6914" />
+  <link rel="canonical" href="https://www.indiangalleries.net/outdoorlamps.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Indian Galleries" />
+  <meta property="og:title" content="Outdoor Lamps | Indian Galleries" />
+  <meta property="og:description" content="Rugged yet elegant handcrafted outdoor lamps by Moradabad artisans. Perfect for gardens, terraces, and outdoor living areas." />
+  <meta property="og:image" content="https://www.indiangalleries.net/Images/outdoorlamps-og-cover.jpg" />
+  <meta property="og:image:alt" content="Handcrafted outdoor lamps collection at Indian Galleries" />
+  <meta property="og:url" content="https://www.indiangalleries.net/outdoorlamps.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Outdoor Lamps | Indian Galleries" />
+  <meta name="twitter:description" content="Weatherproof handcrafted outdoor lighting from India. Garden & exterior lamps for beautiful outdoor spaces." />
+  <meta name="twitter:image" content="https://www.indiangalleries.net/Images/outdoorlamps-og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Handcrafted outdoor lamps collection at Indian Galleries" />
+
+  <!-- Favicon -->
+  <link rel="icon" id="favicon" type="image/png" href="/Images/favicon-light.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />  
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="gallerypagination.css" />
+  <link rel="stylesheet" href="watermark.css" />
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.indiangalleries.net/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Outdoor Lamps", "item": "https://www.indiangalleries.net/outdoorlamps.html" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: CollectionPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Outdoor Lamps",
+    "description": "Shop durable handcrafted outdoor lamps from Indian Galleries. Weather-resistant artisan-made garden, patio and exterior lighting crafted in Moradabad. Enhance your outdoor spaces with elegance and quality.",
+    "url": "https://www.indiangalleries.net/outdoorlamps.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Indian Galleries",
+      "url": "https://www.indiangalleries.net",
+      "logo": { "@type": "ImageObject", "url": "https://www.indiangalleries.net/Images/favicon-light.png" }
+    }
+  }
+  </script>
 </head>
 <body>
   <!--Header will be loaded here -->
@@ -36,14 +82,27 @@
       </div>
     </div>
   </section>
-<section class="gallery-section">
+<section class="gallery-section" aria-labelledby="outdoorlamps-heading">
   <!-- Gallery Title -->
-  <h2 class="gallery-title" data-aos="zoom-in">Outdoor Lamps</h2>
+  <h1 class="gallery-title" id="outdoorlamps-heading" data-aos="zoom-in">Handcrafted Outdoor Lamps</h1>
+
+  <!-- SEO Introductory Content -->
+  <div class="container mb-4" data-aos="fade-up">
+    <p class="text-center" style="max-width:720px; margin:0 auto; font-size:1.05rem; color:inherit;">
+      Bring beauty and functionality to your outdoor spaces with our collection of handcrafted outdoor lamps. Built to withstand weather conditions while maintaining elegant design, these pieces are crafted by skilled artisans in Moradabad for gardens, patios, and terraces.
+      Pair with our
+      <a href="floorlamps.html" title="Floor Lamps – Indian Galleries" class="seo-link">floor lamps</a>,
+      <a href="walllamps.html" title="Wall Lamps – Indian Galleries" class="seo-link">wall lamps</a>, or
+      <a href="pendants.html" title="Pendant Lights – Indian Galleries" class="seo-link">pendant lights</a>
+      to complete your lighting solution.
+    </p>
+  </div>
+
   <!-- Gallery Grid -->
-  <div class="gallery-grid" id="gallery" ></div>
+  <div class="gallery-grid" id="gallery" aria-label="Handcrafted outdoor lamps gallery"></div>
   <!-- Pagination -->
   <div class="pagination-wrapper">
-    <nav aria-label="Gallery pagination" data-aos="zoom-in">
+    <nav aria-label="Handcrafted outdoor lamps gallery pagination" data-aos="zoom-in">
         <ul class="pagination">
           <!-- Pagination items will be injected by JavaScript -->
         </ul>
@@ -52,14 +111,10 @@
 </section>
    <!-- Footer will be loaded here -->
     <div id="footer"></div>
-  <!-- Same footer with developer credit -->
-  <div class="footer-bottom text-center py-2">
-    <p class="mb-0">© All Right Indian Galleries Powered by Monika Maurya</p>
-  </div>
   <!-- Modal for Zoom -->
   <div id="imageModal" class="image-modal" onclick="closeModal(event)">
     <span class="close-btn" onclick="closeModal(event)">&times;</span>
-    <img id="modalImage" src="" alt="Zoomed Image" />
+    <img id="modalImage" src="" alt="Enlarged view of handcrafted outdoor lamp – Indian Galleries" />
   </div>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>  
@@ -67,6 +122,7 @@
   <script src="gallerymodalpagination.js"></script>
   <script src="js.js"></script>
   <script src="commonheaderfooter.js"></script>  
+  <script src="watermark.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", function() {
     AOS.init({

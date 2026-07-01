@@ -25,14 +25,17 @@ function openWhatsApp() {
 
 // Declare popup globally
 let popup; // will be assigned after DOM is loaded
-
 function openImagePopup(el) {
-  const imgSrc = el.querySelector("img").getAttribute("src");
-  const popupImg = document.getElementById("popupImage");
-  popupImg.src = imgSrc;
-  popup.style.display = "flex";
+    const clickedImage = el.querySelector("img");
+    const popupImg = document.getElementById("popupImage");   
+    popupImg.src = clickedImage.src;
+    popup.classList.remove("wm-ignore");
+    if (clickedImage.classList.contains("no-watermark") || 
+        el.classList.contains("no-watermark")) {
+        popup.classList.add("wm-ignore");
+    }
+    popup.style.display = "flex";
 }
-
 function closeImagePopup() {
   popup.style.display = "none";
 }
