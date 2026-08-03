@@ -4,75 +4,75 @@ const path = window.location.pathname.toLowerCase();
 
 if (path.includes("tablelamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Table_lamps/";
-  const fileNames = ["a1.png", "a2.png", "a3.png", "a4.png", "a5.png", "a6.png", "a7.png", "a8.png", "a9.png", "a10.png","a11.png", "a12.png", "a13.png", "a14.png", "a15.png",
-    "a16.png", "a17.png", "a18.png", "a19.png", "a20.png","a21.png", "a22.png", "a23.png", "a24.png", "a25.png",    
-    "tbl1.png", "tbl2.png", "tbl3.png", "tbl4.png", "tbl5.png", "tbl6.png", "tbl7.png", "tbl8.png", "tbl9.png", "tbl10.png","tbl11.png", "tbl12.png", "tbl13.png", "tbl14.png", "tbl15.png",
-    "tbl16.png", "tbl17.png", "tbl18.png", "tbl19.png", "tbl20.png","tbl21.png", "tbl22.png", "tbl23.png", "tbl24.png", "tbl25.png","tbl26.png", "tbl27.png", "tbl28.png", "tbl29.png", "tbl30.png",
-    "tbl31.png", "tbl32.png", "tbl33.png", "tbl34.png", "tbl35.png","tbl36.png", "tbl37.png", "tbl38.png", "tbl39.png", "tbl40.png","tbl41.png", "tbl42.png", "tbl43.png", "tbl44.png", "tbl45.png","tbl46.png", "tbl47.png", "tbl48.png", "tbl49.png", "tbl50.png",
-  "tbl51.png", "tbl52.png", "tbl53.png", "tbl54.png", "tbl55.png","tbl56.png", "tbl57.png", "tbl58.png", "tbl59.png", "tbl60.png","tbl61.png", "tbl62.png", "tbl63.png", "tbl64.png", "tbl65.png", "tbl66.png", "tbl67.png", "tbl68.png", "tbl69.png", "tbl70.png","tbl71.png", "tbl72.png", "tbl73.png", "tbl74.png", "tbl75.png",
-"tbl76.png", "tbl77.png", "tbl78.png", "tbl79.png", "tbl80.png","tbl81.png", "tbl82.png", "tbl83.png", "tbl84.png", "tbl85.png", "tbl86.png","tbl87.png", "tbl88.png", "tbl89.png", "tbl90.png", "tbl91.png", "tbl92.png", "tbl93.png", "tbl43.png", "tbl44.png", "tbl45.png","tbl46.png", "tbl47.png", "tbl48.png", "tbl49.png"];
+  const fileNames = ["a1.webp", "a2.webp", "a3.webp", "a4.webp", "a5.webp", "a6.webp", "a7.webp", "a8.webp", "a9.webp", "a10.webp","a11.webp", "a12.webp", "a13.webp", "a14.webp", "a15.webp",
+    "a16.webp", "a17.webp", "a18.webp", "a19.webp", "a20.webp","a21.webp", "a22.webp", "a23.webp", "a24.webp", "a25.webp",    
+    "tbl1.webp", "tbl2.webp", "tbl3.webp", "tbl4.webp", "tbl5.webp", "tbl6.webp", "tbl7.webp", "tbl8.webp", "tbl9.webp", "tbl10.webp","tbl11.webp", "tbl12.webp", "tbl13.webp", "tbl14.webp", "tbl15.webp",
+    "tbl16.webp", "tbl17.webp", "tbl18.webp", "tbl19.webp", "tbl20.webp","tbl21.webp", "tbl22.webp", "tbl23.webp", "tbl24.webp", "tbl25.webp","tbl26.webp", "tbl27.webp", "tbl28.webp", "tbl29.webp", "tbl30.webp",
+    "tbl31.webp", "tbl32.webp", "tbl33.webp", "tbl34.webp", "tbl35.webp","tbl36.webp", "tbl37.webp", "tbl38.webp", "tbl39.webp", "tbl40.webp","tbl41.webp", "tbl42.webp", "tbl43.webp", "tbl44.webp", "tbl45.webp","tbl46.webp", "tbl47.webp", "tbl48.webp", "tbl49.webp", "tbl50.webp",
+  "tbl51.webp", "tbl52.webp", "tbl53.webp", "tbl54.webp", "tbl55.webp","tbl56.webp", "tbl57.webp", "tbl58.webp", "tbl59.webp", "tbl60.webp","tbl61.webp", "tbl62.webp", "tbl63.webp", "tbl64.webp", "tbl65.webp", "tbl66.webp", "tbl67.webp", "tbl68.webp", "tbl69.webp", "tbl70.webp","tbl71.webp", "tbl72.webp", "tbl73.webp", "tbl74.webp", "tbl75.webp",
+"tbl76.webp", "tbl77.webp", "tbl78.webp", "tbl79.webp", "tbl80.webp","tbl81.webp", "tbl82.webp", "tbl83.webp", "tbl84.webp", "tbl85.webp", "tbl86.webp","tbl87.webp", "tbl88.webp", "tbl89.webp", "tbl90.webp", "tbl91.webp", "tbl92.webp", "tbl93.webp", "tbl43.webp", "tbl44.webp", "tbl45.webp","tbl46.webp", "tbl47.webp", "tbl48.webp", "tbl49.webp"];
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("walllamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Wall_Lamps/";
 
-  // const fileNames = Array(23).fill("WallLamps.jpg");
-  const fileNames = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "i.png", "j.png","k.png", "l.png", "m.png", "n.png", "o.png",
-    "p.png", "q.png", "r.png", "s.png", "t.png","u.png", "v.png", "w.png","x.png", "y.png",
-    "wl1.png", "wl2.png", "wl3.png", "wl4.png", "wl5.png", "wl6.png", "wl7.png", "wl8.png", "wl9.png", "wl10.png", "wl11.png",
-    "wl12.png", "wl13.png", "wl14.png", "wl15.png", "wl16.png", "wl17.png", "wl18.png", "wl19.png", "wl20.png", "wl21.png", "wl22.png", "wl23.png",
-    "wl24.png","wl25.png","wl26.png", "wl27.png", "wl28.JPG", "wl29.jpg", "wl30.jpg", "wl31.jpeg", "wl32.jpg", "wl33.jpeg", "wl34.jpg",
-    "wl1.png", "wl2.png", "wl3.png", "wl4.png", "wl5.png", "wl6.png", "wl7.png", "wl8.png", "wl9.png", "wl10.png", "wl11.png",
-    "wl12.png", "wl13.png", "wl14.png", "wl15.png", "wl16.png"];
+  // const fileNames = Array(23).fill("WallLamps.webp");
+  const fileNames = ["a.webp", "b.webp", "c.webp", "d.webp", "e.webp", "f.webp", "g.webp", "h.webp", "i.webp", "j.webp","k.webp", "l.webp", "m.webp", "n.webp", "o.webp",
+    "p.webp", "q.webp", "r.webp", "s.webp", "t.webp","u.webp", "v.webp", "w.webp","x.webp", "y.webp",
+    "wl1.webp", "wl2.webp", "wl3.webp", "wl4.webp", "wl5.webp", "wl6.webp", "wl7.webp", "wl8.webp", "wl9.webp", "wl10.webp", "wl11.webp",
+    "wl12.webp", "wl13.webp", "wl14.webp", "wl15.webp", "wl16.webp", "wl17.webp", "wl18.webp", "wl19.webp", "wl20.webp", "wl21.webp", "wl22.webp", "wl23.webp",
+    "wl24.webp","wl25.webp","wl26.webp", "wl27.webp", "wl28.webp", "wl29.webp", "wl30.webp", "wl31.webp", "wl32.webp", "wl33.webp", "wl34.webp",
+    "wl1.webp", "wl2.webp", "wl3.webp", "wl4.webp", "wl5.webp", "wl6.webp", "wl7.webp", "wl8.webp", "wl9.webp", "wl10.webp", "wl11.webp",
+    "wl12.webp", "wl13.webp", "wl14.webp", "wl15.webp", "wl16.webp"];
   images = fileNames.map(file => basePath + file);
 } 
 else if (path.includes("floorlamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Floor_lamps/";
-  // const fileNames = Array(20).fill("floorLamps.jpg");
-  const fileNames = ["a1.png", "a2.png", "a3.png", "a4.png", "a5.png", "a6.png", "a7.png", "a8.png", "a9.png", "a10.png","a11.png", "a12.png", "a13.png", "a14.png", "a15.png",
-    "a16.png", "a17.png", "a18.png", "a19.png", "a20.png","a21.png", "a22.png", "a23.png", "a24.png", "a25.png",
-    "flr1.png", "flr2.png", "flr3.png", "flr4.png", "flr5.png", "flr6.png", "flr7.png", "flr8.png", "flr9.png", "flr10.png","flr11.png","flr12.png",
-    "flr13.png", "flr14.png", "flr15.png", "flr16.png", "flr17.png", "flr18.png", "flr19.png", "flr20.png","flr21.png", "flr22.png", "flr23.png", "flr24.png", "flr25.png",
-    "flr26.png", "flr27.png", "flr28.png", "flr29.png", "flr30.png","flr31.png", "flr32.png", "flr33.png", "flr34.png", "flr35.png","flr36.png", "flr37.png", "flr38.png", "flr39.png", "flr40.png",
-    "flr41.png", "flr42.png", "flr43.png", "flr44.png", "flr45.png","flr46.png", "flr47.png", "flr48.png", "flr49.png", "flr50.png","flr51.png", "flr52.png", "flr53.png", "flr54.png", "flr55.png",
-    "flr56.png", "flr57.png", "flr58.png", "flr59.png", "flr60.png","flr61.png", "flr62.png", "flr63.png", "flr64.png", "flr65.png","flr66.png", "flr67.png", "flr68.png", "flr69.png", "flr70.png","flr71.png", "flr72.png", "flr73.png", "flr74.png", "flr75.png"
+  // const fileNames = Array(20).fill("floorLamps.webp");
+  const fileNames = ["a1.webp", "a2.webp", "a3.webp", "a4.webp", "a5.webp", "a6.webp", "a7.webp", "a8.webp", "a9.webp", "a10.webp","a11.webp", "a12.webp", "a13.webp", "a14.webp", "a15.webp",
+    "a16.webp", "a17.webp", "a18.webp", "a19.webp", "a20.webp","a21.webp", "a22.webp", "a23.webp", "a24.webp", "a25.webp",
+    "flr1.webp", "flr2.webp", "flr3.webp", "flr4.webp", "flr5.webp", "flr6.webp", "flr7.webp", "flr8.webp", "flr9.webp", "flr10.webp","flr11.webp","flr12.webp",
+    "flr13.webp", "flr14.webp", "flr15.webp", "flr16.webp", "flr17.webp", "flr18.webp", "flr19.webp", "flr20.webp","flr21.webp", "flr22.webp", "flr23.webp", "flr24.webp", "flr25.webp",
+    "flr26.webp", "flr27.webp", "flr28.webp", "flr29.webp", "flr30.webp","flr31.webp", "flr32.webp", "flr33.webp", "flr34.webp", "flr35.webp","flr36.webp", "flr37.webp", "flr38.webp", "flr39.webp", "flr40.webp",
+    "flr41.webp", "flr42.webp", "flr43.webp", "flr44.webp", "flr45.webp","flr46.webp", "flr47.webp", "flr48.webp", "flr49.webp", "flr50.webp","flr51.webp", "flr52.webp", "flr53.webp", "flr54.webp", "flr55.webp",
+    "flr56.webp", "flr57.webp", "flr58.webp", "flr59.webp", "flr60.webp","flr61.webp", "flr62.webp", "flr63.webp", "flr64.webp", "flr65.webp","flr66.webp", "flr67.webp", "flr68.webp", "flr69.webp", "flr70.webp","flr71.webp", "flr72.webp", "flr73.webp", "flr74.webp", "flr75.webp"
   ];
   images = fileNames.map(file => basePath + file);
 } 
 else if (path.includes("chandeliers")) 
   {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Chandeliers/";
-  const fileNames = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.PNG", "h.png", "i.png", "j.png","k.png", "l.png",
-     "chn13.png", "chn14.png", "chn15.png","chn16.png", "chn17.png","chn18.png", "chn19.png","chn20.png", "chn21.png", "chn22.png", "chn23.png", "chn24.png", "chn25.png", "chn27.png"
-  , "chn29.png", "chn30.png","chn31.png", "chn32.png", "chn33.png", "chn34.png","chn36.png", "chn37.png", "chn39.png", "chn40.png",
-"chn41.png", "chn42.png", "chn43.png", "chn44.png", "chn45.png","chn46.png","chn47.png", "chn48.png", "chn49.png", "chn50.png","chn51.png", "chn52.png", "chn53.png", "chn54.png", "chn55.png","chn56.png",
-"chn57.png", "chn58.png", "chn59.png", "chn60.png","chn61.png", "chn62.png", "chn63.png", "chn64.png", "chn65.png","chn66.png", "chn1.png", "chn2.png", "chn4.png", "chn5.png", "chn6.png", "chn7.png", "chn8.png", 
-"chn9.png", "chn10.png","chn11.png","chn12.png","chn35.png","chn38.png"
+  const fileNames = ["a.webp", "b.webp", "c.webp", "d.webp", "e.webp", "f.webp", "g.webp", "h.webp", "i.webp", "j.webp","k.webp", "l.webp",
+     "chn13.webp", "chn14.webp", "chn15.webp","chn16.webp", "chn17.webp","chn18.webp", "chn19.webp","chn20.webp", "chn21.webp", "chn22.webp", "chn23.webp", "chn24.webp", "chn25.webp", "chn27.webp"
+  , "chn29.webp", "chn30.webp","chn31.webp", "chn32.webp", "chn33.webp", "chn34.webp","chn36.webp", "chn37.webp", "chn39.webp", "chn40.webp",
+"chn41.webp", "chn42.webp", "chn43.webp", "chn44.webp", "chn45.webp","chn46.webp","chn47.webp", "chn48.webp", "chn49.webp", "chn50.webp","chn51.webp", "chn52.webp", "chn53.webp", "chn54.webp", "chn55.webp","chn56.webp",
+"chn57.webp", "chn58.webp", "chn59.webp", "chn60.webp","chn61.webp", "chn62.webp", "chn63.webp", "chn64.webp", "chn65.webp","chn66.webp", "chn1.webp", "chn2.webp", "chn4.webp", "chn5.webp", "chn6.webp", "chn7.webp", "chn8.webp", 
+"chn9.webp", "chn10.webp","chn11.webp","chn12.webp","chn35.webp","chn38.webp"
 ];
    images = fileNames.map(file => basePath + file);
 } 
 else if (path.includes("pendants")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Pendants/";
-  // const fileNames = Array(15).fill("Pendants.jpg");
-  const fileNames = ["a.png", "b.png", "c.png", "d.jpg", "e.jpg", "f.jpg", "g.jpeg", "h.jpg", "i.jpg", "j.png","k.png", "l.jpg", "m.jpg", "n.jpg", "o.jpg",
-    "p.JPG", "q.jpg", "r.jpg", "s.JPG", "t.png","u.png", "v.png", "w.png","x.png", "y.jpg","z.jpg","pn1.png", "pn2.png", "pn3.png", "pn4.png", "pn5.png", "pn6.png", "pn7.png", "pn8.png", "pn9.png", "pn10.png","pn11.png", "pn12.png", "pn13.png", "pn14.png", "pn15.png",
-    "pn16.png", "pn17.png", "pn18.png", "pn19.png", "pn20.png","pn21.png", "pn22.png", "pn23.png", "pn24.png", "pn25.png","pn26.png", "pn27.png", "pn28.png", "pn29.png", "pn30.png",
-    "pn31.png", "pn32.png", "pn33.png", "pn34.png", "pn35.png","pn36.png", "pn37.png", "pn38.png", "pn39.png", "pn40.png","pn41.png", "pn42.png", "pn43.png", "pn44.png", "pn45.png","pn46.png", "pn47.png", "pn48.png", "pn49.jpg", "pn50.png",
-  "pn51.png", "pn52.png", "pn53.png", "pn54.png", "pn55.png","pn56.png", "pn57.png", "pn59.png", "pn60.png","pn61.png", "pn62.png", "pn63.png", "pn64.png", "pn65.png",
-  "pn66.png", "pn67.png", "pn68.png", "pn69.png", "pn70.png","pn71.png", "pn72.png", "pn73.png", "pn74.png", "pn75.png",
+  // const fileNames = Array(15).fill("Pendants.webp");
+  const fileNames = ["a.webp", "b.webp", "c.webp", "d.webp", "e.webp", "f.webp", "g.webp", "h.webp", "i.webp", "j.webp","k.webp", "l.webp", "m.webp", "n.webp", "o.webp",
+    "p.webp", "q.webp", "r.webp", "s.webp", "t.webp","u.webp", "v.webp", "w.webp","x.webp", "y.webp","z.webp","pn1.webp", "pn2.webp", "pn3.webp", "pn4.webp", "pn5.webp", "pn6.webp", "pn7.webp", "pn8.webp", "pn9.webp", "pn10.webp","pn11.webp", "pn12.webp", "pn13.webp", "pn14.webp", "pn15.webp",
+    "pn16.webp", "pn17.webp", "pn18.webp", "pn19.webp", "pn20.webp","pn21.webp", "pn22.webp", "pn23.webp", "pn24.webp", "pn25.webp","pn26.webp", "pn27.webp", "pn28.webp", "pn29.webp", "pn30.webp",
+    "pn31.webp", "pn32.webp", "pn33.webp", "pn34.webp", "pn35.webp","pn36.webp", "pn37.webp", "pn38.webp", "pn39.webp", "pn40.webp","pn41.webp", "pn42.webp", "pn43.webp", "pn44.webp", "pn45.webp","pn46.webp", "pn47.webp", "pn48.webp", "pn49.webp", "pn50.webp",
+  "pn51.webp", "pn52.webp", "pn53.webp", "pn54.webp", "pn55.webp","pn56.webp", "pn57.webp", "pn59.webp", "pn60.webp","pn61.webp", "pn62.webp", "pn63.webp", "pn64.webp", "pn65.webp",
+  "pn66.webp", "pn67.webp", "pn68.webp", "pn69.webp", "pn70.webp","pn71.webp", "pn72.webp", "pn73.webp", "pn74.webp", "pn75.webp",
   ];
   images = fileNames.map(file => basePath + file);
 }
  else if (path.includes("outdoorlamps")) 
   {
   basePath = "/Images/Product Images/Lamps_and_Lightening/OutDoor_lamps/";
-  // const fileNames = Array(27).fill("outdoorLamps.jpg");
-  const fileNames = ["a.png", "b.png", "c.png", "d.png", "e.png", "f.png", "g.png", "h.png", "i.png", "j.png","k.png", "l.png", "m.png", "n.png", "o.png",
-    "p.png", "q.png", "r.png", "s.png", "t.png","u.png", "v.png", "w.png","x.png", "y.png",
-    "od1.png", "od2.png", "od3.png", "od4.png", "od5.png", "od6.png", "od7.png", "od8.png", "od9.png", "od10.png", "od12.png", "od14.png", "od15.png",
-    "od16.png", "od18.png", "od19.png","od21.png", "od22.png", "od23.png", "od24.png", "od25.png","od26.png", "od27.png", "od28.png", "od29.png", "od30.png",
-    "od31.png", "od32.png", "od33.png", "od34.png", "od35.png","od36.png", "od37.png", "od38.png", "od39.png", "od40.png","od41.png", "od42.png", "od43.png",
-     "od44.png", "od45.png","od46.png", "od47.png", "od48.png", "od49.png", "od50.png","a.png", "b.png", "c.png", "d.png",
+  // const fileNames = Array(27).fill("outdoorLamps.webp");
+  const fileNames = ["a.webp", "b.webp", "c.webp", "d.webp", "e.webp", "f.webp", "g.webp", "h.webp", "i.webp", "j.webp","k.webp", "l.webp", "m.webp", "n.webp", "o.webp",
+    "p.webp", "q.webp", "r.webp", "s.webp", "t.webp","u.webp", "v.webp", "w.webp","x.webp", "y.webp",
+    "od1.webp", "od2.webp", "od3.webp", "od4.webp", "od5.webp", "od6.webp", "od7.webp", "od8.webp", "od9.webp", "od10.webp", "od12.webp", "od14.webp", "od15.webp",
+    "od16.webp", "od18.webp", "od19.webp","od21.webp", "od22.webp", "od23.webp", "od24.webp", "od25.webp","od26.webp", "od27.webp", "od28.webp", "od29.webp", "od30.webp",
+    "od31.webp", "od32.webp", "od33.webp", "od34.webp", "od35.webp","od36.webp", "od37.webp", "od38.webp", "od39.webp", "od40.webp","od41.webp", "od42.webp", "od43.webp",
+     "od44.webp", "od45.webp","od46.webp", "od47.webp", "od48.webp", "od49.webp", "od50.webp","a.webp", "b.webp", "c.webp", "d.webp",
   ];
   images = fileNames.map(file => basePath + file);
 }
@@ -80,109 +80,112 @@ else if (path.includes("tabletopitem"))
    {
   basePath = "/Images/Product Images/HomeDecor/TableTopItems/";
   const fileNames = [
-    "tti10.png","tti11.png","tti12.png","tti13.png","tti14.png","tti15.png", "tti16.png","tti17.png","tti18.png","tti20.png","tti21.png","tti22.png","tti23.png","tti24.png","tti25.png","tti26.png","tti27.png","tti28.png","tti29.png","tti30.png","tti31.png","tti32.jpg",
-   "tti33.png","tti34.jpg","tti35.png","tti36.png","tti10.png","tti11.png","tti12.png","tti13.png","tti14.png","tti15.png", "tti16.png","tti17.png","tti18.png","tti20.png","tti21.png",
-    "tti22.png","tti23.png","tti24.png","tti25.png","tti26.png","tti27.png","tti28.png","tti29.png","tti30.png","tti31.png","tti32.jpg",
-   "tti33.png","tti34.jpg","tti35.png","tti36.png","tti10.png","tti11.png","tti12.png","tti13.png","tti14.png","tti15.png", "tti16.png","tti17.png","tti18.png","tti20.png","tti21.png",
-    "tti22.png","tti23.png","tti24.png","tti25.png","tti26.png","tti27.png","tti28.png","tti29.png","tti30.png", "tti10.png","tti11.png","tti12.png"];
+    "tti10.webp","tti11.webp","tti12.webp","tti13.webp","tti14.webp","tti15.webp", "tti16.webp","tti17.webp","tti18.webp","tti20.webp","tti21.webp","tti22.webp","tti23.webp","tti24.webp","tti25.webp","tti26.webp","tti27.webp","tti28.webp","tti29.webp","tti30.webp","tti31.webp","tti32.webp",
+   "tti33.webp","tti34.webp","tti35.webp","tti36.webp","tti10.webp","tti11.webp","tti12.webp","tti13.webp","tti14.webp","tti15.webp", "tti16.webp","tti17.webp","tti18.webp","tti20.webp","tti21.webp",
+    "tti22.webp","tti23.webp","tti24.webp","tti25.webp","tti26.webp","tti27.webp","tti28.webp","tti29.webp","tti30.webp","tti31.webp","tti32.webp",
+   "tti33.webp","tti34.webp","tti35.webp","tti36.webp","tti10.webp","tti11.webp","tti12.webp","tti13.webp","tti14.webp","tti15.webp", "tti16.webp","tti17.webp","tti18.webp","tti20.webp","tti21.webp",
+    "tti22.webp","tti23.webp","tti24.webp","tti25.webp","tti26.webp","tti27.webp","tti28.webp","tti29.webp","tti30.webp", "tti10.webp","tti11.webp","tti12.webp"];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("flowervases"))
    {
   basePath = "/Images/Product Images/HomeDecor/FlowerVases/";
-  const fileNames = ["fv1.png", "fv2.png", "fv3.png", "fv4.png", "fv5.png", "fv6.png", "fv7.png", "fv8.png", "fv9.png", "fv10.png", "fv11.png", "fv12.png", "fv13.png", "fv14.png", "fv15.png", "fv16.png", "fv17.jpg", "fv18.jpg", "fv19.jpg", "fv20.png",
-    "fv21.png", "fv22.png", "fv23.png", "fv24.png", "fv25.png", "fv26.png", "fv27.png", "fv28.png", "fv29.png", "fv30.png","fv31.png", "fv32.png", "fv33.png", "fv34.png", "fv35.png", "fv36.png", "fv37.png", "fv38.png", "fv39.png", "fv40.png",
-    "fv1.png", "fv2.png", "fv3.png", "fv4.png", "fv5.png", "fv6.png", "fv7.png", "fv8.png", "fv9.png", "fv10.png","fv11.png", "fv12.png", "fv13.png", "fv14.png", "fv15.png", "fv16.png", "fv17.jpg", "fv18.jpg", "fv19.jpg", "fv20.png",
-    "fv21.png", "fv22.png", "fv23.png", "fv24.png", "fv25.png", "fv26.png", "fv27.png", "fv28.png", "fv29.png", "fv30.png","fv31.png", "fv32.png",
-    "fv33.png", "fv41.png", "fv42.png"
+  const fileNames = ["fv1.webp", "fv2.webp", "fv3.webp", "fv4.webp", "fv5.webp", "fv6.webp", "fv7.webp", "fv8.webp", "fv9.webp", "fv10.webp", "fv11.webp", "fv12.webp", "fv13.webp", "fv14.webp", "fv15.webp", "fv16.webp", "fv17.webp", "fv18.webp", "fv19.webp", "fv20.webp",
+    "fv21.webp", "fv22.webp", "fv23.webp", "fv24.webp", "fv25.webp", "fv26.webp", "fv27.webp", "fv28.webp", "fv29.webp", "fv30.webp","fv31.webp", "fv32.webp", "fv33.webp", "fv34.webp", "fv35.webp", "fv36.webp", "fv37.webp", "fv38.webp", "fv39.webp", "fv40.webp",
+    "fv1.webp", "fv2.webp", "fv3.webp", "fv4.webp", "fv5.webp", "fv6.webp", "fv7.webp", "fv8.webp", "fv9.webp", "fv10.webp","fv11.webp", "fv12.webp", "fv13.webp", "fv14.webp", "fv15.webp", "fv16.webp", "fv17.webp", "fv18.webp", "fv19.webp", "fv20.webp",
+    "fv21.webp", "fv22.webp", "fv23.webp", "fv24.webp", "fv25.webp", "fv26.webp", "fv27.webp", "fv28.webp", "fv29.webp", "fv30.webp","fv31.webp", "fv32.webp",
+    "fv33.webp", "fv41.webp", "fv42.webp"
   ];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("walldecor")) {
   basePath = "/Images/Product Images/HomeDecor/WallDecor/";
-  const fileNames = ["wd1.jpg", "wd2.jpg", "wd3.jpg", "wd4.jpg", "wd5.jpg","wd6.jpg", "wd7.jpg", "wd8.jpg", "wd9.jpg", "wd10.jpg","wd11.jpg", "wd12.jpg", "wd13.jpg", "wd14.jpg", "wd15.jpg", "wd16.jpg", "wd17.jpg", "wd18.jpeg", "wd19.jpg", "wd20.jpg",
-    "wd21.JPG", "wd22.jpg", "wd23.png", "wd24.png", "wd25.png", "wd26.png", "wd27.JPG", "wd28.JPG", "wd29.JPG", "wd30.jpg","wd31.jpg","wd32.jpg", "wd33.jpg", "wd34.jpg", "wd35.JPG", "wd36.jpg", "wd37.jpg", "wd38.jpg", "wd39.jpg", "wd40.jpg","wd41.jpg", "wd42.jpg", "wd43.jpg", 
-     "wd44.jpg", "wd45.jpg", "wd46.jpg", "wd47.jpg", "wd48.jpg", "wd49.jpg", "wd50.jpg","wd51.jpg", "wd52.jpg", "wd53.jpg", "wd54.jpg", "wd55.jpg", "wd56.jpg","wd57.jpg", "wd58.jpg", "wd59.jpg", "wd60.jpg","wd61.jpg", "wd62.jpg", "wd63.jpg", "wd64.jpg", "wd65.jpg", "wd66.jpg", "wd67.jpg", "wd68.jpg", "wd69.jpg",
-      "wd70.jpg","wd71.jpg", "wd72.jpg", "wd73.jpg", "wd74.JPG", "wd75.JPG"];
+  const fileNames = ["wd1.webp", "wd2.webp", "wd3.webp", "wd4.webp", "wd5.webp","wd6.webp", "wd7.webp", "wd8.webp", "wd9.webp", "wd10.webp","wd11.webp", "wd12.webp", "wd13.webp", "wd14.webp", "wd15.webp", "wd16.webp", "wd17.webp", "wd18.webp", "wd19.webp", "wd20.webp",
+    "wd21.webp", "wd22.webp", "wd23.webp", "wd24.webp", "wd25.webp", "wd26.webp", "wd27.webp", "wd28.webp", "wd29.webp", "wd30.webp","wd31.webp","wd32.webp", "wd33.webp", "wd34.webp", "wd35.webp", "wd36.webp", "wd37.webp", "wd38.webp", "wd39.webp", "wd40.webp","wd41.webp", "wd42.webp", "wd43.webp", 
+     "wd44.webp", "wd45.webp", "wd46.webp", "wd47.webp", "wd48.webp", "wd49.webp", "wd50.webp","wd51.webp", "wd52.webp", "wd53.webp", "wd54.webp", "wd55.webp", "wd56.webp","wd57.webp", "wd58.webp", "wd59.webp", "wd60.webp","wd61.webp", "wd62.webp", "wd63.webp", "wd64.webp", "wd65.webp", "wd66.webp", "wd67.webp", "wd68.webp", "wd69.webp",
+      "wd70.webp","wd71.webp", "wd72.webp", "wd73.webp", "wd74.webp", "wd75.webp"];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("handpainteditems")) {
   basePath = "/Images/Product Images/HomeDecor/HandPaintedItems/";
-  const fileNames = ["hpi1.png", "hpi2.png", "hpi3.png", "hpi4.png", "hpi5.png", "hpi6.png", "hpi7.png", "hpi8.png", "hpi9.png", "hpi10.png","hpi11.png", "hpi12.png", "hpi13.png", "hpi14.png", "hpi15.png", "hpi16.png", "hpi17.png", "hpi18.png", "hpi19.png", "hpi20.png", 
-    "hpi21.png", "hpi22.png", "hpi23.png", "hpi24.png", "hpi25.png", "hpi26.png", "hpi27.png", "hpi28.png", "hpi29.png", "hpi30.png","hpi31.png", "hpi32.png","hpi33.png", "hpi34.png", "hpi35.png", "hpi36.png", "hpi37.png", "hpi38.png", "hpi39.png" , 
-    "hpi40.png","hpi41.png", "hpi42.png", "hpi43.png", "hpi44.png", "hpi45.png", "hpi46.png","hpi47.png", "hpi48.png", "hpi49.png", "hpi50.png","hpi51.png", "hpi52.png", "hpi53.png", "hpi54.png", "hpi55.png",
-    "hpi56.png", "hpi57.png", "hpi58.png", "hpi59.png", "hpi60.png","hpi61.png", "hpi62.png", "hpi63.png", "hpi64.png", "hpi65.png","hpi66.png", "hpi67.png", "hpi68.png", "hpi69.png", "hpi70.png","hpi71.png",
-     "hpi72.png", "hpi73.png", "hpi1.png", "hpi2.png"];
+  const fileNames = ["hpi1.webp", "hpi2.webp", "hpi3.webp", "hpi4.webp", "hpi5.webp", "hpi6.webp", "hpi7.webp", "hpi8.webp", "hpi9.webp", "hpi10.webp","hpi11.webp", "hpi12.webp", "hpi13.webp", "hpi14.webp", "hpi15.webp", "hpi16.webp", "hpi17.webp", "hpi18.webp", "hpi19.webp", "hpi20.webp", 
+    "hpi21.webp", "hpi22.webp", "hpi23.webp", "hpi24.webp", "hpi25.webp", "hpi26.webp", "hpi27.webp", "hpi28.webp", "hpi29.webp", "hpi30.webp","hpi31.webp", "hpi32.webp","hpi33.webp", "hpi34.webp", "hpi35.webp", "hpi36.webp", "hpi37.webp", "hpi38.webp", "hpi39.webp" , 
+    "hpi40.webp","hpi41.webp", "hpi42.webp", "hpi43.webp", "hpi44.webp", "hpi45.webp", "hpi46.webp","hpi47.webp", "hpi48.webp", "hpi49.webp", "hpi50.webp","hpi51.webp", "hpi52.webp", "hpi53.webp", "hpi54.webp", "hpi55.webp",
+    "hpi56.webp", "hpi57.webp", "hpi58.webp", "hpi59.webp", "hpi60.webp","hpi61.webp", "hpi62.webp", "hpi63.webp", "hpi64.webp", "hpi65.webp","hpi66.webp", "hpi67.webp", "hpi68.webp", "hpi69.webp", "hpi70.webp","hpi71.webp",
+     "hpi72.webp", "hpi73.webp", "hpi1.webp", "hpi2.webp"];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("silverteacupset")) 
   {
   basePath = "/Images/Product Images/LuxuryKitchenWares/Silver Ware/";
-  const fileNames = ["sw1.jpg", "sw2.jpg", "sw3.jpg", "sw4.jpg", "sw5.jpg", "sw6.jpg", "sw7.jpg", "sw8.jpg", "sw9.jpg", "sw10.jpg","sw11.jpg","sw12.jpg","sw13.jpg","sw14.jpg",
-    "sw15.JPG", "sw16.jpg", "sw17.JPG", "sw18.JPG", "sw19.JPG", "sw20.JPG",
-    "sw21.JPG", "sw22.JPG", "sw23.JPG", "sw24.JPG", "sw25.JPG", "sw26.JPG", "sw27.JPG", "sw28.JPG", "sw29.JPG", "sw30.JPG","sw31.JPG", "sw32.JPG",
-    "sw33.JPG", "sw34.JPG", "sw35.JPG", "sw36.JPG", "sw37.JPG", "sw38.JPG", "sw39.JPG", "sw40.JPG","sw41.JPG","sw42.jpg","sw43.jpg","sw44.jpg","sw45.jpg","sw46.jpg","sw47.jpg",
-    "sw48.jpg","sw49.jpg","sw50.jpg","sw51.jpg","sw52.jpg","sw53.jpg","sw54.jpg","sw55.JPG","sw56.JPG","sw57.JPG","sw58.JPG","sw59.JPG","sw60.JPG",
-    "sw61.JPG", "sw62.JPG", "sw63.JPG", "sw64.JPG", "sw65.JPG", "sw66.JPG", "sw67.JPG", "sw68.JPG", "sw69.JPG", "sw70.JPG","sw71.JPG", "sw72.JPG","sw73.JPG", "sw74.JPG", "sw75.JPG",
-     "sw76.JPG", "sw77.JPG", "sw78.JPG", "sw79.JPG", "sw80.JPG","sw81.JPG", "sw82.JPG", "sw83.jpg", "sw84.jpg", "sw85.jpg", "sw86.jpg","sw87.jpg","sw88.jpg","sw89.jpg",
-     "sw90.JPG","sw91.JPG","sw92.JPG","sw93.JPG","sw94.JPG","sw95.JPG","sw96.JPG","sw97.JPG","sw98.JPG","sw99.JPG","sw100.jpg"
+  const fileNames = ["sw1.webp", "sw2.webp", "sw3.webp", "sw4.webp", "sw5.webp", "sw6.webp", "sw7.webp", "sw8.webp", "sw9.webp", "sw10.webp","sw11.webp","sw12.webp","sw13.webp","sw14.webp",
+    "sw15.webp", "sw16.webp", "sw17.webp", "sw18.webp", "sw19.webp", "sw20.webp",
+    "sw21.webp", "sw22.webp", "sw23.webp", "sw24.webp", "sw25.webp", "sw26.webp", "sw27.webp", "sw28.webp", "sw29.webp", "sw30.webp","sw31.webp", "sw32.webp",
+    "sw33.webp", "sw34.webp", "sw35.webp", "sw36.webp", "sw37.webp", "sw38.webp", "sw39.webp", "sw40.webp","sw41.webp","sw42.webp","sw43.webp","sw44.webp","sw45.webp","sw46.webp","sw47.webp",
+    "sw48.webp","sw49.webp","sw50.webp","sw51.webp","sw52.webp","sw53.webp","sw54.webp","sw55.webp","sw56.webp","sw57.webp","sw58.webp","sw59.webp","sw60.webp",
+    "sw61.webp", "sw62.webp", "sw63.webp", "sw64.webp", "sw65.webp", "sw66.webp", "sw67.webp", "sw68.webp", "sw69.webp", "sw70.webp","sw71.webp", "sw72.webp","sw73.webp", "sw74.webp", "sw75.webp",
+     "sw76.webp", "sw77.webp", "sw78.webp", "sw79.webp", "sw80.webp","sw81.webp", "sw82.webp", "sw83.webp", "sw84.webp", "sw85.webp", "sw86.webp","sw87.webp","sw88.webp","sw89.webp",
+     "sw90.webp","sw91.webp","sw92.webp","sw93.webp","sw94.webp","sw95.webp","sw96.webp","sw97.webp","sw98.webp","sw99.webp","sw100.webp"
   ];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("etagere")) {
   basePath = "/Images/Product Images/LuxuryKitchenWares/Etagere/";
-  const fileNames = ["et1.png", "et2.png", "et3.png", "et4.png", "et5.png", "et6.png", "et7.png", "et8.png", "et9.png", "et10.png","et111.png", "et112.png", "et113.png", "et114.png", "et115.png", "et116.png", "et117.png", "et118.png", "et119.png", "et120.png",
-    "et121.png", "et122.png", "et123.png", "et124.png", "et125.png", "et126.png", "et127.png", "et128.png", "et129.png", "et130.png","et131.png", "et132.png", "et133.png",
-    "et1.png", "et2.png", "et3.png", "et4.png", "et5.png", "et6.png", "et7.png", "et8.png", "et9.png", "et10.png","et111.png", "et112.png", "et113.png", "et114.png", "et115.png", "et116.png", "et117.png", "et118.png", "et119.png", "et120.png",
-    "et121.png", "et122.png", "et123.png", "et124.png", "et125.png", "et126.png", "et127.png", "et128.png", "et129.png", "et130.png","et131.png", "et132.png", "et133.png","et1.png", "et2.png", "et3.png", "et4.png", "et5.png", "et6.png", "et7.png", "et8.png", "et9.png",
+  const fileNames = ["et1.webp", "et2.webp", "et3.webp", "et4.webp", "et5.webp", "et6.webp", "et7.webp", "et8.webp", "et9.webp", "et10.webp","et111.webp", "et112.webp", "et113.webp", "et114.webp", "et115.webp", "et116.webp", "et117.webp", "et118.webp", "et119.webp", "et120.webp",
+    "et121.webp", "et122.webp", "et123.webp", "et124.webp", "et125.webp", "et126.webp", "et127.webp", "et128.webp", "et129.webp", "et130.webp","et131.webp", "et132.webp", "et133.webp",
+    "et1.webp", "et2.webp", "et3.webp", "et4.webp", "et5.webp", "et6.webp", "et7.webp", "et8.webp", "et9.webp", "et10.webp","et111.webp", "et112.webp", "et113.webp", "et114.webp", "et115.webp", "et116.webp", "et117.webp", "et118.webp", "et119.webp", "et120.webp",
+    "et121.webp", "et122.webp", "et123.webp", "et124.webp", "et125.webp", "et126.webp", "et127.webp", "et128.webp", "et129.webp", "et130.webp","et131.webp", "et132.webp", "et133.webp","et1.webp", "et2.webp", "et3.webp", "et4.webp", "et5.webp", "et6.webp", "et7.webp", "et8.webp", "et9.webp",
   ];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("trays")) {
   basePath = "/Images/Product Images/LuxuryKitchenWares/Trays/";
-  const fileNames = ["tr1.png", "tr2.png", "tr3.png", "tr4.png", "tr5.png", "tr6.png", "tr7.png", "tr8.png", "tr9.png", "tr10.png","tr11.png", "tr12.png", "tr13.png", "tr14.png", "tr15.png", "tr16.png", "tr17.png", "tr18.png", "tr19.png", "tr20.png",
-    "tr21.png", "tr22.png", "tr23.png", "tr24.png", "tr25.png", "tr26.png", "tr27.png", "tr28.png", "tr29.png", "tr30.png","tr31.png", "tr32.png",
-    "tr33.png", "tr34.png", "tr35.png", "tr36.png", "tr37.png", "tr38.png", "tr39.png", "tr40.png","tr41.png", "tr42.png", "tr43.png", "tr44.png", "tr45.png", "tr46.png","tr47.png", "tr48.png", "tr49.png", "tr50.png","tr51.png", "tr52.png", "tr53.png", "tr54.png", "tr55.png", "tr56.png", "tr57.png", "tr58.png", "tr59.png",
-     "tr60.png","tr61.png", "tr62.png", "tr63.png", "tr64.png", "tr65.png","tr66.png", "tr67.png", "tr68.png", "tr69.png","tr70.png","tr71.png", "tr72.png", "tr73.png", "tr74.png", "tr75.png",
-    "tr76.png", "tr77.png", "tr78.png", "tr79.png", "tr80.png","tr81.png", "tr82.png", "tr83.png", "tr84.png", "tr85.png", 
-    "tr86.png","tr87.png", "tr88.png", "tr89.png", "tr90.png", "tr91.png", "tr92.png", "tr93.png", "tr94.png", "tr95.png", "tr96.png","tr97.png", "tr98.png", "tr99.png", "tr100.png"
+  const fileNames = ["tr1.webp", "tr2.webp", "tr3.webp", "tr4.webp", "tr5.webp", "tr6.webp", "tr7.webp", "tr8.webp", "tr9.webp", "tr10.webp","tr11.webp", "tr12.webp", "tr13.webp", "tr14.webp", "tr15.webp", "tr16.webp", "tr17.webp", "tr18.webp", "tr19.webp", "tr20.webp",
+    "tr21.webp", "tr22.webp", "tr23.webp", "tr24.webp", "tr25.webp", "tr26.webp", "tr27.webp", "tr28.webp", "tr29.webp", "tr30.webp","tr31.webp", "tr32.webp",
+    "tr33.webp", "tr34.webp", "tr35.webp", "tr36.webp", "tr37.webp", "tr38.webp", "tr39.webp", "tr40.webp","tr41.webp", "tr42.webp", "tr43.webp", "tr44.webp", "tr45.webp", "tr46.webp","tr47.webp", "tr48.webp", "tr49.webp", "tr50.webp","tr51.webp", "tr52.webp", "tr53.webp", "tr54.webp", "tr55.webp", "tr56.webp", "tr57.webp", "tr58.webp", "tr59.webp",
+     "tr60.webp","tr61.webp", "tr62.webp", "tr63.webp", "tr64.webp", "tr65.webp","tr66.webp", "tr67.webp", "tr68.webp", "tr69.webp","tr70.webp","tr71.webp", "tr72.webp", "tr73.webp", "tr74.webp", "tr75.webp",
+    "tr76.webp", "tr77.webp", "tr78.webp", "tr79.webp", "tr80.webp","tr81.webp", "tr82.webp", "tr83.webp", "tr84.webp", "tr85.webp", 
+    "tr86.webp","tr87.webp", "tr88.webp", "tr89.webp", "tr90.webp", "tr91.webp", "tr92.webp", "tr93.webp", "tr94.webp", "tr95.webp", "tr96.webp","tr97.webp", "tr98.webp", "tr99.webp", "tr100.webp"
   ];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("rural_handicrafts")) {
   basePath = "/Images/Product Images/RuralHandiCrafts/";
-  const fileNames = ["hc1.png", "hc2.png", "hc3.png", "hc4.png", "hc5.png", "hc6.png", "hc7.png", "hc8.png", "hc9.png", "hc10.png","hc11.png", "hc12.png", "hc13.png", "hc14.png", "hc15.png", "hc16.png", "hc17.png", "hc18.png", "hc19.png", "hc20.png",
-    "hc21.png", "hc22.png", "hc23.png", "hc24.png", "hc25.png", "hc26.png", "hc27.png", "hc28.png", "hc29.png", "hc30.png","hc31.png", "hc32.png",
-    "hc33.png", "hc34.png", "hc35.png", "hc36.png", "hc37.png", "hc38.png", "hc39.png", "hc40.png","hc41.png", "hc42.png", "hc43.png", "hc44.png", "hc45.png","hc1.png", "hc2.png", "hc3.png", "hc4.png", "hc5.png", "hc6.png", "hc7.png", "hc8.png", "hc9.png", "hc10.png","hc11.png", "hc12.png", "hc13.png", "hc14.png", "hc15.png", "hc16.png", "hc17.png", "hc18.png", "hc19.png", "hc20.png",
-    "hc21.png", "hc22.png", "hc23.png", "hc24.png", "hc25.png", "hc26.png", "hc27.png", "hc28.png", "hc29.png", "hc30.png"
+  const fileNames = ["hc1.webp", "hc2.webp", "hc3.webp", "hc4.webp", "hc5.webp", "hc6.webp", "hc7.webp", "hc8.webp", "hc9.webp", "hc10.webp","hc11.webp", "hc12.webp", "hc13.webp", "hc14.webp", "hc15.webp", "hc16.webp", "hc17.webp", "hc18.webp", "hc19.webp", "hc20.webp",
+    "hc21.webp", "hc22.webp", "hc23.webp", "hc24.webp", "hc25.webp", "hc26.webp", "hc27.webp", "hc28.webp", "hc29.webp", "hc30.webp","hc31.webp", "hc32.webp",
+    "hc33.webp", "hc34.webp", "hc35.webp", "hc36.webp", "hc37.webp", "hc38.webp", "hc39.webp", "hc40.webp","hc41.webp", "hc42.webp", "hc43.webp", "hc44.webp", "hc45.webp","hc1.webp", "hc2.webp", "hc3.webp", "hc4.webp", "hc5.webp", "hc6.webp", "hc7.webp", "hc8.webp", "hc9.webp", "hc10.webp","hc11.webp", "hc12.webp", "hc13.webp", "hc14.webp", "hc15.webp", "hc16.webp", "hc17.webp", "hc18.webp", "hc19.webp", "hc20.webp",
+    "hc21.webp", "hc22.webp", "hc23.webp", "hc24.webp", "hc25.webp", "hc26.webp", "hc27.webp", "hc28.webp", "hc29.webp", "hc30.webp"
   ];
   images = fileNames.map(file => basePath + file);
 }
 else if (path.includes("metalliccolorswatches")) {
   basePath = "/Images/Product Images/MetallicColorSwatches/";
-  const fileNames = ["ms1.png", "ms2.png", "ms3.png", "ms4.png", "ms5.png", "ms6.png", "ms7.png", "ms8.png", "ms9.png", "ms10.png",
-    "ms11.png", "ms12.png", "ms13.png", "ms14.png", "ms16.png", "ms17.png", "ms18.png", "ms19.png", "ms20.png",
-    "ms21.png", "ms22.png", "ms23.png", "ms24.png", "ms25.png", "ms26.png", "ms27.png", "ms28.png", "ms29.png", "ms30.png",
-    "ms31.png", "ms32.png", "ms33.png", "ms34.png", "ms35.png", "ms36.png", "ms37.png", "ms38.png", "ms39.png", "ms40.png",
+  const fileNames = ["ms1.webp", "ms2.webp", "ms3.webp", "ms4.webp", "ms5.webp", "ms6.webp", "ms7.webp", "ms8.webp", "ms9.webp", "ms10.webp",
+    "ms11.webp", "ms12.webp", "ms13.webp", "ms14.webp", "ms16.webp", "ms17.webp", "ms18.webp", "ms19.webp", "ms20.webp",
+    "ms21.webp", "ms22.webp", "ms23.webp", "ms24.webp", "ms25.webp", "ms26.webp", "ms27.webp", "ms28.webp", "ms29.webp", "ms30.webp",
+    "ms31.webp", "ms32.webp", "ms33.webp", "ms34.webp", "ms35.webp", "ms36.webp", "ms37.webp", "ms38.webp", "ms39.webp", "ms40.webp",
 
-    "ms1.png", "ms2.png", "ms3.png", "ms4.png", "ms5.png", "ms6.png", "ms7.png", "ms8.png", "ms9.png", "ms10.png",
-    "ms11.png", "ms12.png", "ms13.png", "ms14.png", "ms16.png", "ms17.png", "ms18.png", "ms19.png", "ms20.png",
-    "ms21.png", "ms22.png", "ms23.png", "ms24.png", "ms25.png", "ms26.png", "ms27.png", "ms28.png", "ms29.png", "ms30.png","ms31.png", "ms32.png",
+    "ms1.webp", "ms2.webp", "ms3.webp", "ms4.webp", "ms5.webp", "ms6.webp", "ms7.webp", "ms8.webp", "ms9.webp", "ms10.webp",
+    "ms11.webp", "ms12.webp", "ms13.webp", "ms14.webp", "ms16.webp", "ms17.webp", "ms18.webp", "ms19.webp", "ms20.webp",
+    "ms21.webp", "ms22.webp", "ms23.webp", "ms24.webp", "ms25.webp", "ms26.webp", "ms27.webp", "ms28.webp", "ms29.webp", "ms30.webp","ms31.webp", "ms32.webp",
    ];
   images = fileNames.map(file => basePath + file);
 }
 
 else if (path.includes("fairtradeproducts")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/FairTrade_Products/";
-  const fileNames = ["ft1.png", "ft2.png", "ft3.png", "ft4.png", "ft5.png", "ft6.png", "ft7.png", "ft8.png", "ft9.png", "ft10.png","ft11.png", "ft12.png", "ft13.png", "ft14.png", "ft15.png", "ft16.png", "ft17.png", "ft18.png", "ft19.png", "ft20.png",
-    "ft21.png", "ft22.png", "ft23.png", "ft24.png", "ft25.png", "ft26.png", "ft27.png", "ft28.png", "ft29.png", "ft30.png","ft31.png", "ft32.png","ft33.png", "ft34.png", "ft35.png", "ft36.png", "ft37.png", "ft38.png", "ft39.png", "ft40.png","ft41.png", "ft42.png", "ft43.png", "ft44.png","ft45.png",
-    "ft46.png", "ft47.png", "ft48.png", "ft49.png","ft50.png","ft51.png", "ft52.png", "ft53.png", "ft54.png", "ft55.png", "ft56.png", "ft57.png", "ft58.png", "ft59.png", "ft60.png","ft61.png", "ft62.png", "ft63.png", "ft64.png", "ft65.png", "ft66.png", "ft67.png", "ft68.png", "ft69.png", "ft70.png","ft71.png",
-     "ft72.png", "ft73.png", "ft74.png", "ft75.png","ft76.png", "ft77.png", "ft78.png", "ft79.png", "ft80.png","ft81.png", "ft82.png",      
-     "ft1.png", "ft2.png", "ft3.png", "ft4.png", "ft5.png", "ft6.png", "ft7.png", "ft8.png", "ft9.png", "ft10.png","ft11.png", "ft12.png", "ft13.png", "ft14.png", "ft15.png", "ft16.png","ft17.png", "ft18.png"
+  const fileNames = ["ft1.webp", "ft2.webp", "ft3.webp", "ft4.webp", "ft5.webp", "ft6.webp", "ft7.webp", "ft8.webp", "ft9.webp", "ft10.webp","ft11.webp", "ft12.webp", 
+    "ft13.webp", "ft14.webp", "ft15.webp", "ft16.webp", "ft17.webp", "ft18.webp", "ft19.webp", "ft20.webp", "ft21.webp", "ft22.webp", "ft23.webp", "ft24.webp", "ft25.webp",
+     "ft26.webp", "ft27.webp", "ft28.webp", "ft29.webp", "ft30.webp","ft31.webp", "ft32.webp","ft33.webp", "ft34.webp", "ft35.webp", "ft36.webp", "ft37.webp", "ft38.webp", 
+     "ft39.webp", "ft40.webp","ft41.webp", "ft42.webp", "ft43.webp", "ft44.webp","ft45.webp", "ft46.webp", "ft47.webp", "ft48.webp", "ft49.webp","ft50.webp","ft51.webp", 
+     "ft52.webp", "ft53.webp", "ft54.webp", "ft55.webp", "ft56.webp", "ft57.webp", "ft58.webp", "ft59.webp", "ft60.webp","ft61.webp", "ft62.webp", "ft63.webp", "ft64.webp", 
+     "ft65.webp", "ft66.webp", "ft67.webp", "ft68.webp", "ft69.webp", "ft70.webp","ft71.webp","ft72.webp", "ft73.webp", "ft74.webp", "ft75.webp","ft76.webp", "ft77.webp", 
+     "ft78.webp", "ft79.webp", "ft80.webp","ft81.webp", "ft82.webp", "ft1.webp", "ft2.webp", "ft3.webp", "ft4.webp", "ft5.webp", "ft6.webp", "ft7.webp", "ft8.webp", "ft9.webp", 
+     "ft10.webp","ft11.webp", "ft12.webp", "ft13.webp", "ft14.webp", "ft15.webp", "ft16.webp","ft17.webp", "ft18.webp"
    ];
   images = fileNames.map(file => basePath + file);
 }

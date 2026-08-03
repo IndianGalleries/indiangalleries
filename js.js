@@ -4,8 +4,8 @@ function updateFavicon() {
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (favicon) {
     favicon.href = isDark
-      ? "/Images/favicon-dark.png"
-      : "/Images/favicon-light.png";
+      ? "/Images/favicon-dark.webp"
+      : "/Images/favicon-light.webp";
   }
 }
 
