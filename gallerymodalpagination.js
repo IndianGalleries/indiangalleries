@@ -5,12 +5,12 @@ const path = window.location.pathname.toLowerCase();
 if (path.includes("tablelamps")) {
   basePath = "/Images/Product Images/Lamps_and_Lightening/Table_lamps/";
   const fileNames = ["a1.webp", "a2.webp", "a3.webp", "a4.webp", "a5.webp", "a6.webp", "a7.webp", "a8.webp", "a9.webp", "a10.webp","a11.webp", "a12.webp", "a13.webp", "a14.webp", "a15.webp",
-    "a16.webp", "a17.webp", "a18.webp", "a19.webp", "a20.webp","a21.webp", "a22.webp", "a23.webp", "a24.webp", "a25.webp",    
-    "tbl1.webp", "tbl2.webp", "tbl3.webp", "tbl4.webp", "tbl5.webp", "tbl6.webp", "tbl7.webp", "tbl8.webp", "tbl9.webp", "tbl10.webp","tbl11.webp", "tbl12.webp", "tbl13.webp", "tbl14.webp", "tbl15.webp",
-    "tbl16.webp", "tbl17.webp", "tbl18.webp", "tbl19.webp", "tbl20.webp","tbl21.webp", "tbl22.webp", "tbl23.webp", "tbl24.webp", "tbl25.webp","tbl26.webp", "tbl27.webp", "tbl28.webp", "tbl29.webp", "tbl30.webp",
-    "tbl31.webp", "tbl32.webp", "tbl33.webp", "tbl34.webp", "tbl35.webp","tbl36.webp", "tbl37.webp", "tbl38.webp", "tbl39.webp", "tbl40.webp","tbl41.webp", "tbl42.webp", "tbl43.webp", "tbl44.webp", "tbl45.webp","tbl46.webp", "tbl47.webp", "tbl48.webp", "tbl49.webp", "tbl50.webp",
-  "tbl51.webp", "tbl52.webp", "tbl53.webp", "tbl54.webp", "tbl55.webp","tbl56.webp", "tbl57.webp", "tbl58.webp", "tbl59.webp", "tbl60.webp","tbl61.webp", "tbl62.webp", "tbl63.webp", "tbl64.webp", "tbl65.webp", "tbl66.webp", "tbl67.webp", "tbl68.webp", "tbl69.webp", "tbl70.webp","tbl71.webp", "tbl72.webp", "tbl73.webp", "tbl74.webp", "tbl75.webp",
-"tbl76.webp", "tbl77.webp", "tbl78.webp", "tbl79.webp", "tbl80.webp","tbl81.webp", "tbl82.webp", "tbl83.webp", "tbl84.webp", "tbl85.webp", "tbl86.webp","tbl87.webp", "tbl88.webp", "tbl89.webp", "tbl90.webp", "tbl91.webp", "tbl92.webp", "tbl93.webp", "tbl43.webp", "tbl44.webp", "tbl45.webp","tbl46.webp", "tbl47.webp", "tbl48.webp", "tbl49.webp"];
+    "a16.webp", "a17.webp", "a18.webp", "a19.webp", "a20.webp","a21.webp", "a22.webp", "a23.webp", "a24.webp", "a25.webp","tbl14.webp", "tbl15.webp", "tbl16.webp", "tbl17.webp", "tbl18.webp", "tbl19.webp", "tbl20.webp","tbl21.webp", "tbl22.webp", "tbl23.webp", "tbl24.webp", "tbl25.webp","tbl26.webp", "tbl27.webp", "tbl28.webp", "tbl29.webp", "tbl30.webp",
+    "tbl31.webp", "tbl32.webp", "tbl33.webp", "tbl34.webp", "tbl35.webp","tbl36.webp", "tbl56.webp", "tbl57.webp", "tbl58.webp", "tbl59.webp", "tbl60.webp","tbl61.webp", "tbl62.webp", "tbl63.webp", "tbl64.webp", "tbl65.webp", "tbl66.webp", "tbl67.webp", "tbl68.webp", "tbl69.webp", "tbl70.webp","tbl71.webp", "tbl72.webp", "tbl73.webp", "tbl74.webp", "tbl75.webp",
+"tbl76.webp", "tbl77.webp", "tbl78.webp", "tbl79.webp", "tbl80.webp","tbl81.webp", "tbl82.webp", "tbl83.webp", "tbl84.webp", "tbl85.webp", "tbl86.webp","tbl87.webp", "tbl88.webp", "tbl89.webp", "tbl90.webp", "tbl91.webp", "tbl92.webp", "tbl93.webp", "tbl94.webp", "tbl95.webp", "tbl96.webp","tbl97.webp", "tbl98.webp", "tbl99.webp", "tbl100.webp",
+"tbl101.webp", "tbl102.webp", "tbl103.webp", "tbl104.webp", "tbl105.webp","tbl106.webp", "tbl107.webp", "tbl108.webp", "tbl109.webp", "tbl110.webp","tbl111.webp", "tbl112.webp", "tbl113.webp", "tbl114.webp", "tbl115.webp","tbl116.webp", "tbl117.webp", "tbl118.webp", "tbl119.webp", "tbl120.webp","tbl121.webp", "tbl122.webp", "tbl123.webp", 
+"tbl124.webp", "tbl125.webp","tbl126.webp", "tbl127.webp", "tbl128.webp", "tbl129.webp", "tbl130.webp","tbl131.webp", "tbl132.webp", "tbl133.webp", "tbl134.webp", "tbl135.webp","tbl136.webp", "tbl137.webp", "tbl138.webp", "tbl139.webp", "tbl140.webp","tbl141.webp", "tbl142.webp", "tbl143.webp", "tbl144.webp", "tbl145.webp","tbl146.webp", "tbl147.webp", 
+"tbl148.webp", "tbl149.webp", "tbl150.webp","tbl151.webp", "tbl152.webp", "tbl153.webp", "tbl154.webp", "tbl155.webp","tbl156.webp", "tbl157.webp", "tbl158.webp", "tbl159.webp"];
   images = fileNames.map(file => basePath + file);
 
 } else if (path.includes("walllamps")) {
@@ -35,7 +35,8 @@ else if (path.includes("floorlamps")) {
     "flr13.webp", "flr14.webp", "flr15.webp", "flr16.webp", "flr17.webp", "flr18.webp", "flr19.webp", "flr20.webp","flr21.webp", "flr22.webp", "flr23.webp", "flr24.webp", "flr25.webp",
     "flr26.webp", "flr27.webp", "flr28.webp", "flr29.webp", "flr30.webp","flr31.webp", "flr32.webp", "flr33.webp", "flr34.webp", "flr35.webp","flr36.webp", "flr37.webp", "flr38.webp", "flr39.webp", "flr40.webp",
     "flr41.webp", "flr42.webp", "flr43.webp", "flr44.webp", "flr45.webp","flr46.webp", "flr47.webp", "flr48.webp", "flr49.webp", "flr50.webp","flr51.webp", "flr52.webp", "flr53.webp", "flr54.webp", "flr55.webp",
-    "flr56.webp", "flr57.webp", "flr58.webp", "flr59.webp", "flr60.webp","flr61.webp", "flr62.webp", "flr63.webp", "flr64.webp", "flr65.webp","flr66.webp", "flr67.webp", "flr68.webp", "flr69.webp", "flr70.webp","flr71.webp", "flr72.webp", "flr73.webp", "flr74.webp", "flr75.webp"
+    "flr56.webp", "flr57.webp", "flr58.webp", "flr59.webp", "flr60.webp","flr61.webp", "flr62.webp", "flr63.webp", "flr64.webp", "flr65.webp","flr66.webp", "flr67.webp", "flr68.webp", "flr69.webp", "flr70.webp",
+    "flr71.webp", "flr72.webp", "flr73.webp", "flr74.webp", "flr75.webp"
   ];
   images = fileNames.map(file => basePath + file);
 } 
