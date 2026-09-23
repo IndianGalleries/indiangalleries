@@ -435,6 +435,37 @@ header .logo-img {
   }
 }
 
+/* Wrapper for a gallery image + its category heading/link */
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery-item .gallery-image {
+  margin-bottom: 0;
+}
+
+.gallery-caption {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #003580;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.gallery-caption:hover,
+.gallery-caption:focus {
+  color: #b8860b;
+  background-color: rgba(0, 53, 128, 0.06);
+  text-decoration: underline;
+}
+
 .gallery-image {
   position: relative;
   margin-bottom: 30px;
