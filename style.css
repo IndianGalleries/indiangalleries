@@ -1470,3 +1470,290 @@ h3.section-heading {
     font-size: 0.8rem;
   }
 }
+/* ==========================================================
+   Indian Galleries - Reusable Content Section System (ig-)
+   ----------------------------------------------------------
+   HOW TO USE: paste this whole block at the END of style.css.
+   It only adds new "ig-" classes and does not change any
+   existing rule, so other pages are not affected.
+
+   Building blocks:
+   .ig-section / .ig-section--alt / .ig-section--tight
+   .ig-section-head > .ig-section-title + .ig-section-lead
+   .ig-card-grid (+ --2 / --4) > .ig-card
+       .ig-card-icon, .ig-card-title, .ig-card-text
+   .ig-link
+   .ig-cta > .ig-cta-title, .ig-cta-text, .ig-cta-actions > .ig-btn (+ --outline)
+   ========================================================== */
+
+:root {
+  --ig-blue: #003681;
+  --ig-navy: #062f69;
+  --ig-teal: #094274;
+  --ig-gold: #b8860b;
+  --ig-bg: #f5f8ff;
+  --ig-text: #444;
+  --ig-border: #e4e7ee;
+  --ig-radius: 14px;
+  --ig-shadow: 0 6px 22px rgba(0, 54, 129, 0.08);
+  --ig-shadow-hover: 0 14px 32px rgba(0, 54, 129, 0.16);
+}
+
+/* ---------- Section wrapper ---------- */
+.ig-section {
+  padding: 60px 0;
+}
+
+.ig-section--alt {
+  background: var(--ig-bg);
+}
+
+.ig-section--tight {
+  padding: 35px 0;
+}
+
+/* ---------- Section heading block ---------- */
+.ig-section-head {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.ig-section-title {
+  position: relative;
+  display: block;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 700;
+  color: var(--ig-blue);
+  /* cancel the global gradient text used on h2 */
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+}
+
+.ig-section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--ig-blue), var(--ig-gold));
+  transform: translateX(-50%);
+}
+
+.ig-section-lead {
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--ig-text);
+}
+
+/* ---------- Card grid ---------- */
+.ig-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 576px) {
+  .ig-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .ig-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ig-card-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ig-card-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---------- Card ---------- */
+.ig-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 24px 26px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid var(--ig-border);
+  border-radius: var(--ig-radius);
+  box-shadow: var(--ig-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.ig-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--ig-navy), var(--ig-teal), var(--ig-gold));
+}
+
+.ig-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--ig-shadow-hover);
+  border-color: rgba(0, 54, 129, 0.25);
+}
+
+.ig-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  color: var(--ig-blue);
+  background: linear-gradient(135deg, #eaf1ff, #dbe7fb);
+  border: 2px dashed rgba(0, 54, 129, 0.35);
+  border-radius: 50%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ig-card:hover .ig-card-icon {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--ig-navy), var(--ig-teal));
+  border-style: solid;
+}
+
+.ig-card-title {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ig-blue);
+}
+
+.ig-card-text {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: var(--ig-text);
+}
+
+/* ---------- Text link ---------- */
+.ig-link {
+  font-weight: 600;
+  color: var(--ig-blue);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(184, 134, 11, 0.5);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.ig-link:hover,
+.ig-link:focus {
+  color: var(--ig-gold);
+  border-bottom-color: var(--ig-gold);
+}
+
+/* ---------- Call-to-action band ---------- */
+.ig-cta {
+  margin-top: 50px;
+  padding: 38px 28px;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #062f69, #094274);
+  border-radius: var(--ig-radius);
+  box-shadow: var(--ig-shadow);
+}
+
+.ig-cta-title {
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.ig-cta-text {
+  max-width: 640px;
+  margin: 0 auto 22px;
+  line-height: 1.7;
+  color: #e8ecf5;
+}
+
+.ig-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.ig-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-weight: 700;
+  color: var(--ig-navy);
+  text-decoration: none;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ig-btn:hover,
+.ig-btn:focus {
+  color: #ffffff;
+  background: transparent;
+}
+
+.ig-btn--outline {
+  color: #ffffff;
+  background: transparent;
+}
+
+.ig-btn--outline:hover,
+.ig-btn--outline:focus {
+  color: var(--ig-navy);
+  background: #ffffff;
+}
+
+.ig-btn:focus-visible,
+.ig-link:focus-visible {
+  outline: 2px solid var(--ig-gold);
+  outline-offset: 3px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 575.98px) {
+  .ig-section {
+    padding: 40px 0;
+  }
+  .ig-card {
+    padding: 24px 20px;
+  }
+  .ig-cta {
+    padding: 30px 20px;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .ig-card,
+  .ig-card-icon,
+  .ig-btn,
+  .ig-link {
+    transition: none;
+  }
+  .ig-card:hover {
+    transform: none;
+  }
+}

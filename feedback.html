@@ -6,10 +6,10 @@
     
     <!-- Primary SEO Meta -->
     <title>Feedback | Indian Galleries – Share Your Experience</title>
-    <meta name="description" content="Share your valuable feedback with Indian Galleries. We truly appreciate your reviews and suggestions about our handcrafted lamps, lighting, and home décor products." />
+    <meta name="description" content="Share your feedback with Indian Galleries. Tell us about your experience with our handcrafted lamps, lighting and home décor." />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Indian Galleries" />
-    <meta name="theme-color" content="#8b6914" />
+    <meta name="theme-color" content="#003681" />
     <link rel="canonical" href="https://www.indiangalleries.net/feedback.html" />
 
     <!-- Open Graph -->
@@ -42,7 +42,7 @@
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- Existing Site CSS -->
+    <!-- Existing Site CSS (style.css must include the ig- section classes) -->
     <link rel="stylesheet" href="style.css" />
     <!-- Feedback-specific CSS -->
     <link rel="stylesheet" href="feedback.css" />
@@ -89,6 +89,19 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10">
 
+            <!-- Intro -->
+            <div class="ig-section-head" data-aos="fade-up">
+              <h2 class="ig-section-title">We Would Love to Hear From You</h2>
+              <p class="ig-section-lead">
+                Your feedback helps Indian Galleries improve its handcrafted lighting, home décor
+                and luxury kitchenware, and the service that comes with them. Whether you bought a
+                lamp, a chandelier or a décor piece, tell us how you found the product quality,
+                packaging and delivery, and how we can do better. Please keep your invoice ID handy,
+                as the form asks for it. For order help or product enquiries, please
+                <a class="ig-link" href="contactus.html">contact us</a>.
+              </p>
+            </div>
+
             <!-- Form Card -->
             <div class="feedback-card" data-aos="fade-up">
               <div class="feedback-card-header text-center">
@@ -104,7 +117,7 @@
                     <p class="text-muted">Your response helps us serve you better.</p>
                     <div id="googleReviewPrompt" class="d-none mt-3">
                       <p class="fw-semibold">Would you like to leave us a Google Review?</p>
-                      <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review" target="_blank" class="btn btn-google-review">
+                      <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review" target="_blank" rel="noopener" class="btn btn-google-review">
                         <i class="fab fa-google me-2"></i>Leave a Google Review
                       </a>
                     </div>
@@ -124,20 +137,21 @@
                   <div class="row g-3 mb-3">
                     <div class="col-md-6">
                       <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
-                      <input type="text" class="form-control" id="fullName" placeholder="Your full name" required maxlength="100" />
+                      <input type="text" class="form-control" id="fullName" placeholder="Your full name" required maxlength="100" autocomplete="name" />
                       <div class="invalid-feedback">Please enter your full name.</div>
                     </div>
                     <div class="col-md-6">
                       <label for="mobileNumber" class="form-label">Mobile Number <span class="text-danger">*</span></label>
-                      <input type="tel" class="form-control" id="mobileNumber" placeholder="10-digit Mobile Number" required maxlength="10" />                      <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+                      <input type="tel" class="form-control" id="mobileNumber" placeholder="10-digit Mobile Number" required maxlength="10" inputmode="numeric" autocomplete="tel-national" />
+                      <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
                     </div>
                     <div class="col-md-6">
                       <label for="emailAddress" class="form-label">Email Address <span class="text-muted">(Optional)</span></label>
-                      <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" maxlength="150" />
+                      <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" maxlength="150" autocomplete="email" />
                       <div class="invalid-feedback">Please enter a valid email address.</div>
                     </div>
                     <div class="col-md-6">
-                      <label for="invoiceId" class="form-label">Invoice ID<span class="text-danger">*</span></label>
+                      <label for="invoiceId" class="form-label">Invoice ID <span class="text-danger">*</span></label>
                       <input  type="text"  class="form-control"  id="invoiceId"  placeholder="e.g. IG-2024-001"  maxlength="50"  required/>
                       <div class="invalid-feedback">Please enter your invoice ID.</div>
                     </div>
@@ -271,9 +285,13 @@
                       </span>
                     </button>
                   </div>
+
+                  <p class="text-center small text-muted mt-3 mb-0">
+                    Please read our <a class="ig-link" href="Privacy_Policy.html">Privacy Policy</a>
+                    to learn how we handle your information.
+                  </p>
                 </div>
                 <!-- end feedbackFormWrapper -->
-
               </div>
             </div>
             <!-- end feedback-card -->
