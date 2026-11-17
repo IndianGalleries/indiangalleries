@@ -1,0 +1,111 @@
+
+media:
+  input: media/blog
+  output: /media/blog
+  rename: safe
+  extensions:
+    - jpg
+    - jpeg
+    - png
+    - webp
+
+content:
+  - name: blog_articles
+    label: Blog Articles
+    type: collection
+    path: blogs
+    format: yaml-frontmatter
+    filename: "{slug}.md"
+
+    view:
+      primary: title
+      fields:
+        - title
+        - category
+        - date
+        - published
+      sort:
+        - date
+      default:
+        sort: date
+        order: desc
+
+    fields:
+      - name: title
+        label: Blog Title
+        type: string
+        required: true
+
+      - name: slug
+        label: URL Slug
+        type: string
+        required: true
+        pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        description: "Use lowercase words separated by hyphens."
+
+      - name: category
+        label: Blog Category
+        type: select
+        required: true
+        options:
+          values:
+            - Lighting
+            - Lampshades
+            - Home Decor
+            - Kitchenware
+            - Handcrafted Products
+            - Buying Guides
+            - Interior Design
+
+      - name: excerpt
+        label: Short Description
+        type: text
+        required: true
+
+      - name: featured_image
+        label: Featured Image
+        type: image
+        required: true
+
+      - name: image_alt
+        label: Image Alt Text
+        type: string
+        required: true
+
+      - name: author
+        label: Author
+        type: string
+
+      - name: date
+        label: Publication Date
+        type: date
+        required: true
+
+      - name: updated_date
+        label: Last Updated
+        type: date
+
+      - name: published
+        label: Published
+        type: boolean
+
+      - name: tags
+        label: SEO Tags
+        type: string
+        list: true
+
+      - name: seo_title
+        label: SEO Title
+        type: string
+
+      - name: meta_description
+        label: Meta Description
+        type: text
+
+      - name: body
+        label: Blog Article Content
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          switcher: true
