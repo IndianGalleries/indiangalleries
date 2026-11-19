@@ -42,7 +42,7 @@ jobs:
         run: npm run build
 
       - name: Assemble complete site (existing pages + generated blog)
-        run: scripts/assemble-site.sh _site
+        run: bash scripts/assemble-site.sh _site
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
