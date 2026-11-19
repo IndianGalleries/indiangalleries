@@ -1,0 +1,48 @@
+{
+  "siteUrl": "https://www.indiangalleries.net",
+  "siteName": "Indian Galleries",
+  "blogPath": "/blogs/",
+  "logo": "/Images/logo.webp",
+  "pageSize": 9,
+  "categories": [
+    "Lighting",
+    "Lampshades",
+    "Home Decor",
+    "Kitchenware",
+    "Handcrafted Products",
+    "Buying Guides",
+    "Interior Design"
+  ],
+  "listing": {
+    "title": "Lighting & Home Décor Journal | Indian Galleries",
+    "description": "Guides, ideas and buying advice on handcrafted lighting, lampshades, home styling and decorative objects from Indian Galleries, Moradabad.",
+    "heading": "Lighting & Home Décor Journal",
+    "intro": "Thoughtful guides on handcrafted lighting, lampshades, home styling and decorative ideas, written by the makers at Indian Galleries to help you bring warmth and character into every room."
+  },
+  "products": [
+    { "url": "/tablelamps.html",       "label": "Table Lamps",       "categories": ["Lighting", "Lampshades", "Buying Guides", "Interior Design"], "keywords": ["table lamp", "bedside", "desk lamp", "lampshade", "lamp shade", "shade"] },
+    { "url": "/floorlamps.html",       "label": "Floor Lamps",       "categories": ["Lighting", "Lampshades", "Buying Guides", "Interior Design"], "keywords": ["floor lamp", "standing lamp", "reading corner", "lampshade", "shade"] },
+    { "url": "/pendants.html",         "label": "Pendant Lights",    "categories": ["Lighting", "Lampshades", "Interior Design"], "keywords": ["pendant", "hanging light", "ceiling light", "drum shade"] },
+    { "url": "/chandeliers.html",      "label": "Chandeliers",       "categories": ["Lighting", "Interior Design"], "keywords": ["chandelier", "candle bulb", "dining room light"] },
+    { "url": "/walllamps.html",        "label": "Wall Lamps",        "categories": ["Lighting", "Lampshades"], "keywords": ["wall lamp", "wall light", "sconce"] },
+    { "url": "/outdoorlamps.html",     "label": "Outdoor Lamps",     "categories": [], "keywords": ["outdoor", "garden light", "patio"] },
+    { "url": "/Lamps_and_Lightings.html", "label": "Lamps & Lighting", "categories": ["Buying Guides", "Interior Design"], "keywords": ["lighting", "lamp"] },
+    { "url": "/tabletopitem.html",     "label": "Table Top Items",   "categories": ["Home Decor", "Interior Design", "Handcrafted Products"], "keywords": ["tabletop", "table top", "centrepiece", "centerpiece", "decorative object"] },
+    { "url": "/handpainteditems.html", "label": "Hand Painted Items","categories": ["Home Decor", "Handcrafted Products"], "keywords": ["hand painted", "hand-painted", "painted"] },
+    { "url": "/walldecor.html",        "label": "Wall Decor",        "categories": ["Home Decor", "Interior Design"], "keywords": ["wall decor", "wall art", "wall hanging"] },
+    { "url": "/flowervases.html",      "label": "Flower Vases",      "categories": ["Home Decor"], "keywords": ["vase", "flower"] },
+    { "url": "/silverteacupset.html",  "label": "Silver Wares",      "categories": ["Kitchenware"], "keywords": ["silver", "tea set", "teacup", "tableware"] },
+    { "url": "/etagere.html",          "label": "Etagere",           "categories": ["Kitchenware"], "keywords": ["etagere", "tiered stand", "cake stand"] },
+    { "url": "/trays.html",            "label": "Trays",             "categories": ["Kitchenware"], "keywords": ["tray", "serving"] },
+    { "url": "/Rural_Handicrafts.html","label": "Rural Handicrafts", "categories": ["Handcrafted Products"], "keywords": ["handicraft", "basket", "wooden", "artisan"] }
+  ],
+  "autoLinks": [
+    { "pattern": "table lamps?",             "url": "/tablelamps.html" },
+    { "pattern": "floor lamps?",             "url": "/floorlamps.html" },
+    { "pattern": "pendant (?:lamps?|lights?)", "url": "/pendants.html" },
+    { "pattern": "chandeliers?",             "url": "/chandeliers.html" },
+    { "pattern": "wall lamps?",              "url": "/walllamps.html" },
+    { "pattern": "outdoor lamps?",           "url": "/outdoorlamps.html" }
+  ],
+  "maxAutoLinks": 5
+}

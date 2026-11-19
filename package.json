@@ -1,0 +1,18 @@
+{
+  "name": "indiangalleries-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static blog generator for the Indian Galleries website. The rest of the site is plain static HTML.",
+  "scripts": {
+    "build": "node scripts/build-blog.js",
+    "test": "node --test scripts/tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "sharp": "^0.35.5"
+  }
+}
