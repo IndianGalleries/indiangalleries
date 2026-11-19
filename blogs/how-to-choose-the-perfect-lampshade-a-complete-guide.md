@@ -11,7 +11,7 @@ image_alt: Complete guide to choosing decorative lampshades for table lamps and
 author: Indian Galleries
 date: 2026-11-19
 updated_date: 2026-11-19
-published: true
+published: false
 tags:
   - lampshade guide
   - how to choose a lampshade
