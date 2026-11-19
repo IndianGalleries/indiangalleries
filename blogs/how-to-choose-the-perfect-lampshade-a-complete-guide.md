@@ -5,13 +5,13 @@ category: Lampshades
 excerpt: Discover how to choose the perfect lampshade by understanding sizes,
   shapes, materials, colours and styles. Explore practical tips to match
   lampshades with your lamp base and home interiors.
-featured_image: /media/blog/classyfloorlamps3.png
+featured_image: /media/blog/028.png
 image_alt: Complete guide to choosing decorative lampshades for table lamps and
   home lighting
 author: Indian Galleries
 date: 2026-11-19
 updated_date: 2026-11-19
-published: false
+published: true
 tags:
   - lampshade guide
   - how to choose a lampshade
