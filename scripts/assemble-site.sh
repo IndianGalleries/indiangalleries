@@ -29,9 +29,13 @@ for d in Images media css js; do [ -d "$DEST/$d" ] || fail "missing folder $d"; 
 # 3. No Markdown sources / drafts are published.
 if ls "$DEST"/blogs/*.md >/dev/null 2>&1; then fail "Markdown sources found in output"; fi
 
-# 4. Sitemap only lists blog pages that exist in the output.
-grep -o '<loc>https://www.indiangalleries.net/blogs/[^<]\+/</loc>' "$DEST/sitemap.xml" | sed -e 's#<loc>https://www.indiangalleries.net/##' -e 's#</loc>##' | while read -r p; do
-  [ -f "$DEST/${p}index.html" ] || fail "sitemap lists $p but no page was generated"
-done
+# 4. Validate blog pages only when blog URLs exist in the sitemap.
+if grep -q '<loc>https://www.indiangalleries.net/blogs/' "$DEST/sitemap.xml"; then
+  grep -o '<loc>https://www.indiangalleries.net/blogs/[^<]\+/</loc>' "$DEST/sitemap.xml" |
+    sed -e 's#<loc>https://www.indiangalleries.net/##' -e 's#</loc>##' |
+    while read -r p; do
+      [ -f "$DEST/${p}index.html" ] || fail "sitemap lists $p but no page was generated"
+    done
+fi
 
 echo "Site assembled in $DEST: $(find "$DEST" -type f | wc -l) files"
